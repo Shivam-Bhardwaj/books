@@ -52,6 +52,17 @@ test("Chapter nav 'Contents' returns to TOC", async ({ page }) => {
   await page.goto("/books/butterfly-effect/manuscript/arc-1/chapter-01.html");
   await expect(page).toHaveTitle(/Butterfly Effect — Chapter 1/i);
 
+  // Avoid strict justification + auto hyphenation (no trailing hyphens like `some-`).
+  const paraStyles = await page.evaluate(() => {
+    const p = document.querySelector(".chapter-body p");
+    if (!p) return null;
+    const cs = getComputedStyle(p);
+    return { textAlign: cs.textAlign, hyphens: cs.hyphens };
+  });
+  expect(paraStyles).not.toBeNull();
+  expect(paraStyles.textAlign).toBe("left");
+  expect(paraStyles.hyphens).toBe("none");
+
   await page
     .locator("nav.chapter-nav")
     .first()

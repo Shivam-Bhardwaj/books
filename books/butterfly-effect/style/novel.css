@@ -191,16 +191,15 @@ header h1 {
 .chapter-body p {
   margin: 0;
   text-indent: var(--paragraph-indent);
-  text-align: justify;
-  text-justify: inter-word;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
+  text-align: left;
+  text-wrap: pretty;
+  -webkit-hyphens: none;
+  hyphens: none;
   overflow-wrap: break-word;
 }
 
 .chapter-body p + p {
-  margin-top: 0.12em;
+  margin-top: 0.45em;
 }
 
 .chapter-body p:first-of-type {
@@ -472,9 +471,16 @@ video {
   }
 }
 
+@media (min-width: 900px) {
+  :root {
+    --measure: 78ch;
+  }
+}
+
 @media (min-width: 1200px) {
   :root {
-    --content-pad: 1.5rem;
+    --measure: 82ch;
+    --content-pad: 1.25rem;
   }
 }
 
