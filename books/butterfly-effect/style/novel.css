@@ -26,7 +26,8 @@
 }
 
 :root {
-  color-scheme: light dark;
+  /* Force a paper-like reading experience by default (no auto-dark). */
+  color-scheme: light;
 
   --bg: #f5efe4;
   --bg-top: #fbf7f0;
@@ -54,23 +55,6 @@
   --line-height: 1.68;
   --content-pad: 1.25rem;
   --paragraph-indent: 1.5em;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #141416;
-    --bg-top: #1a1a1d;
-    --text: #e7dfd6;
-    --text-muted: rgba(231, 223, 214, 0.68);
-    --accent: #7cc2d0;
-    --accent-light: #a1d9e4;
-    --accent-warm: #d28b5f;
-    --glow-cool: rgba(124, 194, 208, 0.10);
-    --glow-warm: rgba(210, 139, 95, 0.08);
-    --border: rgba(231, 223, 214, 0.16);
-    --nav-bg: rgba(26, 26, 29, 0.96);
-    --scene-break: rgba(231, 223, 214, 0.35);
-  }
 }
 
 * {
