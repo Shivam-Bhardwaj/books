@@ -1,0 +1,6 @@
+name = "books-too-foo"
+compatibility_date = "2026-02-07"
+
+# Cloudflare Pages: this repo serves the static files in `site/`.
+pages_build_output_dir = "site"
+

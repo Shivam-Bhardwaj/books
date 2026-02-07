@@ -1,0 +1,29 @@
+{
+  "chapter": {
+    "arc": 1,
+    "num": 1,
+    "title": "The Lensmaker",
+    "pov": "Kael",
+    "location": "Continental city-state (Caribbean/Atlantic coast)",
+    "timeline": "2587, Month 1, Day 1"
+  },
+  "lang": "es",
+  "selection_mode": "chapter",
+  "selection": {
+    "selected_engine": "nllb",
+    "avg_scores": {
+      "nllb": 0.8837622070312501
+    }
+  },
+  "scores": {
+    "avg_by_engine": {
+      "nllb": 0.8837622070312501
+    }
+  },
+  "qe": {
+    "cometkiwi_enabled": false,
+    "embed_fallback_enabled": true,
+    "embed_model": "intfloat/multilingual-e5-small",
+    "comet_model": null
+  }
+}

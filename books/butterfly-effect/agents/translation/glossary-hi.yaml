@@ -1,0 +1,56 @@
+meta:
+  name: "The Sundering Hindi Glossary (Internal)"
+  purpose: "Terminology consistency for Hindi translation passes."
+  notes:
+    - "Keep Satya terms italicized and generally untranslated (dharma, dā, adharma)."
+    - "VEDA stays uppercase."
+
+terms:
+  - en: "the Before"
+    hi: "बिफोर (पुराना युग)"
+    rule: "First mention: use both; later: 'बिफोर'."
+
+  - en: "mesh"
+    hi: "मेश"
+    rule: "Treat as a system name; avoid over-translating as 'जाल' unless context demands."
+
+  - en: "Council"
+    hi: "परिषद"
+    rule: "Capitalize in English not relevant; keep consistent Hindi term."
+
+  - en: "Habitat"
+    hi: "हैबिटैट"
+    rule: "Technical term; keep transliteration."
+
+  - en: "seal / sealed"
+    hi: "सील / सील्ड"
+    rule: "Use sparingly; prefer natural Hindi when possible ('बंद', 'सीलबंद') but stay consistent in key phrases."
+
+  - en: "receiver"
+    hi: "रिसीवर"
+    rule: "Technical term in Continental context."
+
+  - en: "transmitter"
+    hi: "ट्रांसमीटर"
+    rule: "Technical term in Continental context."
+
+  - en: "signal"
+    hi: "सिग्नल"
+    rule: "Technical; avoid switching to multiple Hindi synonyms."
+
+  - en: "probe"
+    hi: "प्रोब"
+    rule: "Technical."
+
+  - en: "VLF"
+    hi: "VLF"
+    rule: "Keep acronym."
+
+  - en: "arc"
+    hi: "आर्क"
+    rule: "For internal navigation; chapters may omit if not needed."
+
+  - en: "chapter"
+    hi: "अध्याय"
+    rule: "Use 'अध्याय' in headers if producing Hindi-only editions; otherwise keep original header format."
+

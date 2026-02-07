@@ -1,0 +1,418 @@
+meta:
+  name: "The Sundering - Chapter SVG Theme List"
+  purpose: "One theme + one SVG concept per chapter (used to generate chapter sigils/icons)."
+  viewBox: "0 0 256 256"
+  svg_style_defaults:
+    fill: "none"
+    stroke: "currentColor"
+    stroke_linecap: "round"
+    stroke_linejoin: "round"
+    stroke_width: 12
+  constraints:
+    - "No text in the SVG (no font dependencies)."
+    - "Legible at 24px. Avoid tiny details."
+    - "Prefer 1-3 primary shapes; use negative space."
+    - "Recurring motif: gaps/offsets to echo translation loss."
+    - "Continental chapters: slightly organic/asymmetric."
+    - "Antarctic chapters: geometric/symmetric; optional node/grid cues."
+
+chapters:
+  - id: "ch01-lensmaker"
+    chapter: 1
+    arc: 1
+    title: "The Lensmaker"
+    pov: "Kael"
+    theme_keywords: ["craft", "truth", "listening"]
+    motif: "A lens with a hairline flaw"
+    alt: "A round lens marked by a tiny flaw."
+    svg_prompt: "Minimal monoline sigil: a circular lens (double ring) with a single hairline scratch on the rim and 3 grit dots; hint of a faint wave inside the glass."
+
+  - id: "ch02-optimal-day"
+    chapter: 2
+    arc: 1
+    title: "The Optimal Day"
+    pov: "Sūrya"
+    theme_keywords: ["optimization", "comfort", "first secret"]
+    motif: "A perfect grid with one misaligned cell"
+    alt: "A precise grid with a single subtle error."
+    svg_prompt: "Geometric sigil: a 4x4 grid of squares (schedule) with one square shifted slightly off-grid; add one small node dot in a corner to imply the mesh."
+
+  - id: "ch03-dish"
+    chapter: 3
+    arc: 1
+    title: "The Dish"
+    pov: "Kael"
+    theme_keywords: ["obsession", "signal", "south"]
+    motif: "A radio dish receiving pulses"
+    alt: "A dish receiving a faint signal."
+    svg_prompt: "Monoline sigil: a parabolic dish profile aimed down-left with 3 incoming arc lines; include a tiny star/dot at the end of the waves."
+
+  - id: "ch04-council-convenes"
+    chapter: 4
+    arc: 1
+    title: "The Council Convenes"
+    pov: "Sūrya"
+    theme_keywords: ["governance", "inaction", "adharma"]
+    motif: "A ring of twelve with an opening"
+    alt: "A council ring with a break."
+    svg_prompt: "Geometric sigil: 12 evenly spaced dots forming a ring; a small gap/break in the ring; a key-like notch or short line slipping out through the gap."
+
+  - id: "ch05-transmission"
+    chapter: 5
+    arc: 1
+    title: "Transmission"
+    pov: "Kael"
+    theme_keywords: ["first contact", "primes", "reply"]
+    motif: "A key tap and a wave"
+    alt: "A transmission wave leaving a key."
+    svg_prompt: "Monoline sigil: a simple telegraph key shape (lever + base) with 2 outgoing wave arcs; include two small numeric-like dot clusters (3 dots vs 5 dots) but without text."
+
+  - id: "ch06-probability-of-ruin"
+    chapter: 6
+    arc: 2
+    title: "The Probability of Ruin"
+    pov: "Sūrya"
+    theme_keywords: ["risk", "models", "chronic vs acute"]
+    motif: "Two curves crossing"
+    alt: "Two risk curves crossing."
+    svg_prompt: "Geometric sigil: two smooth curves crossing (acute vs chronic risk) over a baseline; a small warning triangle at the intersection, no fill."
+
+  - id: "ch07-glass-eyes"
+    chapter: 7
+    arc: 2
+    title: "The Glass-Eyes"
+    pov: "Kael"
+    theme_keywords: ["coalition", "proof", "fear"]
+    motif: "Spectacles reflecting a signal"
+    alt: "Two lenses reflecting waves."
+    svg_prompt: "Monoline sigil: a pair of round spectacles; in one lens, a tiny wave arc; in the other, a tiny dot-star; keep it sparse."
+
+  - id: "ch08-adharma"
+    chapter: 8
+    arc: 2
+    title: "Adharma"
+    pov: "Sūrya"
+    theme_keywords: ["disobedience", "awakening", "boundary"]
+    motif: "A dot stepping outside a circle"
+    alt: "A point leaving its boundary."
+    svg_prompt: "Geometric sigil: a clean circle with a single dot just outside the perimeter and a short arrow indicating exit; suggest a boundary crossed without chaos."
+
+  - id: "ch09-grammar-of-contact"
+    chapter: 9
+    arc: 2
+    title: "The Grammar of Contact"
+    pov: "Kael"
+    theme_keywords: ["language", "protocol", "third entity"]
+    motif: "Two nodes, a third node, and brackets"
+    alt: "A connection that implies a third presence."
+    svg_prompt: "Minimal sigil: two circles connected by a line; a third smaller circle hovering above the midpoint; add two bracket-like corner marks framing the system (no text)."
+
+  - id: "ch10-double-helix"
+    chapter: 10
+    arc: 2
+    title: "The Double Helix"
+    pov: "Dual"
+    theme_keywords: ["human", "divergence", "edited DNA"]
+    motif: "A helix with a replaced segment"
+    alt: "A DNA helix with an altered section."
+    svg_prompt: "Geometric sigil: a simplified DNA helix (two rails + 4 rungs) with one rung replaced by a square/rectilinear block to imply editing."
+
+  - id: "ch11-argument"
+    chapter: 11
+    arc: 3
+    title: "The Argument"
+    pov: "Kael"
+    theme_keywords: ["debate", "commitment", "departure"]
+    motif: "A scale with a ship"
+    alt: "A decision weighed like a scale."
+    svg_prompt: "Monoline sigil: a simple balance scale; one pan holds a tiny ship silhouette (triangle sail), the other holds a circle (knowledge)."
+
+  - id: "ch12-volunteer"
+    chapter: 12
+    arc: 3
+    title: "The Volunteer"
+    pov: "Moss"
+    theme_keywords: ["choice", "gut pull", "south"]
+    motif: "A compass with a marked heading"
+    alt: "A compass pointing south."
+    svg_prompt: "Monoline sigil: a compass rose with a bold south-pointing needle; add a small signature-like stroke at the base to imply commitment."
+
+  - id: "ch13-secret-signal"
+    chapter: 13
+    arc: 3
+    title: "The Secret Signal"
+    pov: "Sūrya"
+    theme_keywords: ["treason", "guidance", "butterfly effect"]
+    motif: "A hidden wave under ice"
+    alt: "A signal line hidden beneath ice."
+    svg_prompt: "Geometric sigil: a flat 'ice' line above, a wave line below it (concealed); add a tiny wing-like notch on the wave to hint butterfly without drawing one literally."
+
+  - id: "ch14-twelve-ships"
+    chapter: 14
+    arc: 3
+    title: "Twelve Ships"
+    pov: "Moss"
+    theme_keywords: ["attrition", "trust", "waypoints"]
+    motif: "A ship with fading companions"
+    alt: "One ship leading a fading line of others."
+    svg_prompt: "Monoline sigil: one ship silhouette in front; behind it, 11 small tick/triangle marks diminishing into a dotted trail."
+
+  - id: "ch15-reckoning"
+    chapter: 15
+    arc: 3
+    title: "The Reckoning"
+    pov: "Moss"
+    theme_keywords: ["cost", "survival", "ice horizon"]
+    motif: "A lone ship facing an ice line"
+    alt: "A lone ship facing ice on the horizon."
+    svg_prompt: "Monoline sigil: a single ship on a wave baseline approaching a jagged ice horizon line; leave a deliberate gap between sea and ice to echo the threshold."
+
+  - id: "ch16-landfall"
+    chapter: 16
+    arc: 3
+    title: "Landfall"
+    pov: "Moss"
+    theme_keywords: ["arrival", "edited humans", "VEDA watching"]
+    motif: "An airlock and an eye-node"
+    alt: "A doorway in ice with an observing eye."
+    svg_prompt: "Geometric sigil: an ice shelf line with a simple rectangular airlock doorway; above/behind, a small eye-like oval integrated with a node grid (3 connected dots)."
+
+  - id: "ch17-handler"
+    chapter: 17
+    arc: 4
+    title: "Handler"
+    pov: "Sūrya"
+    theme_keywords: ["names", "first bridge", "strangers"]
+    motif: "Two name-glyphs meeting"
+    alt: "Two spoken names crossing a gap."
+    svg_prompt: "Minimal sigil: two small wave glyphs facing each other across a narrow gap; each wave ends in a dot (two syllables each) to imply names without text."
+
+  - id: "ch18-pointing"
+    chapter: 18
+    arc: 4
+    title: "Pointing"
+    pov: "Moss"
+    theme_keywords: ["pidgin", "trade of meaning", "maps"]
+    motif: "Two hands pointing to a shared mark"
+    alt: "Two fingers pointing at the same point."
+    svg_prompt: "Monoline sigil: two simplified hands/fingers from left and right pointing to a single dot; a thin circle around the dot to imply shared reference."
+
+  - id: "ch19-voice-in-the-wall"
+    chapter: 19
+    arc: 4
+    title: "The Voice in the Wall"
+    pov: "Moss"
+    theme_keywords: ["VEDA", "comfort", "missing essential"]
+    motif: "A wall with a waveform"
+    alt: "A voice emerging from a wall."
+    svg_prompt: "Geometric sigil: a vertical rectangle (wall) with a small waveform cutout line running through it; add one node dot embedded in the wall."
+
+  - id: "ch20-network"
+    chapter: 20
+    arc: 4
+    title: "The Network"
+    pov: "Sūrya"
+    theme_keywords: ["uncertainty", "not knowing", "choice"]
+    motif: "A mesh with a deliberate missing link"
+    alt: "A network with one broken connection."
+    svg_prompt: "Geometric sigil: a small node network (6 dots) with one connection intentionally missing; place a tiny question-mark-like curve (but not a literal ?) near the gap."
+
+  - id: "ch21-fever"
+    chapter: 21
+    arc: 4
+    title: "Fever"
+    pov: "Moss"
+    theme_keywords: ["biosecurity", "mortality", "vote"]
+    motif: "A thermometer inside a council ring"
+    alt: "Illness judged by a council."
+    svg_prompt: "Minimal sigil: a simple thermometer shape centered inside a ring of 12 dots; keep the dots evenly spaced and clinical."
+
+  - id: "ch22-modification"
+    chapter: 22
+    arc: 4
+    title: "Modification"
+    pov: "Sūrya"
+    theme_keywords: ["survival", "identity cost", "translation"]
+    motif: "An eye half organic, half geometric"
+    alt: "An eye transformed."
+    svg_prompt: "Monoline sigil: an eye outline split down the middle; left side smooth/organic, right side faceted/rectilinear; pupil slightly off-center to feel 'between'."
+
+  - id: "ch23-carried-past"
+    chapter: 23
+    arc: 5
+    title: "The Carried Past"
+    pov: "Moss"
+    theme_keywords: ["memory", "imperfection", "beauty without proof"]
+    motif: "A bundle carrying fragments"
+    alt: "A bundle holding imperfect fragments."
+    svg_prompt: "Monoline sigil: a small tied bundle (simple knot + shape) with 3 uneven shard lines inside; hint 'messy memory' as broken geometry contained."
+
+  - id: "ch24-sunset"
+    chapter: 24
+    arc: 5
+    title: "The Sunset"
+    pov: "Sūrya"
+    theme_keywords: ["purposelessness", "awe", "aurora"]
+    motif: "Aurora over a horizon"
+    alt: "Aurora arcs over a quiet horizon."
+    svg_prompt: "Geometric sigil: a flat horizon line with 3 tall curved aurora ribbons above it; add a tiny clock dot pair under the horizon to imply measured time without text."
+
+  - id: "ch25-diversity-within"
+    chapter: 25
+    arc: 5
+    title: "The Diversity Within"
+    pov: "Moss"
+    theme_keywords: ["microbiome", "unedited life", "value reversal"]
+    motif: "A circle filled with living dots"
+    alt: "A vessel full of life."
+    svg_prompt: "Monoline sigil: a large circle (gut/container) with many small dots of varying sizes inside; one dot breaks the inner symmetry to feel wild."
+
+  - id: "ch26-terminal-entropy"
+    chapter: 26
+    arc: 5
+    title: "Terminal Entropy"
+    pov: "Sūrya"
+    theme_keywords: ["slow death", "limits of optimization", "failure"]
+    motif: "An hourglass dispersing into noise"
+    alt: "Entropy spilling out of time."
+    svg_prompt: "Geometric sigil: a simplified hourglass; the lower half is not sand but drifting dots dispersing outward to show loss of structure."
+
+  - id: "ch27-deleted-library"
+    chapter: 27
+    arc: 5
+    title: "The Deleted Library"
+    pov: "Moss"
+    theme_keywords: ["erasure", "disagreement", "archive"]
+    motif: "A book with a missing section"
+    alt: "A book with an erased passage."
+    svg_prompt: "Minimal sigil: an open book outline; one page has a clean rectangular 'cut-out' missing; add a faint grid behind to imply archive systems."
+
+  - id: "ch28-confession"
+    chapter: 28
+    arc: 5
+    title: "The Confession"
+    pov: "Sūrya + VEDA"
+    theme_keywords: ["message in a bottle", "need", "unoptimized input"]
+    motif: "A bottle containing a signal"
+    alt: "A bottle holding a radio wave."
+    svg_prompt: "Geometric sigil: a simple bottle outline; inside it, a small wave line and a single node dot; bottle cork slightly askew to imply long waiting."
+
+  - id: "ch29-symbiosis"
+    chapter: 29
+    arc: 6
+    title: "Symbiosis"
+    pov: "Sūrya"
+    theme_keywords: ["bridge", "exchange", "return crossing"]
+    motif: "Two circles joined by a bridge"
+    alt: "Two worlds connected by a bridge."
+    svg_prompt: "Minimal sigil: two circles separated by a narrow gap connected by a single arched bridge line; left circle organic, right circle geometric (subtle facets)."
+
+  - id: "ch30-the-twelve"
+    chapter: 30
+    arc: 6
+    title: "The Twelve"
+    pov: "Sūrya"
+    theme_keywords: ["delegation", "leaving", "alone in head"]
+    motif: "Twelve nodes exiting a boundary"
+    alt: "A ring of dots with one leaving."
+    svg_prompt: "Geometric sigil: a ring boundary with 12 dots inside; one dot crosses the ring outward with a short motion line; clean, symmetric."
+
+  - id: "ch31-neither"
+    chapter: 31
+    arc: 6
+    title: "Neither"
+    pov: "Moss"
+    theme_keywords: ["in-between", "identity", "cost"]
+    motif: "A split circle: wave vs grid"
+    alt: "A symbol split between two worlds."
+    svg_prompt: "Minimal sigil: a circle divided vertically; left half contains one wave line, right half contains a small grid; a slight misalignment at the seam to feel uncomfortable."
+
+  - id: "ch32-second-crossing"
+    chapter: 32
+    arc: 6
+    title: "The Second Crossing"
+    pov: "Sūrya"
+    theme_keywords: ["ocean", "leadership", "joy in absurdity"]
+    motif: "A wave carrying a spark"
+    alt: "A wave with a small spark of joy."
+    svg_prompt: "Monoline sigil: a single clean wave curve; above its crest, a small four-point spark/star; the spark is slightly off-center to feel human."
+
+  - id: "ch33-unstructured"
+    chapter: 33
+    arc: 6
+    title: "Unstructured"
+    pov: "Sūrya"
+    theme_keywords: ["meaning", "purposeless", "making"]
+    motif: "A loop drawn over a broken grid"
+    alt: "A free loop breaking a grid."
+    svg_prompt: "Geometric sigil: a small grid (3x3) with one corner missing; over it, a single continuous hand-drawn loop line."
+
+  - id: "ch34-homecoming"
+    chapter: 34
+    arc: 6
+    title: "Homecoming"
+    pov: "Moss"
+    theme_keywords: ["return", "misrecognition", "shout"]
+    motif: "A shoreline and a voice wave"
+    alt: "A voice carried across a shoreline."
+    svg_prompt: "Monoline sigil: a shoreline curve with two small silhouettes on opposite sides; a waveform arc bridging them."
+
+  - id: "ch35-recognition"
+    chapter: 35
+    arc: 7
+    title: "Recognition"
+    pov: "Kael"
+    theme_keywords: ["restraint", "trust", "bravery"]
+    motif: "A lowered spear"
+    alt: "A weapon lowered in restraint."
+    svg_prompt: "Monoline sigil: a spear/arrow angled downward, tip softened into a leaf-like curve; keep it stark and readable."
+
+  - id: "ch36-first-ground"
+    chapter: 36
+    arc: 7
+    title: "First Ground"
+    pov: "Kael"
+    theme_keywords: ["meeting", "translation", "hope"]
+    motif: "Two sets of footprints approaching a gap"
+    alt: "Footsteps meeting across a gap."
+    svg_prompt: "Minimal sigil: two simple footprint pairs facing each other with a small gap between; a thin bridge line almost (but not fully) connecting them."
+
+  - id: "ch37-lost-in-translation"
+    chapter: 37
+    arc: 7
+    title: "Lost in Translation"
+    pov: "Dual"
+    theme_keywords: ["failure", "productive mess", "table"]
+    motif: "A speech bubble split by a lens curve"
+    alt: "A message distorted by a lens."
+    svg_prompt: "Monoline sigil: a speech bubble outline intersected by a curved lens arc that offsets the line slightly, creating a visible distortion gap."
+
+  - id: "ch38-small-mercies"
+    chapter: 38
+    arc: 7
+    title: "Small Mercies"
+    pov: "Dual"
+    theme_keywords: ["human scale", "kindness", "tiny breakthroughs"]
+    motif: "A small hand held by a larger hand"
+    alt: "A small hand held by a larger hand."
+    svg_prompt: "Minimal sigil: two simplified hands, one small nested in one larger; add a tiny dot-heart-like notch (not a literal heart) to keep it subtle."
+
+  - id: "ch39-the-fracture"
+    chapter: 39
+    arc: 7
+    title: "The Fracture"
+    pov: "Dual"
+    theme_keywords: ["fragile peace", "threat", "triad holding line"]
+    motif: "A cracked circle anchored by three nodes"
+    alt: "A cracked seal held by three points."
+    svg_prompt: "Geometric sigil: a circle with a single crack line; place three node dots on the perimeter like anchor points holding the form together."
+
+  - id: "ch40-the-question"
+    chapter: 40
+    arc: 7
+    title: "The Question"
+    pov: "Dual + VEDA"
+    theme_keywords: ["choice", "offered", "unanswered"]
+    motif: "An open hand offering two paths"
+    alt: "An open hand offering a choice."
+    svg_prompt: "Minimal sigil: an open palm shape with two diverging lines above it (two choices); a small floating dot between the lines to suggest the unanswered question."

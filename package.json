@@ -1,0 +1,17 @@
+{
+  "name": "books-too-foo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler pages dev site --port 8788 --live-reload",
+    "sync": "python3 tools/sync_site.py",
+    "deploy:preview": "python3 tools/sync_site.py && wrangler pages deploy site --project-name books-too-foo --branch preview",
+    "deploy:prod": "python3 tools/sync_site.py && wrangler pages deploy site --project-name books-too-foo --branch main",
+    "test:e2e": "playwright test",
+    "audit": "node tools/site_audit.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.58.2",
+    "wrangler": "4.63.0"
+  }
+}

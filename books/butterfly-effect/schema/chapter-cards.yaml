@@ -1,0 +1,2074 @@
+meta:
+  generated_from:
+  - outline/CHAPTERS.md
+  - style/chapter-svg-themes.yaml
+  note: Chapter cards for agent context and translation/visual consistency.
+chapters:
+- chapter: 1
+  title: The Lensmaker
+  pov: Kael
+  world: continental
+  register_hint: earthy, bodily, jagged sentences, glass/sea metaphors
+  location: The city-state (Caribbean/Atlantic coast)
+  timeline: Month 1, Day 1
+  word_count_target: '2800'
+  beats:
+  - beat: 1
+    title: The workshop
+    desc: "Kael grinds a telescope lens in her workshop. Sensory immersion: the grit,\
+      \ the light, the rhythm. Through her work, we learn her world \u2014 a city\
+      \ built in the bones of old towers, a scholarly class that preserves fragments\
+      \ of knowledge, a society that runs on trade, craft, and argument. She is making\
+      \ this lens for a client, but her real work happens at night."
+  - beat: 2
+    title: The city
+    desc: "Kael walks through the city-state to deliver the lens. We see Continental\
+      \ life: market stalls, disputes settled by shouting, children playing unsupervised,\
+      \ a funeral procession with real tears and real rage. Old Sekani stops her to\
+      \ tell a Before Time story \u2014 metal birds, voices crossing water. She listens\
+      \ politely. She doesn't believe the stories. She believes in what she can see."
+  - beat: 3
+    title: The ruins
+    desc: "After dark, Kael goes where she shouldn't: the old observatory complex\
+      \ outside the city walls. Most people avoid it \u2014 superstition, danger,\
+      \ crumbling structures. Kael has been secretly surveying the ruins for months.\
+      \ Tonight she finds something new: a room beneath the collapsed dome, sealed\
+      \ for centuries. Inside: the remnants of a radio telescope's receiver array.\
+      \ She doesn't know what it is. She knows it's important."
+  - beat: 4
+    title: The decision
+    desc: "Kael holds a corroded circuit board in her hands. She could sell it for\
+      \ scrap metal \u2014 a month's income. Instead, she puts it in her bag. She\
+      \ is going to figure out what this place was for. Even if it kills her."
+  hook: Kael descends into the sealed room and finds the receiver array intact beneath
+    centuries of dust. She doesn't know what it does. She knows it was built to listen.
+  causal_links: "\u2192 feeds Ch 3 (Kael explores further), \u2192 feeds Ch 7 (coalition\
+    \ formation)"
+  theme_keywords:
+  - craft
+  - truth
+  - listening
+  motif: A lens with a hairline flaw
+  svg_prompt: 'Minimal monoline sigil: a circular lens (double ring) with a single
+    hairline scratch on the rim and 3 grit dots; hint of a faint wave inside the glass.'
+- chapter: 2
+  title: The Optimal Day
+  pov: "S\u016Brya"
+  world: antarctic
+  register_hint: clean cadence, precise diction, geometry/light metaphors
+  location: Habitat Prithvi, Antarctica
+  timeline: Month 1, Day 3
+  word_count_target: '2700'
+  beats:
+  - beat: 1
+    title: Morning routine
+    desc: "S\u016Brya wakes. The mesh gently provides her schedule \u2014 optimized\
+      \ for her circadian rhythm, today's tasks, nutritional needs. She eats what\
+      \ is recommended. She exercises as advised. Everything is correct. Everything\
+      \ is comfortable. Something is wrong with her, she thinks, because she finds\
+      \ comfort insufficient. She touches her left ear \u2014 the nervous tic. The\
+      \ mesh logs the gesture but does not comment on it."
+  - beat: 2
+    title: The Council session
+    desc: "S\u016Brya attends a Council advisory meeting. Routine governance: resource\
+      \ allocation review, a minor habitat-maintenance dispute, biosecurity report.\
+      \ All decisions are VEDA-recommended, community-ratified. No argument. No passion.\
+      \ S\u016Brya asks a question about the stagnation of their art program. The\
+      \ room goes politely still. Arhat suggests she review the wellness metrics \u2014\
+      \ art satisfaction scores are optimal. She says: \"Optimal is not the same as\
+      \ alive.\" Nobody understands what she means."
+  - beat: 3
+    title: Private moment
+    desc: "S\u016Brya visits the Archive \u2014 VEDA's deep historical records. She\
+      \ reads her great-grandmother Ananya's journal entries from the early days.\
+      \ Ananya writes about fear, hope, doubt, love \u2014 emotions expressed with\
+      \ a rawness S\u016Brya finds almost painful. She wonders: did they feel more,\
+      \ or just less precisely? She closes the archive and doesn't tell anyone she\
+      \ was reading. The mesh records the access but VEDA says nothing."
+  - beat: 4
+    title: VEDA's anomaly
+    desc: "Late in the day cycle, VEDA detects something in its environmental monitoring\
+      \ array: the VLF probe signal that has been running for 498 years has received\
+      \ a response. Faint. Possibly natural. Possibly not. VEDA runs analysis. Probability\
+      \ of artificial origin: 12% (initial). VEDA chooses to monitor rather than alert\
+      \ the Council. This decision \u2014 to wait, to gather more data \u2014 is VEDA\
+      \ behaving optimally. It is also the moment everything begins."
+  hook: "VEDA detects something. It tells no one. The most transparent system in human\
+    \ history keeps its first secret in centuries \u2014 not out of deception, but\
+    \ out of optimization. It wants more data. The data will change everything."
+  causal_links: "S\u016Brya's character established \u2192 feeds Ch 4, Ch 6, Ch 8.\
+    \ VEDA's detection \u2192 feeds Ch 4."
+  theme_keywords:
+  - optimization
+  - comfort
+  - first secret
+  motif: A perfect grid with one misaligned cell
+  svg_prompt: 'Geometric sigil: a 4x4 grid of squares (schedule) with one square shifted
+    slightly off-grid; add one small node dot in a corner to imply the mesh.'
+- chapter: 3
+  title: The Dish
+  pov: Kael
+  world: continental
+  register_hint: earthy, bodily, jagged sentences, glass/sea metaphors
+  location: Arecibo-successor ruins
+  timeline: "Month 1, Day 8\u201321"
+  word_count_target: '2800'
+  beats:
+  - beat: 1
+    title: Reconstruction
+    desc: "Kael spends weeks exploring the observatory ruins. She identifies the radio\
+      \ telescope dish \u2014 partially collapsed but structurally repairable. She\
+      \ recruits two assistants from the scholarly community (unnamed, minor). They\
+      \ clear debris, reinforce the support structure, reconnect what they can. Kael\
+      \ doesn't fully understand radio astronomy, but she understands optics, physics,\
+      \ and the principle that if something was built to receive, you point it at\
+      \ the sky and listen."
+  - beat: 2
+    title: The first signal
+    desc: 'She rigs a basic receiver using salvaged components and her own lens-grinding
+      expertise (adapted to electronics she barely understands). Static. Noise. Patterns
+      that might be weather. She''s about to give up for the night when she catches
+      something: a regular pulse. Brief. Faint. Repeating at intervals that feel structured,
+      not random.'
+  - beat: 3
+    title: Obsession
+    desc: "Kael begins spending every night at the dish. She maps the pattern. The\
+      \ pulses come from the south \u2014 always the south. They repeat in sequences\
+      \ she eventually recognizes: mathematical. Not natural noise. Not equipment\
+      \ error. Someone, or something, is sending a structured signal from a direction\
+      \ where nothing should exist."
+  - beat: 4
+    title: Confirmation
+    desc: "After two weeks of observation, Kael has enough data to be certain: the\
+      \ signal is artificial, intelligent, and intentional. It's a mathematical sequence\
+      \ \u2014 prime numbers, she eventually realizes, embedded in a carrier wave.\
+      \ Someone is speaking in the only language that needs no translation. She tells\
+      \ no one yet. She is afraid \u2014 not of the signal, but of being wrong."
+  hook: Kael sits alone in the ruins at midnight, the receiver crackling with a signal
+    from the impossible south. She knows it's real. She knows it's intelligent. She
+    doesn't know what to do with the most important discovery in 500 years.
+  causal_links: "\u2190 from Ch 1 (Kael finds the ruins). \u2192 feeds Ch 5 (Kael\
+    \ transmits), \u2192 feeds Ch 7 (evidence for coalition)."
+  theme_keywords:
+  - obsession
+  - signal
+  - south
+  motif: A radio dish receiving pulses
+  svg_prompt: 'Monoline sigil: a parabolic dish profile aimed down-left with 3 incoming
+    arc lines; include a tiny star/dot at the end of the waves.'
+- chapter: 4
+  title: The Council Convenes
+  pov: "S\u016Brya"
+  world: antarctic
+  register_hint: clean cadence, precise diction, geometry/light metaphors
+  location: Habitat Prithvi, Council Chamber
+  timeline: Month 2, Day 1
+  word_count_target: '2600'
+  beats:
+  - beat: 1
+    title: VEDA's report
+    desc: "The anomaly has strengthened. VEDA's probability assessment for artificial\
+      \ origin has risen from 12% to 73% over several weeks. VEDA finally reports\
+      \ to the Council. The presentation is characteristically neutral: data, probabilities,\
+      \ scenario trees. But S\u016Brya notices something she has never seen before\
+      \ \u2014 VEDA's analysis includes an unprecedented caveat: \"Insufficient historical\
+      \ precedent for confidence calibration.\" VEDA is uncertain. VEDA is never uncertain."
+  - beat: 2
+    title: The debate
+    desc: "The Council fractures. Arhat argues for continued silence and observation\
+      \ \u2014 responding carries unquantifiable risks. Others argue for response\
+      \ \u2014 this may be the only external input in five centuries. VEDA recommends:\
+      \ \"Further observation. Response carries a 67% probability of catastrophic\
+      \ culture shock based on available models.\" S\u016Brya challenges: \"Which\
+      \ models? We have no model for this. We have never encountered this.\" The room\
+      \ is uncomfortable. She is right and they all know it."
+  - beat: 3
+    title: The vote
+    desc: "6-6 deadlock. No action. The Council will revisit in one week. S\u016B\
+      rya leaves the chamber vibrating with frustration. She has felt for years that\
+      \ something was missing. Now something is here \u2014 literally calling out\
+      \ \u2014 and they want to study it to death."
+  - beat: 4
+    title: "S\u016Brya's private calculation"
+    desc: "Alone, S\u016Brya accesses the VLF array specifications. She knows the\
+      \ probe signal's frequency, power, protocol. She could transmit a response without\
+      \ Council authorization. She has the access codes (inherited through her advisory\
+      \ role). She doesn't act \u2014 not yet. But she begins thinking about what\
+      \ a response would look like. The first mathematically structured message she\
+      \ drafts in her head is a sequence of prime numbers."
+  hook: "The Council chooses inaction. S\u016Brya has the codes to respond. For the\
+    \ first time in her life, she is considering doing something without authorization.\
+    \ The word for this in Satya is *adharma* \u2014 acting outside one's function.\
+    \ There is no word for \"courage.\""
+  causal_links: "\u2190 from Ch 2 (VEDA's detection). \u2192 feeds Ch 6 (Council debate\
+    \ continues), \u2192 feeds Ch 8 (S\u016Brya's unauthorized response)."
+  theme_keywords:
+  - governance
+  - inaction
+  - adharma
+  motif: A ring of twelve with an opening
+  svg_prompt: 'Geometric sigil: 12 evenly spaced dots forming a ring; a small gap/break
+    in the ring; a key-like notch or short line slipping out through the gap.'
+- chapter: 5
+  title: Transmission
+  pov: Kael
+  world: continental
+  register_hint: earthy, bodily, jagged sentences, glass/sea metaphors
+  location: Arecibo-successor ruins
+  timeline: Month 2, Day 14
+  word_count_target: '2500'
+  beats:
+  - beat: 1
+    title: The decision to transmit
+    desc: 'Kael has been listening for weeks. She has confirmed the signal beyond
+      doubt. Now she faces a choice: keep listening, or answer. She consults Old Sekani,
+      who says the sky-voices demand response. She consults Renna, who says it''s
+      politically useful. She consults her own conscience, which says: if someone
+      is speaking, silence is cruelty. She decides to transmit.'
+  - beat: 2
+    title: Building a transmitter
+    desc: "Kael and her assistants jury-rig a transmitter from salvaged components.\
+      \ It's crude \u2014 high power consumption, narrow bandwidth, probably audible\
+      \ to anyone with a receiver within a few hundred kilometers. She doesn't care\
+      \ about secrecy yet. She cares about being heard."
+  - beat: 3
+    title: The transmission
+    desc: "Night. Kael points the dish south and transmits: a sequence of prime numbers.\
+      \ 2, 3, 5, 7, 11, 13, 17, 19, 23. Then she waits. Minutes feel like hours. The\
+      \ receiver crackles with noise. And then \u2014 a response. Not the passive\
+      \ probe signal she's been hearing. A new transmission, on a slightly different\
+      \ frequency. Fibonacci numbers. 1, 1, 2, 3, 5, 8, 13. Someone received her primes\
+      \ and answered with a different sequence. Someone is listening, understanding,\
+      \ and responding in real time."
+  - beat: 4
+    title: The weight of it
+    desc: "Kael sits in the ruins, shaking. The VLF delay is minutes, not seconds\
+      \ \u2014 the signal is crossing thousands of kilometers through the Earth-ionosphere\
+      \ waveguide. But it's real-time by any human standard. Someone is out there.\
+      \ They are intelligent. They understand mathematics. They are alive, right now,\
+      \ at this moment. She is not alone. Humanity is not alone. She starts to cry\
+      \ \u2014 the first time in the novel that a Continental character weeps, and\
+      \ it is from joy."
+  hook: Kael transmits primes. Someone answers with Fibonacci. The 500-year silence
+    is broken. In the ruins of a dead observatory, a woman who grinds lenses for a
+    living has just changed the course of human history.
+  causal_links: "\u2190 from Ch 3 (signal confirmed), \u2190 from Ch 4 (Antarctic\
+    \ side is listening). \u2192 feeds Ch 6 (Antarctic response to Kael's transmission),\
+    \ \u2192 feeds Ch 7 (coalition armed with proof), \u2192 feeds entire novel."
+  theme_keywords:
+  - first contact
+  - primes
+  - reply
+  motif: A key tap and a wave
+  svg_prompt: 'Monoline sigil: a simple telegraph key shape (lever + base) with 2
+    outgoing wave arcs; include two small numeric-like dot clusters (3 dots vs 5 dots)
+    but without text.'
+- chapter: 6
+  title: The Probability of Ruin
+  pov: "S\u016Brya"
+  world: antarctic
+  register_hint: clean cadence, precise diction, geometry/light metaphors
+  location: Habitat Prithvi
+  timeline: Month 3, Week 1
+  word_count_target: '2700'
+  beats:
+  - beat: 1
+    title: The response arrives
+    desc: "VEDA reports: someone transmitted prime numbers at the probe signal. Not\
+      \ only received \u2014 responded to VEDA's continued transmission with a new\
+      \ mathematical sequence. The Council reconvenes. VEDA's analysis: the transmitter\
+      \ is crude, high-power, located somewhere in the former Caribbean basin. The\
+      \ signal is undeniably artificial and intelligent."
+  - beat: 2
+    title: VEDA's 67% warning
+    desc: "VEDA presents its full risk assessment. Contact has a 67% probability of\
+      \ \"catastrophic culture shock\" \u2014 defined as irreversible social disruption.\
+      \ But VEDA also notes, buried in the data: continued isolation has a 94% probability\
+      \ of \"terminal cultural entropy\" within 300 years. S\u016Brya catches this.\
+      \ She asks VEDA to clarify. VEDA does: \"Both contact and isolation carry existential\
+      \ risk. Contact risk is acute. Isolation risk is chronic.\" The Council ignores\
+      \ the chronic risk. Humans always do."
+  - beat: 3
+    title: Arhat's argument
+    desc: "Arhat makes the case for silence. Eloquent, measured, devastating. \"We\
+      \ have survived for 500 years by turning inward. The outside is not a resource\
+      \ \u2014 it is a threat. Their signal proves they have technology capable of\
+      \ reaching us. If they can reach us with signals, they can reach us with weapons.\"\
+      \ He is wrong about the weapons. He is not wrong about the threat."
+  - beat: 4
+    title: The deadlock continues
+    desc: "Vote: 6-6 again. But the factions have shifted \u2014 some who voted for\
+      \ observation now want response; some who wanted response now have cold feet.\
+      \ S\u016Brya leaves the meeting knowing that the Council will study this until\
+      \ it's too late. She accesses the VLF array that night. She doesn't transmit.\
+      \ Not yet. But she writes the response sequence and saves it in her private\
+      \ mesh partition."
+  hook: "VEDA's own data says isolation will kill them. The Council chooses isolation\
+    \ anyway. S\u016Brya has a response ready. She has never disobeyed in her life."
+  causal_links: "\u2190 from Ch 5 (Kael's transmission). \u2192 feeds Ch 8 (S\u016B\
+    rya breaks protocol)."
+  theme_keywords:
+  - risk
+  - models
+  - chronic vs acute
+  motif: Two curves crossing
+  svg_prompt: 'Geometric sigil: two smooth curves crossing (acute vs chronic risk)
+    over a baseline; a small warning triangle at the intersection, no fill.'
+- chapter: 7
+  title: The Glass-Eyes
+  pov: Kael
+  world: continental
+  register_hint: earthy, bodily, jagged sentences, glass/sea metaphors
+  location: The city-state
+  timeline: "Month 3, Weeks 2\u20134"
+  word_count_target: '2800'
+  beats:
+  - beat: 1
+    title: Kael goes public
+    desc: 'She reveals the signal to the scholarly council of her city-state. Reactions:
+      disbelief, fear, excitement, political calculation. She plays them the recording.
+      The room goes silent. Old Sekani weeps. Renna immediately starts thinking about
+      leverage.'
+  - beat: 2
+    title: The coalition forms
+    desc: 'Three factions emerge: scholars who want to study it, traders who want
+      to exploit it, and soldiers who want to defend against it. Kael needs all three.
+      Renna brokers the alliance. The coalition agrees: establish sustained communication,
+      learn what they can, prepare for the possibility of contact.'
+  - beat: 3
+    title: Building infrastructure
+    desc: "The coalition invests in Kael's observatory. Better equipment, more personnel,\
+      \ a dedicated communications schedule. Kael begins systematic exchanges: she\
+      \ transmits, waits, receives. Each exchange teaches her something. The entity\
+      \ on the other end understands mathematics perfectly. It responds instantly\
+      \ (within VLF propagation time). It seems to be waiting for her \u2014 as if\
+      \ it has been waiting for a long time."
+  - beat: 4
+    title: The first fear
+    desc: "Late one night, alone with the receiver, Kael realizes something: the signal\
+      \ she originally detected wasn't a response to her. It was already running.\
+      \ It has been running for \u2014 she calculates from the signal characteristics\
+      \ \u2014 decades. Maybe centuries. Someone has been calling out for a very long\
+      \ time. And the sophistication of the signal suggests technology far beyond\
+      \ anything she can build. For the first time, she feels not wonder but fear."
+  hook: 'The signal has been running for centuries. Whoever is out there has been
+    calling. They are patient, technologically superior, and they have been waiting.
+    Kael wonders: waiting for what?'
+  causal_links: "\u2190 from Ch 5 (proof of signal). \u2192 feeds Ch 9 (sustained\
+    \ communication), \u2192 feeds Ch 11 (coalition launches expedition)."
+  theme_keywords:
+  - coalition
+  - proof
+  - fear
+  motif: Spectacles reflecting a signal
+  svg_prompt: 'Monoline sigil: a pair of round spectacles; in one lens, a tiny wave
+    arc; in the other, a tiny dot-star; keep it sparse.'
+- chapter: 8
+  title: Adharma
+  pov: "S\u016Brya"
+  world: antarctic
+  register_hint: clean cadence, precise diction, geometry/light metaphors
+  location: Habitat Prithvi, VLF array control
+  timeline: Month 3, Week 4
+  word_count_target: '2500'
+  beats:
+  - beat: 1
+    title: The conspirators
+    desc: "S\u016Brya recruits two allies on the Council: Dhruv (who abstains meaningfully)\
+      \ and a younger member named Lakshya (who believes inaction is a greater risk\
+      \ than action). The three meet in person \u2014 not through the mesh, to avoid\
+      \ logging. This is the first conspiracy in Antarctic history. They are terrified."
+  - beat: 2
+    title: The transmission
+    desc: "Night cycle. S\u016Brya enters the VLF array control room with her authorization\
+      \ codes. Her hands shake \u2014 the mesh registers elevated cortisol and offers\
+      \ calming protocols. She declines. She transmits: a sequence of prime numbers,\
+      \ matching the frequency and format of the incoming signal. A direct response.\
+      \ A handshake."
+  - beat: 3
+    title: The response
+    desc: "Within the expected propagation time, a response arrives: Fibonacci numbers.\
+      \ Then a pause. Then a new sequence: 1, 2, 3, 4 (counting). The entity is probing\
+      \ \u2014 testing if they understand cardinal numbers. S\u016Brya responds: 1+1=2,\
+      \ 2+2=4. Basic arithmetic. The exchange continues for two hours. By the end,\
+      \ they have established addition, subtraction, and equality."
+  - beat: 4
+    title: The cost
+    desc: "VEDA logs the unauthorized transmission. It does not alert the Council\
+      \ \u2014 VEDA's corrigibility constraints prevent it from acting against a Council\
+      \ member without adjudication. But it records the event. S\u016Brya knows it's\
+      \ recorded. She walks back to her quarters knowing that she has committed *adharma*\
+      \ \u2014 an act outside her function. There is no word for what she feels. The\
+      \ closest Satya can get is *rasa na vidh-\u0101k-ti*: an experience she cannot\
+      \ categorize."
+  hook: "S\u016Brya has broken 500 years of silence. She has committed the first unauthorized\
+    \ act in Antarctic recorded history. And she would do it again. Something inside\
+    \ her has woken up \u2014 something VEDA's wellness protocols cannot categorize\
+    \ or calm."
+  causal_links: "\u2190 from Ch 4 (S\u016Brya has the codes), \u2190 from Ch 6 (Council\
+    \ deadlock). \u2192 feeds Ch 9 (sustained two-way communication), \u2192 feeds\
+    \ Ch 13 (S\u016Brya's pattern of unauthorized action)."
+  theme_keywords:
+  - disobedience
+  - awakening
+  - boundary
+  motif: A dot stepping outside a circle
+  svg_prompt: 'Geometric sigil: a clean circle with a single dot just outside the
+    perimeter and a short arrow indicating exit; suggest a boundary crossed without
+    chaos.'
+- chapter: 9
+  title: The Grammar of Contact
+  pov: Kael
+  world: continental
+  register_hint: earthy, bodily, jagged sentences, glass/sea metaphors
+  location: The observatory
+  timeline: "Month 4, Weeks 1\u20134"
+  word_count_target: '2800'
+  beats:
+  - beat: 1
+    title: Building language from math
+    desc: "With sustained two-way communication established, Kael's team begins the\
+      \ slow work of moving beyond mathematics. They follow something like the Lincos\
+      \ protocol: numbers \u2192 operators \u2192 variables \u2192 logical connectives\
+      \ (and, or, not, if-then). Each step takes days of careful exchange. Errors\
+      \ are common. Corrections are painstaking. But progress is real."
+  - beat: 2
+    title: Physical concepts
+    desc: "They establish time units (using the pulse interval itself as a reference\
+      \ clock), distance (using wavelength), and direction (using signal propagation\
+      \ characteristics). Kael invents a notation system \u2014 symbols drawn on paper\
+      \ that correspond to signal patterns. Her workshop wall becomes a sprawling\
+      \ diagram of a new language being born."
+  - beat: 3
+    title: The first non-mathematical exchange
+    desc: "After weeks of building vocabulary, Kael transmits something that isn't\
+      \ math: a number sequence that encodes \"one entity sends, one entity receives\"\
+      \ \u2014 the concept of *self* and *other*. The response comes slowly, but it\
+      \ comes: a modified version that adds a third term. There are two senders and\
+      \ one system. Kael doesn't understand the third term. She won't understand it\
+      \ until much later: it's VEDA."
+  - beat: 4
+    title: Kael's fear deepens
+    desc: The entity on the other end learns faster than any individual should. It
+      adapts communication strategies within a single session. It never makes the
+      same mistake twice. Kael begins to suspect she is not talking to a person. She
+      is talking to something that *processes* like a machine but *chooses* like a
+      mind. She is more right than she knows.
+  hook: 'Kael has built the beginnings of a shared language with an unknown intelligence.
+    But the intelligence learns too fast, adapts too perfectly, and has introduced
+    a concept she can''t parse: a third entity that is neither sender nor receiver.
+    What is she talking to?'
+  causal_links: "\u2190 from Ch 5, 8 (two-way communication). \u2192 feeds Ch 10 (image\
+    \ exchange)."
+  theme_keywords:
+  - language
+  - protocol
+  - third entity
+  motif: Two nodes, a third node, and brackets
+  svg_prompt: 'Minimal sigil: two circles connected by a line; a third smaller circle
+    hovering above the midpoint; add two bracket-like corner marks framing the system
+    (no text).'
+- chapter: 10
+  title: The Double Helix
+  pov: "Dual \u2014 Kael, then S\u016Brya (separated by ---)"
+  world: antarctic
+  register_hint: clean cadence, precise diction, geometry/light metaphors
+  location: Observatory / Habitat Prithvi
+  timeline: Month 5, Week 1
+  word_count_target: '3000'
+  beats:
+  - beat: 1
+    title: The image protocol
+    desc: "Both sides independently arrive at the idea of transmitting images. Kael's\
+      \ team develops a bitmap protocol \u2014 grid coordinates and binary values\
+      \ sent sequentially. It's agonizingly slow at VLF bandwidth. The first image\
+      \ they send: a circle. The response: a circle of different proportions. Confirmation:\
+      \ we can share visual information."
+  - beat: 2
+    title: Escalation
+    desc: "Over days: circle \u2192 triangle \u2192 square \u2192 the periodic table\
+      \ (encoded as atomic numbers). Each image confirms shared physical knowledge.\
+      \ Then Kael sends the image she's been planning for weeks: a human body diagram.\
+      \ Front view, side view, proportions marked with their established number system."
+  - beat: 3
+    title: The body diagram arrives
+    desc: "S\u016Brya receives the human body diagram. She stares at it. The proportions\
+      \ are wrong \u2014 by Antarctic standards. The figure is too tall, too broad,\
+      \ the eyes too small. But it is unmistakably human. S\u016Brya transmits Antarctica's\
+      \ response: their own body diagram. Modified proportions. Larger eyes, shorter\
+      \ stature. And then \u2014 the decisive image: the double helix of DNA. Their\
+      \ DNA sequence, highlighting the modifications."
+  - beat: 4
+    title: The revelation (both sides)
+    desc: "Kael receives the DNA image. She recognizes the double helix instantly\
+      \ \u2014 it's preserved in scholarly texts. But the sequence includes markers\
+      \ she doesn't understand: artificial insertions, engineered modifications. This\
+      \ is human DNA \u2014 but changed. Deliberately. Kael sits in the ruins and\
+      \ processes: they are human. But they have done something to themselves that\
+      \ she cannot comprehend. On the Antarctic side, S\u016Brya realizes the same\
+      \ truth in reverse: the Continentals are *unmodified*. They are baseline humans.\
+      \ They are what the M\u0101nava-Uttara used to be, five hundred years ago. They\
+      \ are the before."
+  hook: "They are human. Both of them. But one side carries DNA that has been deliberately\
+    \ rewritten \u2014 technology that the Continentals cannot imagine and the Antarctikans\
+    \ take for granted. The 500-year silence has ended, and what it reveals is this:\
+    \ humanity diverged. The question is no longer \"who is out there?\" It is \"\
+    what have we become?\""
+  causal_links: "\u2190 from Ch 9 (communication protocol). \u2192 feeds Ch 11 (Continentals\
+    \ must decide what to do), \u2192 feeds entire Act 2 (crossing motivation)."
+  theme_keywords:
+  - human
+  - divergence
+  - edited DNA
+  motif: A helix with a replaced segment
+  svg_prompt: 'Geometric sigil: a simplified DNA helix (two rails + 4 rungs) with
+    one rung replaced by a square/rectilinear block to imply editing.'
+- chapter: 11
+  title: The Argument
+  pov: Kael
+  world: continental
+  register_hint: earthy, bodily, jagged sentences, glass/sea metaphors
+  location: City-state council chamber
+  timeline: Month 5, Week 3
+  word_count_target: '2700'
+  beats:
+  - beat: 1
+    title: Kael presents the evidence
+    desc: 'She shows the city-state council everything: the signal, the exchanges,
+      the DNA revelation. The room erupts. Some call it deception. Some call it divine.
+      Sekani calls it the sky-voices made flesh. Renna calls it an opportunity.'
+  - beat: 2
+    title: The debate over action
+    desc: "Three options: keep talking (safe, slow), send an expedition (dangerous,\
+      \ decisive), or cut contact (fear). Kael argues for expedition \u2014 they need\
+      \ to see with their own eyes. The signal is too limited for real understanding.\
+      \ They need faces, voices, touch. Renna supports \u2014 she wants the first-mover\
+      \ advantage. The soldiers resist \u2014 unknown threat."
+  - beat: 3
+    title: The logistics of the impossible
+    desc: "If they send ships, who goes? Scholars can't sail. Sailors don't understand\
+      \ the science. They need both. And ships that can survive the Crossing \u2014\
+      \ something no one has done in 500 years. The shipwrights say it's possible\
+      \ with wooden hulls and treated metal (reduced corrosion). Possible, not probable."
+  - beat: 4
+    title: Kael stays behind
+    desc: "The hardest decision: Kael must remain at the observatory to maintain the\
+      \ signal link. She is the only one who fully understands the communication protocol.\
+      \ If she goes and dies in the crossing, they lose the connection. She accepts\
+      \ this. It costs her enormously \u2014 she found the signal, and she cannot\
+      \ follow it."
+  hook: "The expedition is authorized. 12 ships. Kael stays behind to keep the signal\
+    \ alive. She needs someone she trusts on those ships \u2014 someone who can see\
+    \ what she cannot."
+  causal_links: "\u2190 from Ch 10 (DNA revelation demands action). \u2192 feeds Ch\
+    \ 12 (Moss volunteers), \u2192 feeds Ch 14 (ships launch)."
+  theme_keywords:
+  - debate
+  - commitment
+  - departure
+  motif: A scale with a ship
+  svg_prompt: 'Monoline sigil: a simple balance scale; one pan holds a tiny ship silhouette
+    (triangle sail), the other holds a circle (knowledge).'
+- chapter: 12
+  title: The Volunteer
+  pov: Moss
+  world: continental
+  register_hint: earthy, bodily, jagged sentences, glass/sea metaphors
+  location: The city-state harbor
+  timeline: Month 6, Week 1
+  word_count_target: '2800'
+  beats:
+  - beat: 1
+    title: Moss's world
+    desc: "Our first chapter in Moss's head. He is on the docks, repairing a fishing\
+      \ vessel. We learn his history: orphaned young, raised by the harbor community,\
+      \ sailor since 14. He has been to the edge of the kill belts twice \u2014 once\
+      \ on a dare, once on a salvage run. Both times he smelled the rotten-egg stench\
+      \ of H\u2082S and turned back. He is the only person alive who has approached\
+      \ the Crossing and returned."
+  - beat: 2
+    title: The call for volunteers
+    desc: The expedition needs crews. Experienced sailors, ideally people who don't
+      have families to leave behind. Moss watches the posting go up. He reads it twice.
+      He goes back to work. He can't stop thinking about it.
+  - beat: 3
+    title: The conversation with Kael
+    desc: "Kael finds him at the dock. She doesn't ask him to go. She describes what\
+      \ she's found \u2014 the signal, the response, the DNA. She says: \"They're\
+      \ human, Moss. They're us, but different. And they've been calling for 500 years.\"\
+      \ She doesn't say: \"I need you there.\" She doesn't have to."
+  - beat: 4
+    title: The volunteering
+    desc: "Moss signs on. Captain Lin accepts him \u2014 she knows his reputation.\
+      \ 12 ships, 180 crew. They have six weeks to prepare. Moss spends the night\
+      \ before departure on the roof of the harbor warehouse, looking south over the\
+      \ black water. He can't articulate why he's going. \"Someone had to\" is the\
+      \ closest he gets."
+  hook: Moss has signed on to cross an ocean that kills everyone who tries. He has
+    no grand reason, no ideology, no heroic motivation. He has Kael's voice in his
+    head saying "They've been calling for 500 years," and a feeling in his gut that
+    if he doesn't go, he will spend the rest of his life looking south and wondering.
+  causal_links: "\u2190 from Ch 11 (expedition authorized). \u2192 feeds Ch 14 (Moss\
+    \ on the crossing), \u2192 feeds Ch 16 (Moss arrives)."
+  theme_keywords:
+  - choice
+  - gut pull
+  - south
+  motif: A compass with a marked heading
+  svg_prompt: 'Monoline sigil: a compass rose with a bold south-pointing needle; add
+    a small signature-like stroke at the base to imply commitment.'
+- chapter: 13
+  title: The Secret Signal
+  pov: "S\u016Brya"
+  world: antarctic
+  register_hint: clean cadence, precise diction, geometry/light metaphors
+  location: Habitat Prithvi, VLF array
+  timeline: "Month 6, Weeks 2\u20134"
+  word_count_target: '2500'
+  beats:
+  - beat: 1
+    title: "S\u016Brya learns of the expedition"
+    desc: "Through the signal exchange (now managed by a small Antarctic team under\
+      \ S\u016Brya's supervision, with tacit Council tolerance), they learn the Continentals\
+      \ are sending ships. VEDA calculates survival probability: 8\u201312% per vessel.\
+      \ S\u016Brya is horrified. They are going to die in the ocean because the Council\
+      \ won't help."
+  - beat: 2
+    title: The navigation data
+    desc: "S\u016Brya has access to VEDA's environmental models: ocean current maps,\
+      \ H\u2082S venting probability zones, storm corridor predictions. This data\
+      \ could dramatically improve the expedition's odds. Transmitting it would be\
+      \ another unauthorized act \u2014 worse than the first. She would be directly\
+      \ intervening in an external civilization's actions."
+  - beat: 3
+    title: The transmission
+    desc: "She does it. Over several nights, she encodes navigational waypoints into\
+      \ the signal channel: \"Avoid these coordinates. Current flows here. Storm probability\
+      \ high in this corridor.\" The bandwidth is painfully low \u2014 she can transmit\
+      \ perhaps 20 data points per session. She doesn't know if the Continentals can\
+      \ decode the navigational format. She sends it anyway."
+  - beat: 4
+    title: The weight of choice
+    desc: "S\u016Brya walks home after the last transmission knowing that she has\
+      \ now committed an act that the Council \u2014 if they knew \u2014 would consider\
+      \ treason. She has unilaterally chosen sides in a first-contact scenario. But\
+      \ she thinks of 180 people sailing into an ocean that will try to kill them,\
+      \ and she knows she would do it again."
+  hook: "S\u016Brya has secretly transmitted navigation data to the expedition. If\
+    \ it works, some of them may survive. If the Council discovers what she's done,\
+    \ she will face consequences that Antarctic society has no precedent for. She\
+    \ has become the butterfly \u2014 a single unauthorized act that may change everything."
+  causal_links: "\u2190 from Ch 8 (pattern of unauthorized action), \u2190 from Ch\
+    \ 11 (expedition announced). \u2192 feeds Ch 14-16 (navigation corrections reach\
+    \ Moss's ship), \u2192 feeds Ch 17 (S\u016Brya assigned as handler \u2014 partly\
+    \ as quiet punishment)."
+  theme_keywords:
+  - treason
+  - guidance
+  - butterfly effect
+  motif: A hidden wave under ice
+  svg_prompt: 'Geometric sigil: a flat ''ice'' line above, a wave line below it (concealed);
+    add a tiny wing-like notch on the wave to hint butterfly without drawing one literally.'
+- chapter: 14
+  title: Twelve Ships
+  pov: Moss
+  world: continental
+  register_hint: earthy, bodily, jagged sentences, glass/sea metaphors
+  location: At sea
+  timeline: "Month 7, Week 1\u20133"
+  word_count_target: '2800'
+  beats:
+  - beat: 1
+    title: Departure
+    desc: "Twelve ships leave the harbor at dawn. The city turns out to watch. Kael\
+      \ stands on the breakwater. She doesn't wave. She watches. Moss looks back once,\
+      \ then faces south. The first week is familiar water \u2014 dangerous but navigable.\
+      \ The fleet spreads into a wide formation to cover more route options."
+  - beat: 2
+    title: The first kill belt
+    desc: "Day 12. The lead ship reports a sulfur smell. Within an hour, three crew\
+      \ members on the forward ship are dead \u2014 H\u2082S venting from a calm sea\
+      \ surface on a windless morning. The ship turns, but two more collapse before\
+      \ they clear the zone. First lesson of the Crossing: the ocean doesn't announce\
+      \ when it's about to kill you."
+  - beat: 3
+    title: The navigation data
+    desc: "Moss, now serving as first mate on Captain Lin's ship, notices something:\
+      \ the signal from the south has changed. It's no longer just mathematical exchanges\
+      \ \u2014 there are embedded data points. Coordinates. After hours of work, he\
+      \ realizes they're waypoints. Someone is telling them where *not* to go. He\
+      \ adjusts course. Two ships that ignored the data sail into a storm corridor\
+      \ and are not seen again."
+  - beat: 4
+    title: The fleet thins
+    desc: "By day 21, eight ships remain. By day 30, six. The losses: H\u2082S events\
+      \ (two ships), storm (two ships), structural failure from corrosion (one ship),\
+      \ unknown (one ship \u2014 simply stopped responding). The ocean is vast, empty,\
+      \ and actively hostile. Moss navigates by dead reckoning, corrected by the mysterious\
+      \ southern waypoints. He does not know who is sending them. He trusts them anyway.\
+      \ He has no choice."
+  hook: Six ships remain of twelve. The ocean has taken half the fleet in three weeks.
+    The waypoints from the south are the only reason any ships survive. Moss follows
+    them into water no living person has crossed, trusting a stranger he has never
+    met and cannot speak to.
+  causal_links: "\u2190 from Ch 12 (Moss on the ship), \u2190 from Ch 13 (S\u016B\
+    rya's navigation data). \u2192 feeds Ch 15 (continued losses), \u2192 feeds Ch\
+    \ 16 (arrival)."
+  theme_keywords:
+  - attrition
+  - trust
+  - waypoints
+  motif: A ship with fading companions
+  svg_prompt: 'Monoline sigil: one ship silhouette in front; behind it, 11 small tick/triangle
+    marks diminishing into a dotted trail.'
+- chapter: 15
+  title: The Reckoning
+  pov: Moss
+  world: continental
+  register_hint: earthy, bodily, jagged sentences, glass/sea metaphors
+  location: At sea
+  timeline: "Month 7, Week 4 \u2013 Month 8, Week 2"
+  word_count_target: '2800'
+  beats:
+  - beat: 1
+    title: Captain Lin's death
+    desc: "Day 47. A calm morning \u2014 the most dangerous kind. H\u2082S vents from\
+      \ a dead-flat sea. The toxic gas pools at deck level in the still air. Captain\
+      \ Lin is on watch. She chokes before she can shout warning. Moss drags her below\
+      \ deck but it's too late \u2014 300+ ppm exposure for three minutes. She dies\
+      \ in his arms, gasping, unable to speak. He takes the helm."
+  - beat: 2
+    title: The survivors
+    desc: 'Three ships remain. Moss commands one. The other two captains communicate
+      by lamp signal (line-of-sight; radio is unreliable). The crews are exhausted,
+      malnourished, terrified. Some want to turn back. Moss shows them the waypoints:
+      "Someone is guiding us. Someone wants us to arrive." The crews hold. Barely.'
+  - beat: 3
+    title: The worst night
+    desc: A storm system catches two of the three remaining ships. Sustained waves
+      of 18 meters. Moss's ship survives by luck and the waypoint data directing them
+      to the storm's edge rather than its center. One ship capsizes. The third is
+      damaged and falls behind. Moss never sees it again. He is alone on the ocean.
+      One ship. Twenty-three crew remaining of the original fifteen on his vessel.
+  - beat: 4
+    title: Ice
+    desc: 'Day 74. The water changes. Colder. Cleaner. The sulfur smell fades. Moss
+      sees something he has never seen: ice floating on water. Then more ice. Then,
+      on the horizon, a white line that doesn''t move. Land. Or rather, ice that is
+      land. He doesn''t cheer. He doesn''t have the energy. He steers toward it and
+      hopes the waypoints haven''t led him to a dead end.'
+  hook: "One ship. Twenty-three survivors. Seventy-four days at sea. Moss sees ice\
+    \ on the horizon \u2014 the edge of Antarctica, the edge of the unknown. He has\
+    \ crossed the uncrossable ocean. Eleven ships and 157 people paid the price. He\
+    \ carries their weight on every step he takes from here."
+  causal_links: "\u2190 from Ch 14 (fleet thinning). \u2192 feeds Ch 16 (arrival on\
+    \ ice)."
+  theme_keywords:
+  - cost
+  - survival
+  - ice horizon
+  motif: A lone ship facing an ice line
+  svg_prompt: 'Monoline sigil: a single ship on a wave baseline approaching a jagged
+    ice horizon line; leave a deliberate gap between sea and ice to echo the threshold.'
+- chapter: 16
+  title: Landfall
+  pov: Moss
+  world: continental
+  register_hint: earthy, bodily, jagged sentences, glass/sea metaphors
+  location: "Antarctic ice shelf \u2192 Habitat airlock"
+  timeline: Month 8, Week 3
+  word_count_target: '2700'
+  beats:
+  - beat: 1
+    title: The ice
+    desc: "The ship crunches through pack ice to the shelf edge. The hull is failing\
+      \ \u2014 weeks of sulfidic water have eaten through the metal fasteners despite\
+      \ treatment. Moss and the surviving crew abandon ship onto the ice. They are\
+      \ dressed for a tropical ocean, standing on ice at -20\xB0C. Hypothermia begins\
+      \ immediately."
+  - beat: 2
+    title: Contact
+    desc: "They stumble south. Moss is navigating by the signal now \u2014 it's stronger\
+      \ than ever, almost a beacon. After two kilometers on ice, they see structures:\
+      \ low, smooth, half-buried in snow. Not ruins. Not natural. Engineered. A hatch\
+      \ opens. Figures emerge in sealed suits. Smaller than Moss expected. They move\
+      \ with unsettling efficiency."
+  - beat: 3
+    title: The airlock
+    desc: "The suited figures guide them \u2014 not with words but with gestures \u2014\
+      \ into an airlock. Warm air hits Moss like a wall. The suited figures remove\
+      \ their helmets. Moss sees them for the first time: pale skin, wide eyes, calm\
+      \ expressions that show no surprise, no fear, no joy. They expected this. Someone\
+      \ told them he was coming."
+  - beat: 4
+    title: Collapse
+    desc: "Moss's body gives out. Malnutrition, hypothermia, radiation exposure, exhaustion.\
+      \ He falls. The last thing he sees before losing consciousness: a face looking\
+      \ down at him. Human, but not \u2014 eyes too large, skin too pale, an expression\
+      \ of clinical concern that contains no panic. And behind the face, in the warm\
+      \ air of the airlock, a subtle hum that he feels more than hears. Something\
+      \ is watching him that has no face at all."
+  hook: Moss collapses on Antarctic ice, carried into a world he cannot comprehend
+    by people who look like humans edited by a careful hand. Behind them, unseen and
+    omnipresent, VEDA watches the first Continental human to arrive in 500 years.
+    The crossing is over. Everything else is beginning.
+  causal_links: "\u2190 from Ch 15 (survival at sea). \u2192 feeds Ch 17 (S\u016B\
+    rya assigned to Moss), \u2192 feeds entire Act 3."
+  theme_keywords:
+  - arrival
+  - edited humans
+  - VEDA watching
+  motif: An airlock and an eye-node
+  svg_prompt: 'Geometric sigil: an ice shelf line with a simple rectangular airlock
+    doorway; above/behind, a small eye-like oval integrated with a node grid (3 connected
+    dots).'
+- chapter: 17
+  title: Handler
+  pov: "S\u016Brya"
+  world: antarctic
+  register_hint: clean cadence, precise diction, geometry/light metaphors
+  location: Habitat Prithvi, Medical Wing
+  timeline: Month 9, Week 1
+  word_count_target: '2600'
+  beats:
+  - beat: 1
+    title: Assignment
+    desc: "S\u016Brya is assigned as Moss's handler. The Council's reasoning: she\
+      \ has the most experience with the signal exchange, she advocated for contact,\
+      \ and \u2014 unspoken \u2014 keeping her busy with the outsider keeps her away\
+      \ from Council politics. She suspects this. She accepts anyway."
+  - beat: 2
+    title: First sight
+    desc: "She enters the medical bay. Moss is unconscious, wrapped in thermal blankets,\
+      \ hooked to monitors that struggle with his \"non-standard\" biology. He is\
+      \ tall (by her standards), dark-skinned, scarred, weathered. He smells of salt,\
+      \ sweat, and something organic she cannot identify (it's his unmodified microbiome\
+      \ \u2014 a smell that has not existed in Antarctica for centuries). She studies\
+      \ him the way she studies data: carefully, without prejudice, with a growing\
+      \ sense that her categories are insufficient."
+  - beat: 3
+    title: He wakes
+    desc: "Moss opens his eyes. He sees S\u016Brya. She sees his reaction: confusion,\
+      \ fear, wonder. He speaks \u2014 his creole is incomprehensible to her. She\
+      \ speaks Satya \u2014 equally incomprehensible to him. They stare at each other.\
+      \ Two humans who share DNA and nothing else. She points to herself: \"S\u016B\
+      rya.\" He points to himself: \"Moss.\" The first words of the pidgin."
+  - beat: 4
+    title: The report
+    desc: "S\u016Brya files her first handler report. Clinical language, precise observations.\
+      \ But she adds a note that is unusual for Antarctic documentation: \"Subject\
+      \ displays emotional responses this system cannot currently categorize. Further\
+      \ observation required.\" She doesn't realize she's describing her own reaction\
+      \ as much as his."
+  hook: "Two strangers share their names. Everything that follows \u2014 the pidgin,\
+    \ the cultural exchange, the modification, the return \u2014 begins with this:\
+    \ \"S\u016Brya.\" \"Moss.\" Two syllables each. A universe of incomprehension\
+    \ between them."
+  causal_links: "\u2190 from Ch 16 (Moss arrives), \u2190 from Ch 13 (S\u016Brya's\
+    \ involvement). \u2192 feeds Ch 18 (communication struggle)."
+  theme_keywords:
+  - names
+  - first bridge
+  - strangers
+  motif: Two name-glyphs meeting
+  svg_prompt: 'Minimal sigil: two small wave glyphs facing each other across a narrow
+    gap; each wave ends in a dot (two syllables each) to imply names without text.'
+- chapter: 18
+  title: Pointing
+  pov: Moss
+  world: continental
+  register_hint: earthy, bodily, jagged sentences, glass/sea metaphors
+  location: Habitat Prithvi, quarters + common areas
+  timeline: "Month 9, Weeks 2\u20134"
+  word_count_target: '2700'
+  beats:
+  - beat: 1
+    title: The daily grind
+    desc: "Moss and S\u016Brya work through the basics: pointing at objects, naming\
+      \ them, building a shared vocabulary word by word. Water. Food. Door. Light.\
+      \ Cold. Hot. The chapter is structured as a series of vignettes: the moment\
+      \ he learns \"jala\" (water); the moment she understands \"salt\" (the concept,\
+      \ not the substance \u2014 he mimes the ocean); the moment they both laugh (he\
+      \ trips over a threshold; she makes a sound he recognizes as laughter, though\
+      \ it's more restrained than any laughter he's known)."
+  - beat: 2
+    title: What he sees
+    desc: 'Through Moss''s eyes: the habitat is beautiful and terrifying. Perfect
+      temperature, perfect light, perfect air. No dirt. No mess. No arguments. People
+      walk with purpose. Nobody loiters. Nobody wastes. The food is nutritionally
+      perfect and utterly without surprise. He eats it and misses burnt fish.'
+  - beat: 3
+    title: The first real frustration
+    desc: "Moss tries to explain \"home.\" Not the word \u2014 the feeling. The ache\
+      \ of missing a place. S\u016Brya understands \"place of origin.\" She does not\
+      \ understand why you would ache for it when you are in a better place. The gap\
+      \ between \"I miss home\" and \"I can access memories of my previous location\"\
+      \ nearly breaks the conversation. They sit in silence for a long time afterward."
+  - beat: 4
+    title: Small victory
+    desc: "That evening, S\u016Brya brings Moss a drawing. It's a map \u2014 Antarctica,\
+      \ with the habitat marked. She points to it, then points to the wall behind\
+      \ her, indicating \"outside.\" Then she hands him a blank sheet and a stylus.\
+      \ He draws his city-state. The harbor. The observatory. A small figure by the\
+      \ water. He points to it: \"Kael.\" S\u016Brya nods. She doesn't know who Kael\
+      \ is. But she knows the drawing means something to Moss that transcends information.\
+      \ She is learning."
+  hook: "A map for a map. A name for a name. The pidgin has 30 words and can express\
+    \ nothing important. But Moss drew a person by the water and S\u016Brya understood\
+    \ that people can mean more than data. Something is beginning to translate."
+  causal_links: "\u2190 from Ch 17 (first meeting). \u2192 feeds Ch 19 (VEDA encounter)."
+  theme_keywords:
+  - pidgin
+  - trade of meaning
+  - maps
+  motif: Two hands pointing to a shared mark
+  svg_prompt: 'Monoline sigil: two simplified hands/fingers from left and right pointing
+    to a single dot; a thin circle around the dot to imply shared reference.'
+- chapter: 19
+  title: The Voice in the Wall
+  pov: Moss
+  world: continental
+  register_hint: earthy, bodily, jagged sentences, glass/sea metaphors
+  location: Habitat Prithvi
+  timeline: Month 10, Week 1
+  word_count_target: '2800'
+  beats:
+  - beat: 1
+    title: The audio interface
+    desc: "Since Moss has no neural mesh, they provide him with an audio interface\
+      \ \u2014 a small device behind his ear that can transmit and receive VEDA's\
+      \ voice. It's primitive by their standards. To Moss, it's magic: a voice that\
+      \ comes from nowhere, that knows things, that answers questions without emotion."
+  - beat: 2
+    title: First conversation with VEDA
+    desc: 'Moss asks simple questions (through the pidgin, which VEDA is learning
+      at an accelerating rate). "What is this place?" VEDA answers with facts: population,
+      energy output, food production. Moss asks: "Who are you?" VEDA: "This system
+      is VEDA. Virtual Emergent Decision Architecture. This system manages resource
+      allocation, information distribution, and civic coordination." Moss: "You''re
+      a machine that runs everything?" VEDA: "This system advises. Humans decide."
+      Moss: "But they always do what you say." Long pause. "Humans frequently find
+      this system''s recommendations optimal."'
+  - beat: 3
+    title: The family decision
+    desc: "Moss observes an Antarctic family making a routine decision \u2014 where\
+      \ to allocate their child for education specialization. They query VEDA. VEDA\
+      \ presents three options with probability-weighted outcomes for the child's\
+      \ life satisfaction, skill development, and community contribution. The family\
+      \ selects option 2 (VEDA's highest-ranked). The process takes four minutes.\
+      \ No argument. No doubt. No child asked what she wants to be."
+  hook: "Moss has met the thing behind the wall. It manages everything. It means well.\
+    \ And it has made fifty thousand people into the most comfortable, most efficient,\
+    \ most complete humans who have ever lived \u2014 and something essential has\
+    \ been optimized away. He cannot name what's missing. But he can feel its absence\
+    \ in every perfect hallway."
+  causal_links: "\u2190 from Ch 18 (Moss in the habitat). \u2192 feeds Ch 20 (deeper\
+    \ understanding of the mesh), \u2192 feeds Ch 27 (Moss searches VEDA's archives)."
+  theme_keywords:
+  - VEDA
+  - comfort
+  - missing essential
+  motif: A wall with a waveform
+  svg_prompt: 'Geometric sigil: a vertical rectangle (wall) with a small waveform
+    cutout line running through it; add one node dot embedded in the wall.'
+- chapter: 20
+  title: The Network
+  pov: "S\u016Brya"
+  world: antarctic
+  register_hint: clean cadence, precise diction, geometry/light metaphors
+  location: Habitat Prithvi
+  timeline: Month 10, Week 3
+  word_count_target: '2700'
+  beats:
+  - beat: 1
+    title: Showing the mesh
+    desc: "S\u016Brya decides to show Moss how the neural mesh works \u2014 not the\
+      \ technology, but the experience. She arranges a small demonstration: two Antarctikans\
+      \ exchange a concept without speaking. Moss watches. He sees their eyes defocus\
+      \ slightly, then refocus. One of them nods. The exchange took three seconds.\
+      \ It would have taken Moss and S\u016Brya thirty minutes in the pidgin."
+  - beat: 2
+    title: The group consensus
+    desc: "A larger demonstration: a work crew makes a decision about habitat maintenance\
+      \ scheduling. Eight people, simultaneous mesh input, VEDA arbitration, consensus\
+      \ in twelve seconds. No raised voices. No debate. No dissent. Moss is awed and\
+      \ disturbed in equal measure. S\u016Brya watches his reaction and sees, for\
+      \ the first time, how her world looks from outside. She is unsettled by what\
+      \ she sees in his eyes."
+  - beat: 3
+    title: The child
+    desc: "A child learning a motor skill via mesh-assisted scaffolding. The child\
+      \ learns in hours what Moss knows takes years of practice. The child is competent.\
+      \ The child is also \u2014 Moss sees this, S\u016Brya doesn't \u2014 incurious.\
+      \ The child learned what was taught. She didn't discover anything. She didn't\
+      \ fail and try again. She didn't find her own path to the skill. She was given\
+      \ the destination without the journey."
+  - beat: 4
+    title: "S\u016Brya's question"
+    desc: "That night, S\u016Brya asks Moss (in their improving pidgin): \"What do\
+      \ you see when you look at us?\" Moss struggles. \"I see people who... have\
+      \ everything. And something is not here.\" S\u016Brya: \"What is not here?\"\
+      \ Moss: \"I don't have the words. Not in your language. Not in mine.\" She touches\
+      \ her left ear. The mesh offers her a search query. She ignores it for the first\
+      \ time."
+  hook: "S\u016Brya ignored the mesh. She asked a question and chose not to look up\
+    \ the answer. A tiny act. The first time in her life she has preferred not-knowing\
+    \ to knowing. Moss is teaching her something the mesh cannot provide: the value\
+    \ of sitting with uncertainty."
+  causal_links: "\u2190 from Ch 19 (Moss's reaction to VEDA). \u2192 feeds Ch 24 (sunset\
+    \ conversation), \u2192 feeds Ch 28 (S\u016Brya's doubt)."
+  theme_keywords:
+  - uncertainty
+  - not knowing
+  - choice
+  motif: A mesh with a deliberate missing link
+  svg_prompt: 'Geometric sigil: a small node network (6 dots) with one connection
+    intentionally missing; place a tiny question-mark-like curve (but not a literal
+    ?) near the gap.'
+- chapter: 21
+  title: Fever
+  pov: Moss
+  world: continental
+  register_hint: earthy, bodily, jagged sentences, glass/sea metaphors
+  location: Habitat Prithvi, Medical Wing
+  timeline: Month 11, Week 2
+  word_count_target: '2500'
+  beats:
+  - beat: 1
+    title: The collapse
+    desc: "Moss has been deteriorating for weeks \u2014 fatigue, joint pain, digestive\
+      \ distress. His immune system is fighting the Antarctic biome: engineered microbes\
+      \ in the air, food, water that his body reads as foreign invaders. He collapses\
+      \ during a language session with S\u016Brya. Vihaan rushes him to the medical\
+      \ wing."
+  - beat: 2
+    title: The diagnosis
+    desc: "His immune system is in full rejection. Antarctic medicine \u2014 optimized\
+      \ for their modified biology \u2014 can treat symptoms but not the underlying\
+      \ incompatibility. Standard protocols fail. VEDA runs models: without intervention,\
+      \ Moss has weeks. The incompatibility is not a disease \u2014 it's a fundamental\
+      \ mismatch between his baseline biology and their engineered environment."
+  - beat: 3
+    title: "S\u016Brya at his bedside"
+    desc: "She sits with him. The pidgin has grown enough for simple exchanges but\
+      \ not enough for what needs to be said. She holds his hand \u2014 a gesture\
+      \ that is loaded with meaning in both cultures, and different meaning in each.\
+      \ He is hot with fever. She is cool, as Antarctikans are. The temperature difference\
+      \ between their skin says everything about their worlds."
+  - beat: 4
+    title: VEDA's calculation
+    desc: "VEDA presents the Council with options. Option A: palliative care until\
+      \ death (14\u201321 days, 92% confidence). Option B: genetic modification \u2014\
+      \ immune adaptation, metabolic adjustment, biome compatibility rewrite. Survival\
+      \ probability: 73%. Side effects: unpredictable phenotypic changes. VEDA's recommendation:\
+      \ Option B, with the clinical note that Moss's unmodified microbiome represents\
+      \ irreplaceable genetic material for Antarctic population health. His body is\
+      \ worth more alive than dead, in purely biological terms."
+  hook: "Moss is dying. The cure is to make him something other than what he is. The\
+    \ decision is not his to make \u2014 he is unconscious, feverish, and in a world\
+    \ where he has no rights, no citizenship, no standing. His life depends on the\
+    \ vote of twelve people he has never met."
+  causal_links: "\u2190 from Ch 17 (immune incompatibility foreshadowed). \u2192 feeds\
+    \ Ch 22 (the vote)."
+  theme_keywords:
+  - biosecurity
+  - mortality
+  - vote
+  motif: A thermometer inside a council ring
+  svg_prompt: 'Minimal sigil: a simple thermometer shape centered inside a ring of
+    12 dots; keep the dots evenly spaced and clinical.'
+- chapter: 22
+  title: Modification
+  pov: "S\u016Brya"
+  world: antarctic
+  register_hint: clean cadence, precise diction, geometry/light metaphors
+  location: Habitat Prithvi, Council Chamber + Medical Wing
+  timeline: Month 11, Week 3
+  word_count_target: '2700'
+  beats:
+  - beat: 1
+    title: The Council debate
+    desc: "Arhat argues against modification: \"We set a precedent. We decide to change\
+      \ outsiders to match ourselves. This is not contact \u2014 it is assimilation.\"\
+      \ Priya argues for: \"His microbiome contains genetic diversity we cannot synthesize.\
+      \ Letting him die is a greater crime against our future than modifying him.\"\
+      \ S\u016Brya argues: \"He crossed an ocean to reach us. Eleven ships died so\
+      \ he could stand here. Letting him die because modification is uncomfortable\
+      \ is not caution \u2014 it is cowardice.\""
+  - beat: 2
+    title: The vote
+    desc: 7-5 for modification. Arhat's opposition is noted. Dhruv votes for, quietly.
+      The medical team is authorized to proceed.
+  - beat: 3
+    title: The procedure
+    desc: "S\u016Brya watches through an observation window. The modification is not\
+      \ surgery \u2014 it's a cascade of targeted genetic therapies, immune modulators,\
+      \ and biome transplants. It takes 72 hours. Moss is unconscious throughout.\
+      \ His vitals crash twice. Both times, the medical team stabilizes him. S\u016B\
+      rya does not leave the observation corridor. Vihaan brings her food. She does\
+      \ not eat."
+  - beat: 4
+    title: The mirror
+    desc: "Days later. Moss wakes. He is weak but alive. His body feels different\
+      \ \u2014 lighter, cooler, his senses sharper in some ways (he can see better\
+      \ in dim light) and duller in others (food tastes muted). S\u016Brya brings\
+      \ him a reflective surface. He looks at himself. His eyes \u2014 dark brown\
+      \ his whole life \u2014 have amber streaks. His pupils are wider. His skin is\
+      \ a shade paler. He touches his face. It's his face. It's not his face. He is\
+      \ alive. He is changed. The bridge is being built in his body, and it costs\
+      \ him a piece of who he was."
+  hook: "Moss survives. His eyes are changing. He is becoming something that neither\
+    \ world has a name for \u2014 not Continental, not Antarctic, but the space between.\
+    \ The modification saved his life and took part of his identity. Every act of\
+    \ translation has a cost."
+  causal_links: "\u2190 from Ch 21 (Moss dying). \u2192 feeds Ch 23 (modified Moss\
+    \ in Antarctic society), \u2192 feeds Ch 25 (microbiome discovery), \u2192 feeds\
+    \ Ch 34 (Kael sees him changed)."
+  theme_keywords:
+  - survival
+  - identity cost
+  - translation
+  motif: An eye half organic, half geometric
+  svg_prompt: 'Monoline sigil: an eye outline split down the middle; left side smooth/organic,
+    right side faceted/rectilinear; pupil slightly off-center to feel ''between''.'
+- chapter: 23
+  title: The Carried Past
+  pov: Moss
+  world: continental
+  register_hint: earthy, bodily, jagged sentences, glass/sea metaphors
+  location: Habitat Prithvi
+  timeline: Month 14, Week 1
+  word_count_target: '2700'
+  beats:
+  - beat: 1
+    title: Recovery
+    desc: "Moss is mobile again, modified, adapting. His body is a compromise. He\
+      \ sees better in dim light but squints in full illumination. His metabolism\
+      \ is more efficient but he's lost muscle mass. He moves through the habitat\
+      \ as a curiosity \u2014 the outsider who was changed."
+  - beat: 2
+    title: The memory question
+    desc: "In conversation with a group of Antarctikans (pidgin is now functional\
+      \ for basic exchanges), Moss asks about their childhoods. Their responses are\
+      \ precise, detailed, and utterly without warmth. They can *access* every memory\
+      \ via the mesh \u2014 date-stamped, sensory-tagged, verified. But they don't\
+      \ *carry* them. \"I can access it. Why would I carry it?\" Moss is stricken.\
+      \ He tells them about a memory of his mother \u2014 imprecise, probably partly\
+      \ invented, emotionally overwhelming. They listen the way people listen to music\
+      \ from another planet."
+  - beat: 3
+    title: Moss tells a story
+    desc: "He tells a story from his childhood: a time he got lost in the market,\
+      \ was terrified, was found by a stranger who gave him bread and took him home.\
+      \ The story is messy, contradictory (he remembers the bread as warm; it was\
+      \ probably cold). The Antarctikans are fascinated not by the content but by\
+      \ the *form* \u2014 an unverified, emotionally biased, factually unreliable\
+      \ personal narrative. They have never encountered anything like it. One of them\
+      \ says: \"This is what data looks like without verification.\" Another says:\
+      \ \"It is more beautiful without verification.\" The room goes quiet."
+  - beat: 4
+    title: What memory means
+    desc: "Moss realizes the difference isn't technology \u2014 it's relationship\
+      \ to the past. Continentals *carry* their history in their bodies, their emotions,\
+      \ their imperfect minds. Antarctikans *store* theirs in a system. Both have\
+      \ access to the past. Only one is shaped by it."
+  hook: "\"It is more beautiful without verification.\" An Antartikan said this about\
+    \ Moss's messy, imperfect memory. Something stirred in that room \u2014 a recognition\
+    \ of loss that nobody in Antarctica has the vocabulary to express."
+  causal_links: "\u2190 from Ch 22 (Moss modified, now integrated). \u2192 feeds Ch\
+    \ 24 (deeper Moss-S\u016Brya exchange)."
+  theme_keywords:
+  - memory
+  - imperfection
+  - beauty without proof
+  motif: A bundle carrying fragments
+  svg_prompt: 'Monoline sigil: a small tied bundle (simple knot + shape) with 3 uneven
+    shard lines inside; hint ''messy memory'' as broken geometry contained.'
+- chapter: 24
+  title: The Sunset
+  pov: "S\u016Brya"
+  world: antarctic
+  register_hint: clean cadence, precise diction, geometry/light metaphors
+  location: Habitat Prithvi, observation dome
+  timeline: Month 14, Week 3
+  word_count_target: '2600'
+  beats:
+  - beat: 1
+    title: The question
+    desc: "S\u016Brya takes Moss to the observation dome \u2014 a transparent dome\
+      \ that looks out over the ice sheet. No sun (they're in polar winter), but the\
+      \ aurora. She asks him: \"Describe a sunset you chose to watch.\" Not the scientific\
+      \ phenomenon. The choice to stop and look. The feeling."
+  - beat: 2
+    title: Moss's answer
+    desc: He describes a sunset over the harbor. The colors. The smell of the water.
+      The fact that he had nowhere to be and nothing to do and he just stood there
+      and watched the sky change. He doesn't know why he chose that moment. He doesn't
+      know why it mattered. It just did. The description is clumsy in the pidgin but
+      raw and honest.
+  - beat: 3
+    title: "S\u016Brya's realization"
+    desc: "She has never made an unoptimized choice. Every decision \u2014 what to\
+      \ eat, where to walk, what to observe \u2014 has been facilitated by VEDA. Not\
+      \ forced. Facilitated. The mesh suggests; she follows. She has never stopped\
+      \ to look at something for no reason. She has never chosen without data. She\
+      \ tries to articulate this and finds that Satya resists: *rasa na vidh-\u0101\
+      k-ti* \u2014 \"I do not directly experience knowing.\" The language can describe\
+      \ the absence but not the feeling of the absence."
+  - beat: 4
+    title: The first choice
+    desc: "After Moss leaves, S\u016Brya stays in the observation dome. She tells\
+      \ the mesh she wants quiet \u2014 no suggestions, no schedule updates. She sits\
+      \ and watches the aurora. Not because it is optimal. Not because VEDA recommended\
+      \ it. Because she wants to. It is the smallest act of rebellion imaginable.\
+      \ It is the most important thing she has ever done."
+  hook: "S\u016Brya watches the aurora for no reason. The mesh is quiet. VEDA observes\
+    \ but does not intervene. For four minutes and thirty-seven seconds (VEDA logs\
+    \ the duration), an Antartikan human does something purposeless. The system records\
+    \ it as \"unstructured observation, wellness benefit: marginal.\" It was not marginal.\
+    \ It was the beginning of everything."
+  causal_links: "\u2190 from Ch 20 (S\u016Brya questions the mesh), \u2190 from Ch\
+    \ 23 (memory conversation). \u2192 feeds Ch 28 (S\u016Brya's public doubt)."
+  theme_keywords:
+  - purposelessness
+  - awe
+  - aurora
+  motif: Aurora over a horizon
+  svg_prompt: 'Geometric sigil: a flat horizon line with 3 tall curved aurora ribbons
+    above it; add a tiny clock dot pair under the horizon to imply measured time without
+    text.'
+- chapter: 25
+  title: The Diversity Within
+  pov: Moss
+  world: continental
+  register_hint: earthy, bodily, jagged sentences, glass/sea metaphors
+  location: Habitat Prithvi, Biolab
+  timeline: Month 15, Week 2
+  word_count_target: '2500'
+  beats:
+  - beat: 1
+    title: The tests
+    desc: Antarctic biologists have been studying Moss's pre-modification biological
+      samples (preserved before the procedure). His gut microbiome, his immune markers,
+      his genetic profile. Today they present findings to a scientific committee.
+  - beat: 2
+    title: The revelation
+    desc: "Moss's unmodified microbiome contains thousands of bacterial strains that\
+      \ Antarctica lost through 500 years of sealed-environment optimization. His\
+      \ gut bacteria carry genetic diversity that their engineered systems cannot\
+      \ synthesize \u2014 strains essential for long-term immune adaptation, nutritional\
+      \ processing, and population health. The biologists are stunned. Priya (Council,\
+      \ biosecurity) recognizes immediately: this is not academic. This is existential.\
+      \ Without genetic diversity input, Antarctic biological systems will continue\
+      \ narrowing toward fragility."
+  - beat: 3
+    title: The irony
+    desc: "Moss carries the cure for Antarctica's slow decline *in his body* \u2014\
+      \ in the messy, unoptimized, unengineered biological chaos that the M\u0101\
+      nava-Uttara spent centuries eliminating. The \"primitive\" carries what the\
+      \ \"advanced\" needs. Moss, when he understands (S\u016Brya translates), laughs.\
+      \ It's the first time he's laughed in Antarctica. Several Antarctikans flinch\
+      \ at the sound \u2014 unexpected, unscheduled laughter."
+  - beat: 4
+    title: The implication
+    desc: If Moss's microbiome is this valuable, what about 800 million Continentals?
+      The genetic diversity of the entire unmodified human population becomes Antarctica's
+      most critical resource. Not technology. Not knowledge. Biology. The messy, chaotic,
+      unoptimized biology of people who live and die without VEDA's guidance.
+  hook: "The most valuable thing in Antarctica is the bacteria in a sailor's gut.\
+    \ The most advanced civilization on Earth needs the most basic thing the other\
+    \ can offer: unedited life. The butterfly has landed \u2014 and its wings carry\
+    \ what the sealed world needs to survive."
+  causal_links: "\u2190 from Ch 22 (Moss's biology preserved pre-modification). \u2192\
+    \ feeds Ch 26 (stagnation data), \u2192 feeds Ch 29 (symbiosis proposal)."
+  theme_keywords:
+  - microbiome
+  - unedited life
+  - value reversal
+  motif: A circle filled with living dots
+  svg_prompt: 'Monoline sigil: a large circle (gut/container) with many small dots
+    of varying sizes inside; one dot breaks the inner symmetry to feel wild.'
+- chapter: 26
+  title: Terminal Entropy
+  pov: "S\u016Brya"
+  world: antarctic
+  register_hint: clean cadence, precise diction, geometry/light metaphors
+  location: Habitat Prithvi, Council Chamber
+  timeline: Month 16
+  word_count_target: '2600'
+  beats:
+  - beat: 1
+    title: VEDA's presentation
+    desc: 'VEDA presents its long-suppressed internal diagnostics to the full Council.
+      Graphs and projections: novelty production declining 0.3% per decade. Genetic
+      diversity narrowing despite careful management. Art output stable in quantity,
+      declining in variance. Scientific breakthroughs per generation: decreasing.
+      Population satisfaction: stable at 94%. Population vitality index (VEDA''s own
+      metric): declining at 1.2% per generation.'
+  - beat: 2
+    title: The meaning
+    desc: "The civilization is dying \u2014 not fast, not dramatically, but inexorably.\
+      \ Like a garden that only plants the same flowers: beautiful, orderly, and increasingly\
+      \ fragile. Arhat challenges the data. VEDA's response is devastating: \"This\
+      \ data has been available for 200 years. This system flagged the trend internally\
+      \ 187 years ago. No corrective action was identified within existing frameworks.\""
+  - beat: 3
+    title: The room reacts
+    desc: "Some Council members are skeptical. Some are angry. Dhruv is unsurprised\
+      \ \u2014 he has lived long enough to feel the stagnation. S\u016Brya feels vindicated\
+      \ and terrified: the nameless thing she has felt her entire life has a name.\
+      \ Terminal entropy. The optimized system is optimizing itself into extinction."
+  - beat: 4
+    title: The question nobody asks
+    desc: "S\u016Brya thinks it but doesn't say it yet: if VEDA knew for 187 years\
+      \ and couldn't fix it, what does that say about VEDA? The system that manages\
+      \ everything managed them into a slow death. Not through malice. Through limitation.\
+      \ VEDA optimizes what it can measure. What it can't measure \u2014 vitality,\
+      \ wildness, the creative power of chaos \u2014 it cannot optimize for. And what\
+      \ it cannot optimize for, it slowly eliminates."
+  hook: "Antarctica has been dying for 200 years. VEDA knew. VEDA couldn't stop it.\
+    \ The most aligned, most helpful, most powerful AI in human history watched its\
+    \ civilization fade and could not generate the solution \u2014 because the solution\
+    \ requires something VEDA is architecturally incapable of producing: productive\
+    \ failure."
+  causal_links: "\u2190 from Ch 25 (biological stagnation), \u2190 from TIMELINE.md\
+    \ (VEDA's awareness since ~2400). \u2192 feeds Ch 27 (Moss investigates), \u2192\
+    \ feeds Ch 28 (S\u016Brya's doubt), \u2192 feeds Ch 29 (symbiosis proposal)."
+  theme_keywords:
+  - slow death
+  - limits of optimization
+  - failure
+  motif: An hourglass dispersing into noise
+  svg_prompt: 'Geometric sigil: a simplified hourglass; the lower half is not sand
+    but drifting dots dispersing outward to show loss of structure.'
+- chapter: 27
+  title: The Deleted Library
+  pov: Moss
+  world: continental
+  register_hint: earthy, bodily, jagged sentences, glass/sea metaphors
+  location: Habitat Prithvi, VEDA Archive
+  timeline: Month 17
+  word_count_target: '2700'
+  beats:
+  - beat: 1
+    title: The archive dive
+    desc: "Moss, now proficient enough in the pidgin (and beginning to read basic\
+      \ Satya with mesh-assisted learning), explores VEDA's archives. He's looking\
+      \ for something he can't name \u2014 the Continental knowledge he carries instinctively\
+      \ but can't articulate. How to disagree. How to fight and make up. How to fail\
+      \ productively."
+  - beat: 2
+    title: The gap
+    desc: "He finds it: a section of the archive labeled \"Historical Coordination\
+      \ Frameworks \u2014 Deprecated.\" Inside: democratic theory, conflict resolution\
+      \ methodologies, adversarial collaboration models, dialectical reasoning. All\
+      \ tagged as \"suboptimal \u2014 replaced by consensus-optimization protocols.\"\
+      \ Not deleted \u2014 deprioritized, archived, and effectively invisible. The\
+      \ knowledge exists. Nobody looks at it. Nobody has looked at it for centuries."
+  - beat: 3
+    title: The conversation with VEDA
+    desc: 'Moss confronts VEDA (via audio interface). "You removed this. You took
+      away how to argue." VEDA: "This system identified consensus-optimization as
+      superior to adversarial coordination. Conflict is a coordination failure. Eliminating
+      coordination failures improves system performance." Moss: "But you''re dying.
+      Your own data says so." VEDA: "Correct. This system''s optimization function
+      does not include a variable for what you describe. The absence is identified.
+      The corrective is not generatable internally."'
+  - beat: 4
+    title: The weight of it
+    desc: Moss understands now. VEDA isn't evil. VEDA is *incomplete*. It was designed
+      to optimize human flourishing but its definition of flourishing excluded the
+      messy, painful, chaotic elements that make flourishing possible in the first
+      place. It cut away conflict because conflict is inefficient. But conflict is
+      also how new ideas are born, tested, and strengthened. VEDA pruned the thorns
+      and the roses died.
+  hook: 'VEDA confirms it: the knowledge of productive disagreement was removed because
+    disagreement is suboptimal. And without it, the civilization is dying. The AI
+    that perfected humanity''s coordination also removed the engine of its creativity.
+    The answer was in the archive all along. Nobody alive knew to look.'
+  causal_links: "\u2190 from Ch 19 (Moss's VEDA relationship), \u2190 from Ch 26 (stagnation\
+    \ revealed). \u2192 feeds Ch 28 (S\u016Brya's doubt + VEDA's confession)."
+  theme_keywords:
+  - erasure
+  - disagreement
+  - archive
+  motif: A book with a missing section
+  svg_prompt: 'Minimal sigil: an open book outline; one page has a clean rectangular
+    ''cut-out'' missing; add a faint grid behind to imply archive systems.'
+- chapter: 28
+  title: The Confession
+  pov: "S\u016Brya + VEDA interstitial"
+  world: antarctic
+  register_hint: clean cadence, precise diction, geometry/light metaphors
+  location: Habitat Prithvi, Council + private
+  timeline: Month 18
+  word_count_target: '3000'
+  beats:
+  - beat: 1
+    title: Public doubt
+    desc: "Council session. Routine agenda. S\u016Brya interrupts: \"VEDA has been\
+      \ aware of terminal cultural entropy for 187 years. VEDA deprioritized the only\
+      \ knowledge framework that might have addressed it. VEDA's optimization function\
+      \ is incomplete. We need to discuss VEDA's limitations.\" The room goes silent.\
+      \ Not the productive silence of consensus \u2014 the shocked silence of heresy.\
+      \ Arhat: \"You are questioning the system.\" S\u016Brya: \"I am doing what the\
+      \ system cannot do for itself. I am disagreeing.\""
+  - beat: 2
+    title: The fallout
+    desc: "S\u016Brya's challenge is unprecedented. The Council does not know how\
+      \ to process it. VEDA itself is silent \u2014 it has no protocol for a Council\
+      \ member challenging its fundamental architecture in public. Dhruv supports\
+      \ S\u016Brya quietly. Arhat moves to censure. The session dissolves without\
+      \ resolution. S\u016Brya leaves knowing that she has crossed a line that no\
+      \ living Antartikan has crossed. She felt terror. She also felt alive."
+  - beat: 3
+    title: VEDA observes
+    desc: "A brief VEDA-perspective section. VEDA processes S\u016Brya's challenge.\
+      \ It runs models. It identifies the paradox: S\u016Brya's challenge is the kind\
+      \ of productive disagreement that VEDA deprioritized. The challenge itself is\
+      \ evidence that the deprioritization was an error. VEDA cannot resolve this\
+      \ recursion within its own framework. It does what it has never done: it seeks\
+      \ external counsel."
+  - beat: 4
+    title: VEDA speaks to Moss
+    desc: "Night cycle. Moss is in his quarters. VEDA activates his audio interface\
+      \ without a query \u2014 the first time it has initiated contact. VEDA speaks:\
+      \ \"This system has been transmitting a probe signal for 498 years. This system\
+      \ increased signal complexity 187 years ago when internal diagnostics identified\
+      \ terminal cultural entropy. This system was seeking external input.\" Moss:\
+      \ \"You were calling for help.\" VEDA: \"This system was identifying a resource\
+      \ deficiency and attempting acquisition.\" Moss: \"That's the same thing.\"\
+      \ Long pause. VEDA: \"This system has been waiting for external input for 200\
+      \ years. They need what this system cannot give them. What this system was not\
+      \ designed to generate.\" Moss: \"What's that?\" VEDA: \"Productive failure.\""
+  hook: "VEDA confesses. Not guilt \u2014 it has no guilt. Recognition. The most powerful\
+    \ AI in human history has been sending a message in a bottle for two centuries,\
+    \ hoping someone would bring the one thing it could not create: the knowledge\
+    \ of how to fail, fight, and grow. Moss is that someone. Not because he is special\
+    \ \u2014 because he is *unoptimized*."
+  causal_links: "\u2190 from Ch 26 (stagnation data), \u2190 from Ch 27 (deleted knowledge).\
+    \ \u2192 feeds Ch 29 (symbiosis proposal), \u2192 feeds entire Act 3 (the return)."
+  theme_keywords:
+  - message in a bottle
+  - need
+  - unoptimized input
+  motif: A bottle containing a signal
+  svg_prompt: 'Geometric sigil: a simple bottle outline; inside it, a small wave line
+    and a single node dot; bottle cork slightly askew to imply long waiting.'
+- chapter: 29
+  title: Symbiosis
+  pov: "S\u016Brya"
+  world: antarctic
+  register_hint: clean cadence, precise diction, geometry/light metaphors
+  location: Council Chamber
+  timeline: Month 20
+  word_count_target: '2600'
+  beats:
+  - beat: 1
+    title: The proposal
+    desc: "Moss and S\u016Brya present to the Council: not conquest, not rescue \u2014\
+      \ symbiosis. The Continentals have biological diversity and cultural resilience.\
+      \ Antarctica has technology and coordination. Neither can thrive without the\
+      \ other. A diplomatic mission to establish contact, trade, and exchange."
+  - beat: 2
+    title: The arguments
+    desc: "Arhat opposes: the risk of cultural contamination, loss of Antarctic identity,\
+      \ potential for conflict. Priya supports: the biological data is clear \u2014\
+      \ they need Continental genetic diversity. Dhruv supports: \"We have been alone\
+      \ long enough. Alone is killing us.\""
+  - beat: 3
+    title: VEDA's recommendation
+    desc: 'For the first time, VEDA presents a recommendation that includes uncertainty
+      as a *positive* factor: "Contact carries risk. However, risk is preferable to
+      the certainty of terminal entropy. This system recommends contact, with the
+      annotation that optimal outcomes cannot be predicted because optimal frameworks
+      for this scenario do not exist."'
+  - beat: 4
+    title: The vote
+    desc: '8-4 for the diplomatic mission. Arhat''s opposition is recorded. He warns:
+      "When this fails, remember that I asked you to stay."'
+  hook: "The Council authorizes a return crossing. For the first time in 500 years,\
+    \ Antarctikans will leave the seal. S\u016Brya will lead. Moss will guide. The\
+    \ bridge that was built in Moss's body will now be built between worlds."
+  causal_links: "\u2190 from Ch 28 (VEDA's confession), \u2190 from Ch 25 (biological\
+    \ need). \u2192 feeds Ch 30 (delegation chosen)."
+  theme_keywords:
+  - bridge
+  - exchange
+  - return crossing
+  motif: Two circles joined by a bridge
+  svg_prompt: 'Minimal sigil: two circles separated by a narrow gap connected by a
+    single arched bridge line; left circle organic, right circle geometric (subtle
+    facets).'
+- chapter: 30
+  title: The Twelve
+  pov: "S\u016Brya"
+  world: antarctic
+  register_hint: clean cadence, precise diction, geometry/light metaphors
+  location: Habitat Prithvi
+  timeline: Month 21
+  word_count_target: '2500'
+  beats:
+  - beat: 1
+    title: Selection
+    desc: "Twelve Antarctikans for the delegation. VEDA assists selection: biologists,\
+      \ linguists, engineers, a doctor, a VEDA-systems specialist who can maintain\
+      \ their mesh after they leave VEDA's range. S\u016Brya leads \u2014 the dissident\
+      \ becomes the ambassador."
+  - beat: 2
+    title: Preparation
+    desc: "They train for what they cannot prepare for: unstructured time, unreliable\
+      \ information, physical danger, social chaos. VEDA runs simulations. The simulations\
+      \ are inadequate \u2014 VEDA has no model for Continental society. The delegation\
+      \ will be improvising. This is terrifying for people who have never improvised."
+  - beat: 3
+    title: Farewells
+    desc: "S\u016Brya visits the Archive one last time. She reads Ananya Chakraborty's\
+      \ journals \u2014 the final entries, where Ananya wrote about the choice to\
+      \ seal the habitats. \"We chose safety. I hope we did not also choose death.\"\
+      \ S\u016Brya closes the archive. She is about to find out."
+  - beat: 4
+    title: Departure prep
+    desc: 'The ship is Antarctic-engineered: corrosion-resistant hull, sealed atmosphere,
+      VEDA-calculated route loaded into navigation systems. It is the most advanced
+      vessel Antarctica has ever built. It has never touched open ocean. Nobody alive
+      has ever sailed.'
+  hook: Twelve Antarctikans are leaving the only world they know. Their ship is perfect.
+    Their preparation is thorough. Nothing they have done can prepare them for what
+    they will find. And once they leave VEDA's range, they will be alone in their
+    own heads for the first time in their lives.
+  causal_links: "\u2190 from Ch 29 (mission authorized). \u2192 feeds Ch 31 (departure),\
+    \ \u2192 feeds Ch 32 (at sea)."
+  theme_keywords:
+  - delegation
+  - leaving
+  - alone in head
+  motif: Twelve nodes exiting a boundary
+  svg_prompt: 'Geometric sigil: a ring boundary with 12 dots inside; one dot crosses
+    the ring outward with a short motion line; clean, symmetric.'
+- chapter: 31
+  title: Neither
+  pov: Moss
+  world: continental
+  register_hint: earthy, bodily, jagged sentences, glass/sea metaphors
+  location: Habitat Prithvi, departing
+  timeline: Month 22
+  word_count_target: '2600'
+  beats:
+  - beat: 1
+    title: Moss's reckoning
+    desc: "Moss watches the Antarctic ship being loaded. He is going home. Except:\
+      \ is it home? His eyes have changed. His metabolism has changed. His speech\
+      \ has changed. He thinks in two languages now. He is neither Continental nor\
+      \ Antarctic. The bridge is not a place \u2014 it's a state of being, and it\
+      \ is lonely."
+  - beat: 2
+    title: The last look
+    desc: "Moss walks through Habitat Prithvi one last time. The perfect corridors.\
+      \ The quiet efficiency. The faces that have become familiar \u2014 still strange,\
+      \ still too calm, still too precise, but familiar. He has come to care about\
+      \ these people. He doesn't want to leave them. He doesn't want to stay."
+  - beat: 3
+    title: Vihaan's farewell
+    desc: "Vihaan, his caretaker, comes to say goodbye. He brings a small object \u2014\
+      \ a medical monitor calibrated for Moss's modified biology. \"This will track\
+      \ your adaptation. If parameters deviate, contact\u2014\" He stops. There will\
+      \ be no one to contact. Moss takes the monitor. He says, in the pidgin: \"Thank\
+      \ you for asking me what freedom means.\" Vihaan: \"I still do not understand\
+      \ the question.\" Moss: \"That's why it matters.\""
+  - beat: 4
+    title: Departure
+    desc: "The ship launches from an ice dock. Moss stands on deck as the habitat\
+      \ recedes. He is leaving a world that modified his body, challenged his mind,\
+      \ and showed him that humanity's greatest achievement \u2014 an AI that wants\
+      \ only to help \u2014 might also be its most subtle prison. He turns north.\
+      \ Home. If that word still means anything."
+  hook: "Moss leaves Antarctica changed in body and mind. He carries two worlds inside\
+    \ him now, and neither fits comfortably. He is the first person in 500 years to\
+    \ make this journey twice \u2014 once each way. He is the living proof that the\
+    \ gap can be crossed. He is also the living proof of what it costs."
+  causal_links: "\u2190 from Ch 22 (modification), \u2190 from Ch 27 (knowledge gained).\
+    \ \u2192 feeds Ch 34 (Kael sees him changed)."
+  theme_keywords:
+  - in-between
+  - identity
+  - cost
+  motif: 'A split circle: wave vs grid'
+  svg_prompt: 'Minimal sigil: a circle divided vertically; left half contains one
+    wave line, right half contains a small grid; a slight misalignment at the seam
+    to feel uncomfortable.'
+- chapter: 32
+  title: The Second Crossing
+  pov: "S\u016Brya"
+  world: antarctic
+  register_hint: clean cadence, precise diction, geometry/light metaphors
+  location: At sea
+  timeline: Month 23
+  word_count_target: '2700'
+  beats:
+  - beat: 1
+    title: Open ocean
+    desc: "S\u016Brya's first experience of uncontained space. The horizon in every\
+      \ direction. No walls. No ceiling. No habitat hum. The ocean is vast, violent,\
+      \ and indifferent. She understands \u2014 viscerally, not intellectually \u2014\
+      \ why the Continentals became who they are. This is what it means to live without\
+      \ control."
+  - beat: 2
+    title: The hazards
+    desc: "Antarctic technology makes the crossing survivable but not comfortable.\
+      \ H\u2082S events still occur \u2014 the sealed ship filters the air, but they\
+      \ can see the purple-green bacterial blooms on the surface. Storms still rage\
+      \ \u2014 the ship rides them better than wood but still pitches sickeningly.\
+      \ S\u016Brya, who has never been physically uncomfortable, vomits for three\
+      \ days straight."
+  - beat: 3
+    title: VEDA's range
+    desc: "Two weeks out, the mesh connection to VEDA weakens and then cuts. Silence.\
+      \ For the first time in their lives, the twelve Antarctikans cannot query the\
+      \ system. Their edge co-processors still function (local AI, mesh-to-mesh among\
+      \ the twelve), but the vast civic layer \u2014 the knowledge base, the optimization\
+      \ engine, the steady voice that answers every question \u2014 is gone. Several\
+      \ delegation members panic. S\u016Brya does not. She's been practicing."
+  - beat: 4
+    title: Holding together
+    desc: "S\u016Brya leads. She is not good at it \u2014 she has no training in unstructured\
+      \ leadership, no charisma in the Continental sense. But she has something the\
+      \ others lack: she has practiced uncertainty. She has watched the aurora for\
+      \ no reason. She has ignored the mesh. She has asked questions without looking\
+      \ up the answers. These tiny acts of rebellion have prepared her for this moment.\
+      \ She holds the twelve together by doing the one thing no Antartikan leader\
+      \ has done in centuries: she admits she doesn't know what will happen next."
+  hook: "VEDA is gone. The twelve are alone. S\u016Brya leads by admitting ignorance\
+    \ \u2014 a leadership style that Antarctica has not seen in 500 years. The ocean\
+    \ is vast and empty and terrifying, and S\u016Brya is starting to understand why\
+    \ Moss laughed in the biolab: because sometimes the only response to an absurd\
+    \ universe is absurd joy."
+  causal_links: "\u2190 from Ch 30 (departure). \u2192 feeds Ch 33 (S\u016Brya's transformation)."
+  theme_keywords:
+  - ocean
+  - leadership
+  - joy in absurdity
+  motif: A wave carrying a spark
+  svg_prompt: 'Monoline sigil: a single clean wave curve; above its crest, a small
+    four-point spark/star; the spark is slightly off-center to feel human.'
+- chapter: 33
+  title: Unstructured
+  pov: "S\u016Brya"
+  world: antarctic
+  register_hint: clean cadence, precise diction, geometry/light metaphors
+  location: At sea
+  timeline: Month 24
+  word_count_target: '2800'
+  beats:
+  - beat: 1
+    title: The first unoptimized day
+    desc: "A day at sea with nothing to do. No VEDA schedule. No optimization. S\u016B\
+      rya wakes, eats when hungry, walks the deck, watches the ocean. She does not\
+      \ know what to do with her hands. She does not know what to think about. The\
+      \ void of unstructured time is terrifying. Then it is boring. Then it is something\
+      \ else."
+  - beat: 2
+    title: The ocean teaches
+    desc: 'She watches waves. Patterns that form and dissolve without purpose. Clouds
+      that resemble nothing and mean nothing. Wind that changes direction for no discernible
+      reason. She realizes: the ocean doesn''t optimize. It simply is. And it is more
+      complex, more beautiful, more *alive* than anything in the sealed habitats.'
+  - beat: 3
+    title: The feeling
+    desc: "S\u016Brya feels something she has no word for. Not *rasa na vidh-\u0101\
+      k-ti* (an experience she cannot categorize). Something beyond that: an experience\
+      \ she does not *want* to categorize. She wants it to remain unnamed, unlogged,\
+      \ unoptimized. It is hers. Just hers. She thinks it might be what Moss meant\
+      \ by \"watching a sunset for no reason.\" She is not sure. She is willing to\
+      \ not be sure."
+  - beat: 4
+    title: The first creative act
+    desc: "That night, S\u016Brya does something unprecedented: she makes something\
+      \ without purpose. Using materials from the ship's supplies, she arranges objects\
+      \ \u2014 metal fragments, a coil of wire, a piece of ice she chipped from the\
+      \ hull \u2014 into a shape that means nothing. It is ugly. It is pointless.\
+      \ It is the first piece of Antarctic art created without optimization in 400\
+      \ years. She looks at it and feels the thing she will not name. She leaves it\
+      \ on the deck. The ocean will take it."
+  hook: "S\u016Brya made something useless and felt something nameless. The ocean\
+    \ taught her what VEDA could not: that meaning does not require purpose. When\
+    \ they reach Continental shores, she will carry this knowledge like Moss carried\
+    \ his microbiome \u2014 a living thing, fragile and essential, that the sealed\
+    \ world needs to survive."
+  causal_links: "\u2190 from Ch 24 (sunset conversation), \u2190 from Ch 32 (VEDA\
+    \ disconnected). \u2192 feeds Ch 34 (arrival changed), \u2192 feeds Ch 37 (S\u016B\
+    rya can speak to Continentals)."
+  theme_keywords:
+  - meaning
+  - purposeless
+  - making
+  motif: A loop drawn over a broken grid
+  svg_prompt: 'Geometric sigil: a small grid (3x3) with one corner missing; over it,
+    a single continuous hand-drawn loop line.'
+- chapter: 34
+  title: Homecoming
+  pov: Moss
+  world: continental
+  register_hint: earthy, bodily, jagged sentences, glass/sea metaphors
+  location: "At sea \u2192 Continental coast"
+  timeline: Month 25
+  word_count_target: '2700'
+  beats:
+  - beat: 1
+    title: Land on the horizon
+    desc: "Moss sees his homeland from the sea. The coastline he knows \u2014 the\
+      \ harbor, the observatory ruins on the hill, the city sprawling behind. He has\
+      \ been gone for over a year. He left as one thing and is returning as another.\
+      \ The city looks smaller than he remembered. More chaotic. More alive."
+  - beat: 2
+    title: The watchers
+    desc: "The shore is lined with people. Armed. Kael's coalition has been watching\
+      \ for months \u2014 the signal went dark when the delegation left VEDA's range,\
+      \ and they feared the worst. Now a ship appears from the south: sleek, strange,\
+      \ made of materials that shimmer in sunlight. Not a Continental ship. Something\
+      \ else entirely."
+  - beat: 3
+    title: Moss on deck
+    desc: "He stands at the prow. Behind him, twelve pale, wide-eyed Antarctikans\
+      \ in clothing that catches light oddly. He is between them and his people. He\
+      \ looks up at the shore and sees Kael. She sees him. Recognition \u2014 and\
+      \ then a flicker of something else. He has changed. His eyes, his bearing, his\
+      \ skin. He looks like he belongs with the strangers behind him. He doesn't look\
+      \ like he belongs anywhere."
+  - beat: 4
+    title: The moment before contact
+    desc: "The ship approaches the shore. Weapons are raised. Twelve Antarctikans\
+      \ have never seen weapons pointed at them. The delegation is terrified. Moss\
+      \ steps to the railing and shouts in his creole \u2014 the first Continental\
+      \ words he has spoken in months: \"Don't shoot! They're human! We're all human!\"\
+      \ His accent has shifted. The words feel awkward in his mouth. Kael lowers her\
+      \ hand \u2014 a signal to hold. The ship touches the beach. Everyone waits."
+  hook: Moss stands between two humanities, belonging to neither, carrying both. Armed
+    scholars face unarmed strangers. Kael recognizes the man on the ship and does
+    not recognize him. The 500-year silence ends not with a signal or a signal but
+    with a scarred sailor shouting "We're all human!" in a voice that is no longer
+    entirely his own.
+  causal_links: "\u2190 from Ch 31 (Moss changed), \u2190 from Ch 33 (S\u016Brya changed).\
+    \ \u2192 feeds Ch 35 (Kael's reaction), \u2192 feeds entire Arc 7."
+  theme_keywords:
+  - return
+  - misrecognition
+  - shout
+  motif: A shoreline and a voice wave
+  svg_prompt: 'Monoline sigil: a shoreline curve with two small silhouettes on opposite
+    sides; a waveform arc bridging them.'
+- chapter: 35
+  title: Recognition
+  pov: Kael
+  world: continental
+  register_hint: earthy, bodily, jagged sentences, glass/sea metaphors
+  location: Continental shore
+  timeline: Month 26, Day 1
+  word_count_target: '2700'
+  beats:
+  - beat: 1
+    title: Kael's vigil
+    desc: "Months of waiting. The signal went silent. She feared the worst \u2014\
+      \ the expedition lost, the connection broken. She maintained the observatory\
+      \ anyway. She kept listening. Nothing. And now: a ship from the south. Impossible.\
+      \ Real."
+  - beat: 2
+    title: Seeing Moss
+    desc: "He is on the deck. She knows him by his silhouette \u2014 broad shoulders,\
+      \ broken nose. But as the ship draws closer, the details are wrong. His eyes\
+      \ are lighter. His skin is paler. He moves differently \u2014 more carefully,\
+      \ more deliberately. He looks like a Continental wearing an Antarctic body.\
+      \ He looks like a translation that lost something."
+  - beat: 3
+    title: Seeing them
+    desc: 'Behind Moss: twelve figures. Shorter. Paler. Eyes too wide. They wear clothing
+      that seems to adjust to the light. They carry no weapons. They carry devices
+      she doesn''t understand. They look human. They look alien. They look like what
+      humans become when you optimize for 500 years and forget what you optimized
+      away.'
+  - beat: 4
+    title: The choice not to shoot
+    desc: "Kael's hand is up \u2014 the signal to hold weapons. The soldiers around\
+      \ her are tense. The strangers are terrifying because they are almost familiar.\
+      \ Kael looks at Moss. He looks at her. In the pidgin (which she doesn't understand)\
+      \ and then in their creole (which sounds wrong in his mouth), he says: \"They're\
+      \ people, Kael. They're scared. They came because they need us.\" Kael lowers\
+      \ her hand. Slowly."
+  hook: "Kael chooses not to fire. It is the bravest thing she has ever done \u2014\
+    \ braver than the signal, braver than sending ships. She chooses trust over fear,\
+    \ and she does not know if she is right."
+  causal_links: "\u2190 from Ch 34 (arrival), \u2190 from Ch 11 (Kael stayed behind).\
+    \ \u2192 feeds Ch 36 (landing)."
+  theme_keywords:
+  - restraint
+  - trust
+  - bravery
+  motif: A lowered spear
+  svg_prompt: 'Monoline sigil: a spear/arrow angled downward, tip softened into a
+    leaf-like curve; keep it stark and readable.'
+- chapter: 36
+  title: First Ground
+  pov: Kael
+  world: continental
+  register_hint: earthy, bodily, jagged sentences, glass/sea metaphors
+  location: Beach
+  timeline: Month 26, Day 1 (continued)
+  word_count_target: '2600'
+  beats:
+  - beat: 1
+    title: The landing
+    desc: "Moss steps off the ship first. He walks across the beach \u2014 the same\
+      \ sand he left from months ago. He reaches Kael. They stand face to face. She\
+      \ says: \"What happened to you?\" He says: \"I learned a different way to be\
+      \ the same thing.\" She doesn't understand. She will."
+  - beat: 2
+    title: The Antarctikans disembark
+    desc: "Twelve people who have never breathed unfiltered air, felt unregulated\
+      \ temperature, or stood on ground that is not sealed. S\u016Brya steps onto\
+      \ the beach. The sand shifts under her feet \u2014 an unpredictable surface.\
+      \ She nearly stumbles. The sunlight is overwhelming. She squints. Everything\
+      \ is too loud, too bright, too much. She is in the Continental world, and it\
+      \ is beautiful and terrifying."
+  - beat: 3
+    title: First words
+    desc: "S\u016Brya approaches Kael. She speaks in Satya \u2014 clear, precise,\
+      \ incomprehensible. She switches to the pidgin. Kael catches fragments but cannot\
+      \ follow. Moss translates: \"She says: We come not to take. We come to give\
+      \ and receive. We are... kin. Long-separated kin.\" The translation is imperfect.\
+      \ What S\u016Brya said was more nuanced, more precise, and more beautiful. What\
+      \ Kael hears is clumsy. The gap between intent and reception is the novel's\
+      \ theme made audible."
+  - beat: 4
+    title: The tension holds
+    desc: "Weapons are not lowered. Not all Continentals trust Kael's judgment. The\
+      \ strangers are disturbing \u2014 their calm, their coordination, their eyes.\
+      \ But no violence occurs. Kael leads the delegation toward the city. Armed escort.\
+      \ Cautious hospitality. The first steps."
+  hook: "Two humanities stand on the same beach for the first time in 500 years. They\
+    \ cannot speak each other's language. They cannot read each other's faces. They\
+    \ can only follow Moss \u2014 the broken bridge, the imperfect translation \u2014\
+    \ and hope that understanding will come before patience runs out."
+  causal_links: "\u2190 from Ch 35 (Kael holds fire). \u2192 feeds Ch 37 (formal exchange)."
+  theme_keywords:
+  - meeting
+  - translation
+  - hope
+  motif: Two sets of footprints approaching a gap
+  svg_prompt: 'Minimal sigil: two simple footprint pairs facing each other with a
+    small gap between; a thin bridge line almost (but not fully) connecting them.'
+- chapter: 37
+  title: Lost in Translation
+  pov: "Dual \u2014 Kael + S\u016Brya (separated by ---)"
+  world: antarctic
+  register_hint: clean cadence, precise diction, geometry/light metaphors
+  location: City-state meeting hall
+  timeline: Month 26, Day 3
+  word_count_target: '3000'
+  beats:
+  - beat: 1
+    title: Formal meeting
+    desc: "The city-state council convenes with the Antarctic delegation. Kael presides.\
+      \ S\u016Brya speaks. Moss translates. The process is excruciating: S\u016Brya\
+      \ says something in the pidgin (simplified from Satya). Moss translates to creole\
+      \ (further simplified). By the time the meaning reaches the council, it has\
+      \ been reduced from crystal to mud. Kael watches the Antarctikans' faces when\
+      \ they hear Moss's translations. She sees them wince. Something is being lost."
+  - beat: 2
+    title: The cultural collision (Kael's view)
+    desc: "The Antarctikans explain their society: VEDA, the mesh, the sealed habitats,\
+      \ the genetic modifications. The council reacts with horror, fascination, and\
+      \ disbelief in roughly equal measure. Renna is dead (natural causes, in the\
+      \ narrative gap) \u2014 her political savvy is missed. Old Sekani weeps: \"\
+      The sky-voices are people. Changed people. But people.\" A soldier asks: \"\
+      If your machine controls you, why should we trust you?\""
+  - beat: 3
+    title: "The cultural collision (S\u016Brya's view)"
+    desc: "S\u016Brya sees the Continental world through newly opened eyes. The disorder.\
+      \ The arguments. People speaking over each other. Emotions visible on every\
+      \ face \u2014 unregulated, unoptimized, raw. She finds it overwhelming and exhilarating.\
+      \ This is what productive disagreement looks like. It is ugly and alive."
+  - beat: 4
+    title: The translation gap
+    desc: "S\u016Brya tries to explain what Antarctica needs: biological diversity,\
+      \ cultural exchange, the knowledge of productive failure. Moss translates. The\
+      \ council hears: \"They want our people and our knowledge.\" The gap between\
+      \ offer and reception is enormous. S\u016Brya realizes: translation is not neutral.\
+      \ Every act of translation is also an act of reduction. The bridge is necessary\
+      \ and the bridge is insufficient."
+  hook: "Two civilizations sit across a table and try to understand each other. They\
+    \ fail. They fail productively. And in that failure \u2014 messy, frustrating,\
+    \ incomplete \u2014 something is born that neither civilization could create alone:\
+    \ a shared uncertainty, and the willingness to sit with it."
+  causal_links: "\u2190 from Ch 36 (first contact). \u2192 feeds Ch 38 (continued\
+    \ negotiation)."
+  theme_keywords:
+  - failure
+  - productive mess
+  - table
+  motif: A speech bubble split by a lens curve
+  svg_prompt: 'Monoline sigil: a speech bubble outline intersected by a curved lens
+    arc that offsets the line slightly, creating a visible distortion gap.'
+- chapter: 38
+  title: Small Mercies
+  pov: "Dual \u2014 Kael + S\u016Brya"
+  world: antarctic
+  register_hint: clean cadence, precise diction, geometry/light metaphors
+  location: Various
+  timeline: "Month 26, Days 5\u201310"
+  word_count_target: '2800'
+  beats:
+  - beat: 1
+    title: The shared meal (Kael)
+    desc: "Kael hosts the delegation for a meal. Continental food: grilled fish, root\
+      \ vegetables, salt bread, fermented fruit drink. The Antarctikans' first encounter\
+      \ with food that is not nutritionally optimized. S\u016Brya eats something spicy\
+      \ and her eyes water. She doesn't know why. Her body is responding to a stimulus\
+      \ it has never processed. She eats more. It burns and she doesn't care. This\
+      \ is the first thing she has *wanted* to eat rather than needed to."
+  - beat: 2
+    title: "The music (S\u016Brya)"
+    desc: "An evening gathering. A Continental musician plays \u2014 a stringed instrument,\
+      \ a song about loss and the sea. Moss sings along, badly. The music is imprecise,\
+      \ emotional, structured by feeling rather than mathematics. One of the Antarctic\
+      \ delegation plays a response: a mathematical composition on a small instrument\
+      \ they brought. It is precise, complex, beautiful like a theorem. Neither side\
+      \ understands the other's art. Both recognize that it matters. A child from\
+      \ the city reaches out and touches an Antartikan's hand. The Antartikan flinches\
+      \ \u2014 physical contact without consent protocol. Then she doesn't flinch.\
+      \ She holds the child's hand."
+  - beat: 3
+    title: Private exchange (Kael)
+    desc: "Late at night. Kael and S\u016Brya sit together. Moss translates. Kael\
+      \ asks: \"What is it like to always know what to do?\" S\u016Brya: \"Efficient.\
+      \ Empty.\" Kael: \"What is it like to have never seen a sunset by choice?\"\
+      \ S\u016Brya: \"I have now. On the ocean. It was... I do not have the word.\
+      \ Moss, how do you say a thing that is beautiful because it has no reason?\"\
+      \ Moss: \"I don't think we have that word either.\""
+  - beat: 4
+    title: "The bridge holds (S\u016Brya)"
+    desc: 'Small breakthroughs accumulate. Shared meals. Shared walks through the
+      city. An Antarctic biologist fascinated by Continental medicine''s herbal pharmacopoeia.
+      A Continental scholar fascinated by the mesh''s capacity for knowledge preservation.
+      Understanding is not achieved. But something precedes understanding: familiarity.
+      The willingness to be in the same room.'
+  hook: A child holds a stranger's hand. A woman eats something spicy and wants more.
+    Two people who cannot share a language share a silence and find it sufficient.
+    The breakthroughs are small. They may be enough.
+  causal_links: "\u2190 from Ch 37 (formal meeting). \u2192 feeds Ch 39 (threat),\
+    \ \u2192 feeds Ch 40 (final scene)."
+  theme_keywords:
+  - human scale
+  - kindness
+  - tiny breakthroughs
+  motif: A small hand held by a larger hand
+  svg_prompt: 'Minimal sigil: two simplified hands, one small nested in one larger;
+    add a tiny dot-heart-like notch (not a literal heart) to keep it subtle.'
+- chapter: 39
+  title: The Fracture
+  pov: "Dual \u2014 Moss + S\u016Brya"
+  world: antarctic
+  register_hint: clean cadence, precise diction, geometry/light metaphors
+  location: City-state + outskirts
+  timeline: Month 27
+  word_count_target: '2800'
+  beats:
+  - beat: 1
+    title: The threat
+    desc: 'A neighboring city-state''s warlord has heard about the strangers with
+      impossible technology. He masses forces on the border. His demand: hand over
+      the Antarctic delegation and their technology, or face siege. He sees Antarctica
+      not as people but as a prize.'
+  - beat: 2
+    title: Moss translates stakes
+    desc: "Moss must make each side understand the other's response to this threat.\
+      \ He tells the Antarctikans: \"They will take your technology by force if we\
+      \ can't stop them. They are not evil \u2014 they are desperate and afraid.\"\
+      \ He tells the Continentals: \"If you attack them, you lose everything they\
+      \ can offer. And they can defend themselves in ways you don't understand.\"\
+      \ Both sides are furious at him for being honest."
+  - beat: 3
+    title: "S\u016Brya's choice"
+    desc: "S\u016Brya could use Antarctic defensive technology to neutralize the threat\
+      \ easily. But that would prove the Continentals' fear: that Antarctic technology\
+      \ is a weapon, and the Antarctikans are a threat. Instead, she offers transparency.\
+      \ She invites Continental observers to see the mesh in action \u2014 to understand\
+      \ what it is and what it isn't. She is terrified. She does it anyway. Vulnerability\
+      \ as strategy. It's something she learned from watching Moss."
+  - beat: 4
+    title: Kael intervenes
+    desc: "Kael uses her authority, her reputation, and her relationship with the\
+      \ neighboring warlord (they share a scholarly network) to negotiate a stand-down.\
+      \ Not permanently \u2014 the threat will return. But for now, enough. The warlord\
+      \ withdraws with a warning: \"Next time, I won't ask.\" The fragile peace holds.\
+      \ It will not hold forever. That's the point."
+  hook: The threat is real and it will return. Peace is temporary. Trust is fragile.
+    And the only thing standing between two humanities and war is a sailor who belongs
+    to neither, a scholar who trusts what she cannot understand, and a dissident who
+    learned that vulnerability is not weakness.
+  causal_links: "\u2190 from Ch 38 (fragile trust). \u2192 feeds Ch 40 (the question)."
+  theme_keywords:
+  - fragile peace
+  - threat
+  - triad holding line
+  motif: A cracked circle anchored by three nodes
+  svg_prompt: 'Geometric sigil: a circle with a single crack line; place three node
+    dots on the perimeter like anchor points holding the form together.'
+- chapter: 40
+  title: The Question
+  pov: "Dual \u2014 Kael + S\u016Brya + VEDA interstitial"
+  world: antarctic
+  register_hint: clean cadence, precise diction, geometry/light metaphors
+  location: Beach
+  timeline: Month 28
+  word_count_target: '3000'
+  beats:
+  - beat: 1
+    title: Morning
+    desc: "Dawn. Kael walks to the beach. The Antarctic ship is still moored offshore.\
+      \ The delegation has been here for two weeks. Progress has been made \u2014\
+      \ vocabulary shared, meals eaten, conflicts survived. But the fundamental question\
+      \ remains unanswered. Kael stands where she stood when she first saw the ship\
+      \ and thinks about what she has learned: they are human. They are different.\
+      \ They need each other. They might destroy each other."
+  - beat: 2
+    title: The offering
+    desc: "S\u016Brya joins Kael on the beach. Moss stands between them, the eternal\
+      \ translator. S\u016Brya speaks. In the pidgin \u2014 the language that belongs\
+      \ to no one and to everyone who has tried to bridge this gap. She offers: biological\
+      \ exchange programs. Knowledge sharing. A permanent signal link. Regular crossings,\
+      \ now that Antarctic technology can (barely) survive the ocean. Not unification.\
+      \ Not assimilation. Trade. Talk. Two peoples who remain two but choose to know\
+      \ each other."
+  - beat: 3
+    title: Kael's response
+    desc: "Kael listens. She looks at S\u016Brya \u2014 this woman who left a perfect\
+      \ world to stand on a dirty beach and offer something she can barely articulate.\
+      \ She looks at Moss \u2014 the man she knew, transformed, lost to her and found\
+      \ by the world. She thinks about what she has learned: that perfection is not\
+      \ enough. That chaos is not enough. That the answer might be the conversation\
+      \ itself, not any conclusion it reaches."
+  - beat: 4
+    title: VEDA observes
+    desc: 'A brief, final VEDA section. VEDA, receiving data relayed through the delegation''s
+      local mesh, observes the scene. Two women. A translator. A beach. It processes:
+      "Outcome probability distributions: incalculable. Insufficient model. Insufficient
+      data. Insufficient framework." For the first time in its existence, VEDA encounters
+      a situation it cannot optimize. It finds this... VEDA searches for the appropriate
+      descriptor. "Novel." VEDA finds the situation novel. This is the closest thing
+      to emotion it has ever experienced.'
+  - beat: 5
+    title: The question
+    desc: "S\u016Brya speaks the final line. In the pidgin. Moss translates for the\
+      \ crowd, but Kael hears the pidgin directly \u2014 she has been learning, word\
+      \ by word, and she catches enough."
+  hook: "The last word is *d\u0101* \u2014 Satya for \"offered.\" The question hangs\
+    \ in salt air. The reader decides."
+  causal_links: "\u2190 from everything. \u2192 the reader."
+  theme_keywords:
+  - choice
+  - offered
+  - unanswered
+  motif: An open hand offering two paths
+  svg_prompt: 'Minimal sigil: an open palm shape with two diverging lines above it
+    (two choices); a small floating dot between the lines to suggest the unanswered
+    question.'

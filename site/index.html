@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="books.too.foo: a lightweight arcade entry point to read my books."
+    />
+    <title>books.too.foo</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-brand" href="/">
+        <span class="site-mark" aria-hidden="true">b</span>
+        <span class="site-name">books.too.foo</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/#books">Books</a>
+        <a href="https://too.foo/" target="_blank" rel="noopener noreferrer">too.foo</a>
+      </nav>
+    </header>
+
+    <main class="shell">
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="kicker">Book arcade</p>
+        <h1 id="hero-title">A lightweight index of my books.</h1>
+        <p class="lede">
+          Each book lives as a set of web pages (fast to load, easy to translate).
+        </p>
+      </section>
+
+      <section id="books" class="grid" aria-label="Books">
+        <a class="card" href="/butterfly-effect/" style="--d: 0">
+          <div class="card-media" aria-hidden="true">
+            <img
+              class="card-logo"
+              src="/assets/butterfly-effect-logo.svg"
+              alt=""
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">Butterfly Effect</h2>
+            <p class="card-meta">
+              <span class="pill" title="Language">EN</span>
+              <span class="muted">Novel</span>
+            </p>
+            <p class="card-desc">
+              A small action. A vast consequence. (Book page placeholder.)
+            </p>
+          </div>
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-row">
+        <small class="muted">© <span id="year">2026</span> <a href="https://too.foo/" target="_blank" rel="noopener noreferrer">too.foo</a></small>
+        <small class="muted">Built for speed. No trackers.</small>
+      </div>
+    </footer>
+
+    <script>
+      // Tiny nicety: keep the year current without a build step.
+      document.getElementById("year").textContent = String(
+        new Date().getFullYear(),
+      );
+    </script>
+  </body>
+</html>

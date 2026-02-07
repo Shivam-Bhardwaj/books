@@ -1,0 +1,522 @@
+/* BUTTERFLY EFFECT — Reader Stylesheet */
+/* Lightweight, book-like typography for mobile + desktop + print/ebook conversion. */
+
+@font-face {
+  font-family: "Literata";
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url("fonts/literata-latin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Literata";
+  font-style: italic;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url("fonts/literata-latin-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url("fonts/space-grotesk-latin.woff2") format("woff2");
+}
+
+:root {
+  color-scheme: light dark;
+
+  --bg: #f5efe4;
+  --bg-top: #fbf7f0;
+  --text: #17120d;
+  --text-muted: rgba(23, 18, 13, 0.62);
+  --accent: #155e6b;
+  --accent-light: #2a8aa2;
+  --accent-warm: #a85a2a;
+  --glow-cool: rgba(21, 94, 107, 0.10);
+  --glow-warm: rgba(168, 90, 42, 0.08);
+  --border: rgba(23, 19, 14, 0.14);
+  --nav-bg: rgba(252, 248, 241, 0.96);
+  --scene-break: rgba(23, 19, 14, 0.35);
+
+  /* Prefer high-quality book serifs where available; fall back to system serif. */
+  --font-body: "Literata", "Iowan Old Style", "Charter", "Palatino Linotype",
+    Palatino, "Book Antiqua", "Noto Serif", "DejaVu Serif", serif;
+  --font-ui: "Space Grotesk", "Avenir Next", Avenir, "Gill Sans",
+    "Trebuchet MS", sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Monaco, "Cascadia Mono",
+    "Segoe UI Mono", "Roboto Mono", "Noto Sans Mono", "DejaVu Sans Mono",
+    monospace;
+
+  --measure: 72ch;
+  --line-height: 1.68;
+  --content-pad: 1.25rem;
+  --paragraph-indent: 1.5em;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141416;
+    --bg-top: #1a1a1d;
+    --text: #e7dfd6;
+    --text-muted: rgba(231, 223, 214, 0.68);
+    --accent: #7cc2d0;
+    --accent-light: #a1d9e4;
+    --accent-warm: #d28b5f;
+    --glow-cool: rgba(124, 194, 208, 0.10);
+    --glow-warm: rgba(210, 139, 95, 0.08);
+    --border: rgba(231, 223, 214, 0.16);
+    --nav-bg: rgba(26, 26, 29, 0.96);
+    --scene-break: rgba(231, 223, 214, 0.35);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: clamp(16px, 1.2vw + 12px, 20px);
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  font-family: var(--font-body);
+  background:
+    radial-gradient(900px 600px at 18% 6%, var(--glow-cool), transparent 60%),
+    radial-gradient(1000px 700px at 82% 18%, var(--glow-warm), transparent 62%),
+    linear-gradient(180deg, var(--bg-top), var(--bg));
+  color: var(--text);
+  line-height: var(--line-height);
+  font-optical-sizing: auto;
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures contextual;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  color: var(--accent-light);
+}
+
+/* Navigation */
+.chapter-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem var(--content-pad);
+  background: var(--nav-bg);
+  border-bottom: 1px solid var(--border);
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.chapter-nav.bottom {
+  position: static;
+  border-bottom: none;
+  border-top: 1px solid var(--border);
+  margin-top: 4rem;
+}
+
+.chapter-nav a {
+  text-decoration: none;
+  padding: 0.25rem 0;
+}
+
+.chapter-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 2.75rem var(--content-pad) 1.5rem;
+  max-width: var(--measure);
+  margin: 0 auto;
+}
+
+.chapter-sigil {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  color: var(--accent);
+}
+
+.chapter-sigil .sigil {
+  width: 56px;
+  height: 56px;
+  opacity: 0.88;
+}
+
+.arc-label {
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  font-family: var(--font-body);
+  font-size: 1.9rem;
+  font-weight: 500;
+  line-height: 1.22;
+  margin-bottom: 0.5rem;
+}
+
+.chapter-title {
+  font-style: italic;
+  font-weight: 450;
+}
+
+.chapter-meta {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
+/* Chapter body */
+.chapter-body {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 0 var(--content-pad) 4rem;
+}
+
+.chapter-body p {
+  margin: 0;
+  text-indent: var(--paragraph-indent);
+  text-align: justify;
+  text-justify: inter-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
+
+.chapter-body p + p {
+  margin-top: 0.12em;
+}
+
+.chapter-body p:first-of-type {
+  text-indent: 0;
+}
+
+.chapter-body p:first-of-type::first-letter {
+  font-size: 3.1em;
+  float: left;
+  line-height: 0.86;
+  padding-right: 0.07em;
+  padding-top: 0.05em;
+  font-weight: 500;
+  color: var(--text);
+}
+
+/* Scene breaks */
+hr.scene-break {
+  border: none;
+  text-align: center;
+  margin: 2.5rem 0;
+}
+
+hr.scene-break::before {
+  content: '· · ·';
+  color: var(--scene-break);
+  font-size: 1.2rem;
+  letter-spacing: 0.5em;
+}
+
+blockquote {
+  margin: 1.75rem 0;
+  padding: 0.25rem 0 0.25rem 1rem;
+  border-left: 2px solid var(--border);
+  color: var(--text-muted);
+}
+
+blockquote p {
+  text-indent: 0;
+  text-align: left;
+  -webkit-hyphens: none;
+  hyphens: none;
+}
+
+/* Dialogue and emphasis */
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* Satya language words */
+.satya {
+  font-style: italic;
+  color: var(--accent);
+}
+
+/* VEDA interstitial sections */
+.veda-voice {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-left: 2px solid var(--accent);
+  background: var(--nav-bg);
+}
+
+/* Primary documents (in-world excerpts) */
+.primary-document {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border: 1px solid var(--border);
+  background: var(--nav-bg);
+}
+
+.primary-document .doc-header {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Index page */
+.toc-nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem var(--content-pad);
+  max-width: var(--measure);
+  margin: 0 auto;
+}
+
+.toc-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.42rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--nav-bg);
+  color: var(--text);
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.toc-pill:hover {
+  background: color-mix(in srgb, var(--nav-bg) 78%, #fff 22%);
+  border-color: color-mix(in srgb, var(--border) 55%, var(--accent) 45%);
+  color: var(--accent);
+}
+
+.index-header {
+  text-align: center;
+  padding: 3.25rem var(--content-pad) 2rem;
+}
+
+.index-header h1 {
+  font-family: var(--font-body);
+  font-size: 2.65rem;
+  font-weight: 550;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.5rem;
+}
+
+.index-header .subtitle {
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+.arc-group {
+  max-width: var(--measure);
+  margin: 2rem auto;
+  padding: 0 var(--content-pad);
+}
+
+.arc-group h2 {
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.chapter-link {
+  display: grid;
+  grid-template-columns: 42px 3.2em 1fr;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 0.65rem 0.25rem;
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(23, 18, 13, 0.06);
+  border-radius: 10px;
+}
+
+.chapter-link:hover {
+  color: var(--accent);
+  background: rgba(21, 94, 107, 0.06);
+}
+
+.chapter-link .chapter-sigil {
+  margin: 0;
+  justify-content: flex-start;
+  color: var(--text-muted);
+}
+
+.chapter-link .sigil {
+  width: 34px;
+  height: 34px;
+  opacity: 0.82;
+}
+
+.chapter-number {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.chapter-text {
+  display: block;
+}
+
+.chapter-text .chapter-title {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 1.02rem;
+  line-height: 1.25;
+}
+
+.chapter-text .chapter-sub {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  color: var(--text-muted);
+  margin-top: 0.1rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  :root {
+    --content-pad: 1rem;
+    --paragraph-indent: 1.25em;
+  }
+
+  header {
+    padding: 2.25rem var(--content-pad) 1.25rem;
+  }
+
+  .chapter-sigil .sigil {
+    width: 50px;
+    height: 50px;
+  }
+
+  header h1 {
+    font-size: 1.55rem;
+  }
+
+  .chapter-body {
+    padding: 0 var(--content-pad) 3rem;
+  }
+
+  /* Justification on narrow screens can look gappy; hyphenation helps, but keep it conservative. */
+  /* Drop caps fight for space on small screens. */
+  .chapter-body p:first-of-type::first-letter {
+    float: none;
+    font-size: 1em;
+    line-height: inherit;
+    padding: 0;
+    font-weight: inherit;
+  }
+
+  .chapter-nav {
+    position: static;
+  }
+
+  .chapter-link {
+    grid-template-columns: 36px 2.8em 1fr;
+    gap: 0.6rem;
+    padding: 0.6rem 0.2rem;
+    border-radius: 8px;
+  }
+
+  .chapter-link .sigil {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --content-pad: 1.5rem;
+  }
+}
+
+/* Reading progress bar */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: var(--accent);
+  z-index: 100;
+  transition: width 0.1s ease;
+}
+
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .chapter-nav {
+    display: none;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+}

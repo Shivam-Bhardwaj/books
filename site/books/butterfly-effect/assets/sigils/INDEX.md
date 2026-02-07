@@ -1,0 +1,42 @@
+# Sigils
+
+- Chapter 01: `ch01-lensmaker.svg` — The Lensmaker
+- Chapter 02: `ch02-optimal-day.svg` — The Optimal Day
+- Chapter 03: `ch03-dish.svg` — The Dish
+- Chapter 04: `ch04-council-convenes.svg` — The Council Convenes
+- Chapter 05: `ch05-transmission.svg` — Transmission
+- Chapter 06: `ch06-probability-of-ruin.svg` — The Probability of Ruin
+- Chapter 07: `ch07-glass-eyes.svg` — The Glass-Eyes
+- Chapter 08: `ch08-adharma.svg` — Adharma
+- Chapter 09: `ch09-grammar-of-contact.svg` — The Grammar of Contact
+- Chapter 10: `ch10-double-helix.svg` — The Double Helix
+- Chapter 11: `ch11-argument.svg` — The Argument
+- Chapter 12: `ch12-volunteer.svg` — The Volunteer
+- Chapter 13: `ch13-secret-signal.svg` — The Secret Signal
+- Chapter 14: `ch14-twelve-ships.svg` — Twelve Ships
+- Chapter 15: `ch15-reckoning.svg` — The Reckoning
+- Chapter 16: `ch16-landfall.svg` — Landfall
+- Chapter 17: `ch17-handler.svg` — Handler
+- Chapter 18: `ch18-pointing.svg` — Pointing
+- Chapter 19: `ch19-voice-in-the-wall.svg` — The Voice in the Wall
+- Chapter 20: `ch20-network.svg` — The Network
+- Chapter 21: `ch21-fever.svg` — Fever
+- Chapter 22: `ch22-modification.svg` — Modification
+- Chapter 23: `ch23-carried-past.svg` — The Carried Past
+- Chapter 24: `ch24-sunset.svg` — The Sunset
+- Chapter 25: `ch25-diversity-within.svg` — The Diversity Within
+- Chapter 26: `ch26-terminal-entropy.svg` — Terminal Entropy
+- Chapter 27: `ch27-deleted-library.svg` — The Deleted Library
+- Chapter 28: `ch28-confession.svg` — The Confession
+- Chapter 29: `ch29-symbiosis.svg` — Symbiosis
+- Chapter 30: `ch30-the-twelve.svg` — The Twelve
+- Chapter 31: `ch31-neither.svg` — Neither
+- Chapter 32: `ch32-second-crossing.svg` — The Second Crossing
+- Chapter 33: `ch33-unstructured.svg` — Unstructured
+- Chapter 34: `ch34-homecoming.svg` — Homecoming
+- Chapter 35: `ch35-recognition.svg` — Recognition
+- Chapter 36: `ch36-first-ground.svg` — First Ground
+- Chapter 37: `ch37-lost-in-translation.svg` — Lost in Translation
+- Chapter 38: `ch38-small-mercies.svg` — Small Mercies
+- Chapter 39: `ch39-the-fracture.svg` — The Fracture
+- Chapter 40: `ch40-the-question.svg` — The Question

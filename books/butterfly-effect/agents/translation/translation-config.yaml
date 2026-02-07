@@ -1,0 +1,57 @@
+meta:
+  name: "The Sundering - Local Translation Config"
+  note: "Primary target is high-quality literary translation via local GPU MT, with optional human/LLM post-edit."
+
+model:
+  # NLLB covers many languages and runs locally on GPU with transformers.
+  name: "facebook/nllb-200-1.3B"
+  source_lang: "eng_Latn"
+  # Generation defaults (can be overridden by CLI)
+  generate:
+    num_beams: 5
+    max_new_tokens: 512
+
+targets:
+  hi: "hin_Deva"
+  es: "spa_Latn"
+  ru: "rus_Cyrl"
+  ar: "arb_Arab"
+  zh-hans: "zho_Hans"
+  zh-hant: "zho_Hant"
+  ko: "kor_Hang"
+
+protected:
+  # Keep these as-is across all translations.
+  tokens:
+    - "VEDA"
+    - "Kael"
+    - "Moss"
+    - "Sūrya"
+    - "Tidemouth"
+    - "Satya"
+    - "SĀDHU"
+
+  # Satya terms should remain italicized and untranslated.
+  satya_terms:
+    - "dā"
+    - "nī"
+    - "pū"
+    - "dharma"
+    - "adharma"
+    - "rasa"
+    - "mānava"
+    - "vidhi"
+    - "ākāśa"
+    - "prāṇa"
+    - "āhāra"
+    - "jala"
+    - "agni"
+    - "vāyu"
+    - "bhūmi"
+    - "kāla"
+    - "śakti"
+    - "netra"
+    - "mati"
+    - "bandhu"
+    - "śūnya"
+

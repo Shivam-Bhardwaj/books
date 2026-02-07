@@ -1,0 +1,30 @@
+# Editors / OS
+.DS_Store
+
+# Obsidian
+.obsidian/workspace.json
+
+# Node
+node_modules/
+
+# Wrangler
+.wrangler/state/
+.wrangler/tmp/
+
+# Python
+**/__pycache__/
+.venv/
+**/.venv/
+
+# Model/tool caches
+**/.hf-cache/
+
+# Playwright
+playwright-report/
+test-results/
+
+# Local artifacts (audit screenshots, etc.)
+artifacts/
+
+# Generated book output (keep if you want published output in-repo; remove if needed)
+books/**/build/index.html

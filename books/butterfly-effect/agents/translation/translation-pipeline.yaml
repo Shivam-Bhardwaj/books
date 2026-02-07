@@ -1,0 +1,148 @@
+meta:
+  name: "The Sundering - Translation Pipeline"
+  note: "Multi-engine MT + algorithmic scoring/QE selection. Designed for local GPU use."
+
+# Output layout (matches existing translations/ convention)
+io:
+  output_root: "translations"
+
+# Tokens that must survive translation exactly as-is.
+protected:
+  # Also load `schema/entities.yaml:do_not_translate_tokens` when true.
+  include_entities_registry: true
+
+  # Extra tokens not in entities registry (or to override in one place).
+  tokens:
+    - "VEDA"
+    - "Kael"
+    - "Moss"
+    - "Sūrya"
+    - "Tidemouth"
+    - "Satya"
+    - "SĀDHU"
+    - "H₂S"
+    - "VLF"
+    - "HF"
+    - "VHF"
+    - "UHF"
+    - "LEO"
+    - "GEO"
+
+  # Satya terms should remain italicized and untranslated.
+  # The pipeline protects both `term` and `*term*`.
+  satya_terms:
+    - "dā"
+    - "nī"
+    - "pū"
+    - "dharma"
+    - "adharma"
+    - "rasa"
+    - "mānava"
+    - "vidhi"
+    - "ākāśa"
+    - "prāṇa"
+    - "āhāra"
+    - "jala"
+    - "agni"
+    - "vāyu"
+    - "bhūmi"
+    - "kāla"
+    - "śakti"
+    - "netra"
+    - "mati"
+    - "bandhu"
+    - "śūnya"
+
+targets:
+  # Expand this list freely. Engines define their own language-code mappings below.
+  - id: "hi"
+    label: "Hindi"
+  - id: "es"
+    label: "Spanish"
+  - id: "ru"
+    label: "Russian"
+  - id: "ar"
+    label: "Arabic"
+  - id: "zh-hans"
+    label: "Chinese (Simplified)"
+  - id: "zh-hant"
+    label: "Chinese (Traditional)"
+  - id: "ko"
+    label: "Korean"
+
+selection:
+  # `chapter` keeps voice consistent by choosing one engine for the whole chapter.
+  # `paragraph` can mix engines but risks style drift.
+  mode: "chapter"
+
+qe:
+  # Research-grade QE (reference-free) if you have access/acceptance on HuggingFace.
+  # COMETKiwi models often require license acceptance and an HF token.
+  cometkiwi:
+    enabled: false
+    model: "Unbabel/wmt22-cometkiwi-da"
+    batch_size: 8
+    device: "auto"
+
+  # Deterministic fallback scorer: cross-lingual embedding similarity.
+  embed_fallback:
+    enabled: true
+    model: "intfloat/multilingual-e5-small"
+    batch_size: 16
+    device: "auto"
+
+engines:
+  # NLLB baseline (already working locally).
+  nllb:
+    enabled: true
+    type: "nllb-200"
+    model: "facebook/nllb-200-1.3B"
+    source_lang: "eng_Latn"
+    targets:
+      hi: "hin_Deva"
+      es: "spa_Latn"
+      ru: "rus_Cyrl"
+      ar: "arb_Arab"
+      zh-hans: "zho_Hans"
+      zh-hant: "zho_Hant"
+      ko: "kor_Hang"
+    generate:
+      num_beams: 5
+      max_new_tokens: 512
+
+  # SeamlessM4T v2 (text MT). Often strong for fluency.
+  seamless_v2:
+    enabled: true
+    type: "seamless-m4t-v2-text"
+    model: "facebook/seamless-m4t-v2-medium"
+    targets:
+      hi: "hin"
+      es: "spa"
+      ru: "rus"
+      ar: "arb"
+      zh-hans: "cmn"
+      zh-hant: "cmn_Hant"
+      ko: "kor"
+    generate:
+      num_beams: 5
+      max_new_tokens: 512
+
+  # MADLAD-400 (3B). High quality, but heavier; enable if you want the extra candidate.
+  # Uses a target-language prefix token like "<2es>".
+  madlad400:
+    enabled: false
+    type: "madlad400"
+    model: "google/madlad400-3b-mt"
+    load_in_4bit: true
+    targets:
+      hi: "<2hi>"
+      es: "<2es>"
+      ru: "<2ru>"
+      ar: "<2ar>"
+      zh-hans: "<2zh>"
+      zh-hant: "<2zh>"
+      ko: "<2ko>"
+    generate:
+      num_beams: 5
+      max_new_tokens: 512
+

@@ -1,0 +1,82 @@
+meta:
+  name: "The Sundering Entity Registry"
+  version: 1
+  purpose: "Shared compact canon used by reviewers, translators, and visual prompt agents."
+
+# Tokens that must be preserved exactly as-is across translations (case-sensitive).
+do_not_translate_tokens:
+  - "VEDA"
+  - "Kael"
+  - "Moss"
+  - "Sūrya"
+  - "Tidemouth"
+  - "Satya"
+  - "SĀDHU"
+  - "H₂S"
+  - "VLF"
+  - "HF"
+  - "VHF"
+  - "UHF"
+  - "LEO"
+  - "GEO"
+
+entities:
+  characters:
+    - id: "kael"
+      name: "Kael"
+      type: "human"
+      culture: "Continental"
+      voice_tags: ["continental", "glass_metaphors", "bodily", "precision_under_stress"]
+      notes:
+        - "Close-cropped hair; burn scar left forearm; lens/grit imagery."
+
+    - id: "moss"
+      name: "Moss"
+      type: "human"
+      culture: "Continental"
+      voice_tags: ["continental", "sea_metaphors", "dry_humor"]
+      notes:
+        - "Crooked nose; sailor build; post-mod eyes lighten over time."
+
+    - id: "surya"
+      name: "Sūrya"
+      type: "human"
+      culture: "Antarctic"
+      voice_tags: ["antarctic", "geometric", "formal", "precise"]
+      notes:
+        - "Very pale skin; large gray eyes; long hair; touches left ear when nervous."
+
+    - id: "veda"
+      name: "VEDA"
+      type: "ai_system"
+      culture: "Antarctic"
+      voice_tags: ["veda", "clinical", "short_paragraphs", "no_metaphors"]
+      notes:
+        - "No body; presence via mesh and environment; not evil."
+
+  places:
+    - id: "habitat_prithvi"
+      name: "Habitat Prithvi"
+      culture: "Antarctic"
+      tags: ["sealed", "geothermal", "diffuse_light", "clean_geometry"]
+
+    - id: "tidemouth"
+      name: "Tidemouth"
+      culture: "Continental"
+      tags: ["coastal_city_state", "ruins", "trade", "craft"]
+
+  concepts:
+    - id: "mesh"
+      name: "the mesh"
+      tags: ["bci", "knowledge_query", "consent_gated", "no_raw_memory_copy"]
+      translation_rule: "Usually transliterate; do not over-interpret as literal 'net'."
+
+    - id: "satya_language"
+      name: "Satya"
+      tags: ["conlang", "evidentials", "consent_particles"]
+      translation_rule: "Satya terms are italicized and generally left untranslated."
+
+    - id: "sadhu_network"
+      name: "SĀDHU Network"
+      tags: ["shared_semantic_exchange", "privacy_primitives"]
+

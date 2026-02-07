@@ -1,0 +1,9 @@
+/the-sundering             /butterfly-effect/               301
+/the-sundering/            /butterfly-effect/               301
+/books/the-sundering       /books/butterfly-effect/         301
+/books/the-sundering/      /books/butterfly-effect/         301
+/books/the-sundering/*     /books/butterfly-effect/:splat   301
+
+/butterfly-effect          /books/butterfly-effect/          301
+/butterfly-effect/         /books/butterfly-effect/          301
+/butterfly-effect/*        /books/butterfly-effect/:splat    301
