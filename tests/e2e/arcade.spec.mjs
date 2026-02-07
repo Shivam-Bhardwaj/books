@@ -11,4 +11,10 @@ test("arcade home loads and links to too.foo", async ({ page }) => {
   // Card should take you to the book entry route (redirect handled by _redirects).
   const bookCard = page.getByRole("link", { name: /Butterfly Effect/i });
   await expect(bookCard).toHaveAttribute("href", "/butterfly-effect/");
+
+  // Ensure we're referencing the latest (cache-busted) logo asset.
+  await expect(bookCard.locator("img")).toHaveAttribute(
+    "src",
+    "/assets/butterfly-effect-logo-v3.svg",
+  );
 });

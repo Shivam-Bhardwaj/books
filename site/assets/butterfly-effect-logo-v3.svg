@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="-39 -24 338 208"
+  width="240"
+  height="160"
+  role="img"
+  aria-label="Butterfly Effect logo"
+  preserveAspectRatio="xMidYMid meet"
+>
+  <title>Butterfly Effect</title>
+  <defs>
+    <linearGradient id="wingA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffb703" />
+      <stop offset="1" stop-color="#e4572e" />
+    </linearGradient>
+    <linearGradient id="wingB" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#fb8500" />
+      <stop offset="1" stop-color="#e4572e" />
+    </linearGradient>
+    <style>
+      <![CDATA[
+        .outline { stroke: rgba(21,21,21,.18); stroke-width: 1.25; stroke-linejoin: round; }
+        .vein { fill: none; stroke: rgba(21,21,21,.22); stroke-width: 1.1; stroke-linecap: round; }
+        .body { fill: #1a1a1a; }
+        .glow { fill: none; stroke: #2a9d8f; stroke-width: 2; opacity: .62; }
+        .static { display: none; }
+
+        @media (prefers-reduced-motion: reduce) {
+          .anim { display: none; }
+          .static { display: inline; }
+        }
+      ]]>
+    </style>
+  </defs>
+
+  <g class="anim">
+    <!-- Butterfly -->
+    <g transform="translate(130 80)">
+      <!-- Left wing -->
+      <g>
+        <path
+          class="outline"
+          fill="url(#wingA)"
+          d="M0 -10 C -18 -56 -92 -78 -112 -18 C -126 28 -88 54 -40 28 C -18 16 -8 6 0 6 Z"
+        />
+        <path
+          class="outline"
+          fill="url(#wingB)"
+          d="M0 18 C -16 62 -72 86 -82 34 C -90 -6 -52 -8 -20 10 C -10 16 -5 18 0 18 Z"
+        />
+        <path class="vein" d="M-8 -8 C -36 -28 -68 -22 -96 -2" />
+        <path class="vein" d="M-10 14 C -30 34 -50 44 -70 38" />
+        <path class="vein" d="M-20 2 C -48 6 -66 16 -78 26" />
+
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          values="5; -3; 5"
+          dur="3.2s"
+          repeatCount="indefinite"
+        />
+      </g>
+
+      <!-- Right wing (mirrored + additive flap) -->
+      <g transform="scale(-1 1)">
+        <path
+          class="outline"
+          fill="url(#wingA)"
+          d="M0 -10 C -18 -56 -92 -78 -112 -18 C -126 28 -88 54 -40 28 C -18 16 -8 6 0 6 Z"
+        />
+        <path
+          class="outline"
+          fill="url(#wingB)"
+          d="M0 18 C -16 62 -72 86 -82 34 C -90 -6 -52 -8 -20 10 C -10 16 -5 18 0 18 Z"
+        />
+        <path class="vein" d="M-8 -8 C -36 -28 -68 -22 -96 -2" />
+        <path class="vein" d="M-10 14 C -30 34 -50 44 -70 38" />
+        <path class="vein" d="M-20 2 C -48 6 -66 16 -78 26" />
+
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          values="-5; 3; -5"
+          dur="3.2s"
+          repeatCount="indefinite"
+          additive="sum"
+        />
+      </g>
+
+      <!-- Body -->
+      <path
+        class="body outline"
+        d="M0 -20 C 8 -18 10 -6 6 6 C 4 14 4 26 0 34 C -4 26 -4 14 -6 6 C -10 -6 -8 -18 0 -20 Z"
+      />
+      <path class="vein" d="M-2 -22 C -10 -34 -18 -38 -26 -40" />
+      <path class="vein" d="M2 -22 C 10 -34 18 -38 26 -40" />
+    </g>
+  </g>
+
+  <g class="static">
+    <!-- Static butterfly (reduced motion) -->
+    <g transform="translate(130 80)">
+      <g>
+        <path
+          class="outline"
+          fill="url(#wingA)"
+          d="M0 -10 C -18 -56 -92 -78 -112 -18 C -126 28 -88 54 -40 28 C -18 16 -8 6 0 6 Z"
+        />
+        <path
+          class="outline"
+          fill="url(#wingB)"
+          d="M0 18 C -16 62 -72 86 -82 34 C -90 -6 -52 -8 -20 10 C -10 16 -5 18 0 18 Z"
+        />
+        <path class="vein" d="M-8 -8 C -36 -28 -68 -22 -96 -2" />
+        <path class="vein" d="M-10 14 C -30 34 -50 44 -70 38" />
+        <path class="vein" d="M-20 2 C -48 6 -66 16 -78 26" />
+      </g>
+
+      <g transform="scale(-1 1)">
+        <path
+          class="outline"
+          fill="url(#wingA)"
+          d="M0 -10 C -18 -56 -92 -78 -112 -18 C -126 28 -88 54 -40 28 C -18 16 -8 6 0 6 Z"
+        />
+        <path
+          class="outline"
+          fill="url(#wingB)"
+          d="M0 18 C -16 62 -72 86 -82 34 C -90 -6 -52 -8 -20 10 C -10 16 -5 18 0 18 Z"
+        />
+        <path class="vein" d="M-8 -8 C -36 -28 -68 -22 -96 -2" />
+        <path class="vein" d="M-10 14 C -30 34 -50 44 -70 38" />
+        <path class="vein" d="M-20 2 C -48 6 -66 16 -78 26" />
+      </g>
+
+      <path
+        class="body outline"
+        d="M0 -20 C 8 -18 10 -6 6 6 C 4 14 4 26 0 34 C -4 26 -4 14 -6 6 C -10 -6 -8 -18 0 -20 Z"
+      />
+      <path class="vein" d="M-2 -22 C -10 -34 -18 -38 -26 -40" />
+      <path class="vein" d="M2 -22 C 10 -34 18 -38 26 -40" />
+    </g>
+  </g>
+</svg>

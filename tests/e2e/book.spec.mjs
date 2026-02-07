@@ -34,6 +34,15 @@ test("Butterfly Effect TOC loads styles, fonts, and navigation", async ({
   });
   expect(fontsOk).toBeTruthy();
 
+  // Reader theme should stay "paper-like" even when the browser is in dark mode.
+  const rgb = await page.evaluate(() => {
+    const c = getComputedStyle(document.body).color;
+    const m = c.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)/);
+    return m ? m.slice(1, 4).map((n) => Number(n)) : null;
+  });
+  expect(rgb).not.toBeNull();
+  expect(rgb[0] + rgb[1] + rgb[2]).toBeLessThan(200);
+
   // Spot-check that the first chapter link works.
   await page.getByRole("link", { name: /1\.\s*The Lensmaker/i }).click();
   await expect(page).toHaveURL(/\/books\/butterfly-effect\/manuscript\/arc-1\/chapter-01\.html$/);
