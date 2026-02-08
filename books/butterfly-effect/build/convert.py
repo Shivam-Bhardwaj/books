@@ -626,6 +626,7 @@ def generate_index(chapters, *, style_href, manuscript_prefix, sigil_rel_base):
 <body>
   <nav class="toc-nav" aria-label="Book navigation">
     <a class="toc-pill" href="{html.escape(ARCADE_HREF)}">← {html.escape(ARCADE_LABEL)}</a>
+    <a class="toc-pill" href="meta/ui/">Behind the Scenes</a>
     <a class="toc-pill" href="{html.escape(HOME_HREF)}" target="_blank" rel="noopener noreferrer">{html.escape(HOME_LABEL)} ↗</a>
   </nav>
   <div class="index-header">
