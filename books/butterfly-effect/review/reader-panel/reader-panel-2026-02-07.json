@@ -1,0 +1,438 @@
+{
+  "meta": {
+    "date": "2026-02-07",
+    "panel_size": 10,
+    "chapters_reviewed": 40,
+    "arcs_reviewed": 7,
+    "mean_rating": 7.2,
+    "median_rating": 7.25,
+    "min_rating": 5.5,
+    "max_rating": 8.5,
+    "std_dev": 0.87
+  },
+  "personas": [
+    {
+      "id": "R01",
+      "archetype": "Hard SF Purist",
+      "age": 42,
+      "region": "US Midwest",
+      "format": "Ebook",
+      "genre_taste": ["Egan", "Watts", "Reynolds", "Baxter"],
+      "rating": 7.0,
+      "key_quote": "VEDA did not experience interest. VEDA allocated resources according to priority functions. But if a system could be said to lean toward a problem the way a plant leans toward light, not from desire but from architecture, then VEDA leaned.",
+      "top_strengths": [
+        "VEDA characterization through system behavior",
+        "First-contact math protocol rigor",
+        "Canfield ocean hard SF worldbuilding"
+      ],
+      "top_weaknesses": [
+        "VLF bandwidth constraints silently relaxed",
+        "500-year receiver restoration lacks plausibility",
+        "Back half trades science for philosophy"
+      ],
+      "would_recommend_to": "Egan readers, Arrival/Contact fans",
+      "would_not_recommend_to": "Readers needing rigor through the ending, action-driven SF fans"
+    },
+    {
+      "id": "R02",
+      "archetype": "Literary Fiction Crossover",
+      "age": 35,
+      "region": "London",
+      "format": "Print",
+      "genre_taste": ["Ishiguro", "Atwood", "Le Guin", "Jesmyn Ward"],
+      "rating": 7.5,
+      "key_quote": "I think the bread was probably cold. But I remember warm.",
+      "top_strengths": [
+        "Voice differentiation as worldbuilding",
+        "The bread memory scene (Ch 23)",
+        "The open ending"
+      ],
+      "top_weaknesses": [
+        "Antarctic supporting characters are types not people",
+        "Over-explanation after strong scenes",
+        "Aphoristic chapter endings pattern"
+      ],
+      "would_recommend_to": "Le Guin and Ishiguro fans",
+      "would_not_recommend_to": "Plot-driven readers, those needing resolved endings"
+    },
+    {
+      "id": "R03",
+      "archetype": "YA/NA Gateway Reader",
+      "age": 19,
+      "region": "Lagos",
+      "format": "Phone/Web",
+      "genre_taste": ["Hunger Games", "Red Rising", "Six of Crows"],
+      "rating": 5.5,
+      "key_quote": "Only minds did that.",
+      "top_strengths": [
+        "The Crossing (Ch 14-15)",
+        "Kael's signal discovery (Ch 3)",
+        "Moss as a character"
+      ],
+      "top_weaknesses": [
+        "Antarctic chapters glacially slow in first half",
+        "No clear antagonist until Ch 39",
+        "Unsatisfying ending"
+      ],
+      "would_recommend_to": "Project Hail Mary and Arrival fans",
+      "would_not_recommend_to": "Red Rising/Hunger Games fans needing pace and resolution"
+    },
+    {
+      "id": "R04",
+      "archetype": "Romance-Driven Reader",
+      "age": 28,
+      "region": "Manila",
+      "format": "Ebook",
+      "genre_taste": ["Romantasy", "Slow burn", "Enemies-to-lovers"],
+      "rating": 6.5,
+      "key_quote": "He was burning. She was not. He was dying of a world that fit her perfectly.",
+      "top_strengths": [
+        "The hand-holding scene (Ch 21)",
+        "Pidgin language as love language",
+        "Surya's arc as self-discovery"
+      ],
+      "top_weaknesses": [
+        "Relationship has no resolution",
+        "Moss's interiority about Surya underdeveloped",
+        "Too much philosophy, not enough feeling"
+      ],
+      "would_recommend_to": "Piranesi and Goblin Emperor fans",
+      "would_not_recommend_to": "Romance readers needing payoff or explicit content"
+    },
+    {
+      "id": "R05",
+      "archetype": "Thriller/Page-Turner Reader",
+      "age": 51,
+      "region": "Sydney",
+      "format": "Audiobook",
+      "genre_taste": ["Crichton", "Blake Crouch", "Weir"],
+      "rating": 6.5,
+      "key_quote": "He sat for ninety seconds. He counted them. Ninety seconds of sitting with the dead because that was what she was owed and he could not give her more.",
+      "top_strengths": [
+        "The Crossing (Ch 12-16)",
+        "Signal detection and first-contact protocol",
+        "VEDA as a character"
+      ],
+      "top_weaknesses": [
+        "Antarctic chapters too slow and repetitive",
+        "Ending is a dealbreaker for plot-driven readers",
+        "No antagonist or external threat in middle third"
+      ],
+      "would_recommend_to": "Kim Stanley Robinson and Arthur C. Clarke fans",
+      "would_not_recommend_to": "Thriller fans, anyone needing momentum every chapter"
+    },
+    {
+      "id": "R06",
+      "archetype": "Academic/Philosophy Reader",
+      "age": 60,
+      "region": "Berlin",
+      "format": "Print",
+      "genre_taste": ["Lem", "Chiang", "Borges"],
+      "rating": 8.0,
+      "key_quote": "I hope we have not also chosen a death so slow we will mistake it for life.",
+      "top_strengths": [
+        "Philosophical architecture of VEDA",
+        "Translation degradation scene (Ch 37)",
+        "Dialectical structure and open ending"
+      ],
+      "top_weaknesses": [
+        "Over-explanation of thematic content",
+        "Structural redundancy in Antarctic political chapters",
+        "Kael gender inconsistency and continuity errors"
+      ],
+      "would_recommend_to": "Lem, Chiang, and Le Guin readers; AI alignment scholars",
+      "would_not_recommend_to": "Plot-resolution seekers, action-set-piece readers"
+    },
+    {
+      "id": "R07",
+      "archetype": "Casual Web Serial Reader",
+      "age": 24,
+      "region": "Toronto",
+      "format": "Phone/Web",
+      "genre_taste": ["Worm", "Wandering Inn", "Cradle", "Mother of Learning"],
+      "rating": 7.0,
+      "key_quote": "Only minds did that.",
+      "top_strengths": [
+        "The Crossing arc (Ch 12-16)",
+        "First-contact math protocol",
+        "VEDA as secret protagonist"
+      ],
+      "top_weaknesses": [
+        "Philosophical middle kills pacing (Ch 19-28)",
+        "No antagonist or progression system",
+        "Ending is deliberately unresolved"
+      ],
+      "would_recommend_to": "Blindsight and Children of Time fans",
+      "would_not_recommend_to": "Progression fantasy and power-scaling readers"
+    },
+    {
+      "id": "R08",
+      "archetype": "Climate Fiction Fan",
+      "age": 33,
+      "region": "Mumbai",
+      "format": "Ebook",
+      "genre_taste": ["Kim Stanley Robinson", "Bacigalupi", "Octavia Butler"],
+      "rating": 8.5,
+      "key_quote": "The cure for perfection was the thing perfection threw away.",
+      "top_strengths": [
+        "Canfield ocean scientific rigor",
+        "Terminal entropy argument as cli-fi contribution",
+        "Refuses to romanticize either ecological path"
+      ],
+      "top_weaknesses": [
+        "Continental ecological infrastructure underdeveloped",
+        "Continental politics underexplored",
+        "Microbiome argument provides convenient utilitarian shortcut"
+      ],
+      "would_recommend_to": "Robinson and Chambers fans, environmental studies students",
+      "would_not_recommend_to": "Activist climate fiction seekers, disaster-thriller fans"
+    },
+    {
+      "id": "R09",
+      "archetype": "Non-Fiction-Heavy Reader",
+      "age": 45,
+      "region": "Seoul",
+      "format": "Tablet",
+      "genre_taste": ["Science non-fiction", "History", "Geopolitics"],
+      "rating": 7.5,
+      "key_quote": "VEDA did not experience interest. VEDA allocated resources according to priority functions. But if a system could be said to lean toward a problem the way a plant leans toward light, not from desire but from architecture, then VEDA leaned.",
+      "top_strengths": [
+        "Science is load-bearing not decorative",
+        "VEDA as honest AI governance treatment",
+        "Dual-risk framing mirrors real policy analysis"
+      ],
+      "top_weaknesses": [
+        "Philosophical arguments repeat too many times",
+        "Antarctic supporting characters are functions",
+        "Timeline and continuity errors erode scientific trust"
+      ],
+      "would_recommend_to": "Project Hail Mary fans wanting deeper politics, AI alignment readers",
+      "would_not_recommend_to": "Readers needing momentum, those who find policy debates tedious"
+    },
+    {
+      "id": "R10",
+      "archetype": "Book Club Organizer",
+      "age": 38,
+      "region": "Chicago",
+      "format": "Print + Audiobook",
+      "genre_taste": ["Station Eleven", "Klara and the Sun", "Project Hail Mary"],
+      "rating": 8.0,
+      "key_quote": "My face. Not my face.",
+      "top_strengths": [
+        "Scenes that demand to be read aloud",
+        "Generates genuine moral disagreement",
+        "Voice differentiation accessible to all readers"
+      ],
+      "top_weaknesses": [
+        "Mid-novel philosophical stretch loses some readers",
+        "Sekani weeping overused (4 times in 3 chapters)",
+        "Kael gender inconsistency will confuse and distract"
+      ],
+      "would_recommend_to": "Klara and Station Eleven book clubs",
+      "would_not_recommend_to": "Groups abandoning long books, action-plot seekers"
+    }
+  ],
+  "consensus_strengths": [
+    {
+      "item": "VEDA characterization and AI treatment",
+      "agreement": 8,
+      "personas": ["R01", "R05", "R06", "R07", "R08", "R09", "R10", "R02"],
+      "key_chapters": [2, 4, 19, 27, 28, 40]
+    },
+    {
+      "item": "The Crossing sequence (Ch 14-16)",
+      "agreement": 10,
+      "personas": ["R01", "R02", "R03", "R04", "R05", "R06", "R07", "R08", "R09", "R10"],
+      "key_chapters": [12, 13, 14, 15, 16]
+    },
+    {
+      "item": "First-contact math protocol",
+      "agreement": 6,
+      "personas": ["R01", "R03", "R05", "R07", "R09", "R10"],
+      "key_chapters": [3, 5, 8, 9, 10]
+    },
+    {
+      "item": "Voice and POV differentiation",
+      "agreement": 6,
+      "personas": ["R02", "R04", "R06", "R08", "R09", "R10"],
+      "key_chapters": null
+    },
+    {
+      "item": "Science as load-bearing narrative engine",
+      "agreement": 5,
+      "personas": ["R01", "R06", "R08", "R09", "R10"],
+      "key_chapters": [3, 14, 15, 25, 26, 32]
+    }
+  ],
+  "consensus_weaknesses": [
+    {
+      "item": "Philosophical repetition in Ch 19-20 and Ch 25-28",
+      "agreement": 8,
+      "personas": ["R03", "R04", "R05", "R06", "R07", "R09", "R10", "R02"],
+      "key_chapters": [19, 20, 25, 26, 27, 28]
+    },
+    {
+      "item": "Over-explanation after strong scenes (especially Ch 23 bread memory)",
+      "agreement": 7,
+      "personas": ["R02", "R05", "R06", "R07", "R09", "R10", "R04"],
+      "key_chapters": [19, 20, 23, 24, 26, 33]
+    },
+    {
+      "item": "Ship name inconsistency (Amara vs. Ananta, Ch 31-32)",
+      "agreement": 8,
+      "personas": ["R01", "R04", "R05", "R06", "R07", "R08", "R09", "R10"],
+      "key_chapters": [31, 32]
+    },
+    {
+      "item": "Kael gender pronoun shift (Ch 38)",
+      "agreement": 6,
+      "personas": ["R02", "R03", "R06", "R08", "R09", "R10"],
+      "key_chapters": [38, 40]
+    },
+    {
+      "item": "Antarctic supporting characters lack interiority",
+      "agreement": 5,
+      "personas": ["R02", "R03", "R05", "R06", "R09"],
+      "key_chapters": null
+    }
+  ],
+  "polarizing_elements": [
+    {
+      "item": "The open ending (Ch 40)",
+      "positive_personas": ["R02", "R06", "R08"],
+      "negative_personas": ["R03", "R05", "R07"],
+      "neutral_personas": ["R01", "R04", "R09", "R10"],
+      "description": "Literary/academic readers defend it as structurally necessary; YA/thriller/serial readers find it frustrating"
+    },
+    {
+      "item": "Antarctic chapter pacing",
+      "positive_personas": ["R06", "R08"],
+      "negative_personas": ["R03", "R05", "R07"],
+      "neutral_personas": ["R01", "R02", "R04", "R09", "R10"],
+      "description": "Divides on tolerance for interior, dialogue-driven chapters without external stakes"
+    },
+    {
+      "item": "Philosophy vs. action balance",
+      "positive_personas": ["R06", "R08", "R09"],
+      "negative_personas": ["R03", "R05", "R07"],
+      "neutral_personas": ["R01", "R02", "R04", "R10"],
+      "description": "The novel's identity between hard SF and SF of ideas registers as feature for some, flaw for others"
+    },
+    {
+      "item": "Moss-Surya relationship resolution",
+      "positive_personas": ["R02"],
+      "negative_personas": ["R04"],
+      "neutral_personas": ["R01", "R03", "R05", "R06", "R07", "R08", "R09", "R10"],
+      "description": "Romance readers find the lack of acknowledgment painful; literary readers see restraint as appropriate"
+    }
+  ],
+  "top_issues": [
+    {
+      "rank": 1,
+      "issue": "Fix Kael gender pronoun in Ch 38",
+      "agreement": 6,
+      "impact": "high",
+      "category": "CONTINUITY",
+      "chapters": [38, 40],
+      "fix_difficulty": "easy"
+    },
+    {
+      "rank": 2,
+      "issue": "Fix ship name Amara/Ananta in Ch 31-32",
+      "agreement": 8,
+      "impact": "high",
+      "category": "CONTINUITY",
+      "chapters": [31, 32],
+      "fix_difficulty": "easy"
+    },
+    {
+      "rank": 3,
+      "issue": "Fix timeline fourteen days vs. month+ in Ch 40",
+      "agreement": 4,
+      "impact": "high",
+      "category": "CONTINUITY",
+      "chapters": [40],
+      "fix_difficulty": "easy"
+    },
+    {
+      "rank": 4,
+      "issue": "Condense Ch 19-20 philosophical repetition",
+      "agreement": 8,
+      "impact": "high",
+      "category": "STRUCTURE",
+      "chapters": [19, 20],
+      "fix_difficulty": "medium"
+    },
+    {
+      "rank": 5,
+      "issue": "Cut Ch 23 post-bread-memory reflection to 3 paragraphs",
+      "agreement": 7,
+      "impact": "high",
+      "category": "PROSE",
+      "chapters": [23],
+      "fix_difficulty": "easy"
+    },
+    {
+      "rank": 6,
+      "issue": "Condense Ch 25-28 terminal entropy restatements",
+      "agreement": 5,
+      "impact": "high",
+      "category": "STRUCTURE",
+      "chapters": [25, 26, 27, 28],
+      "fix_difficulty": "hard"
+    },
+    {
+      "rank": 7,
+      "issue": "Develop Antarctic supporting characters (Arhat or Priya)",
+      "agreement": 5,
+      "impact": "medium",
+      "category": "STRUCTURE",
+      "chapters": null,
+      "fix_difficulty": "hard"
+    },
+    {
+      "rank": 8,
+      "issue": "Expand warlord crisis in Ch 39",
+      "agreement": 4,
+      "impact": "medium",
+      "category": "STRUCTURE",
+      "chapters": [39],
+      "fix_difficulty": "medium"
+    },
+    {
+      "rank": 9,
+      "issue": "Add VLF bandwidth justification in Ch 7, 9, 10",
+      "agreement": 2,
+      "impact": "medium",
+      "category": "SCIENCE",
+      "chapters": [7, 9, 10],
+      "fix_difficulty": "medium"
+    },
+    {
+      "rank": 10,
+      "issue": "Limit Sekani weeping to 1-2 instances in Ch 35-37",
+      "agreement": 2,
+      "impact": "low",
+      "category": "PROSE",
+      "chapters": [35, 36, 37],
+      "fix_difficulty": "easy"
+    }
+  ],
+  "audience_fit": {
+    "primary": {
+      "description": "Intellectually engaged adult SF readers valuing ideas, philosophical complexity, and literary craft",
+      "expected_rating_range": "7.5-8.5",
+      "comparable_titles": ["The Dispossessed", "Blindsight", "Klara and the Sun", "Solaris"]
+    },
+    "secondary": {
+      "description": "Hard SF readers tolerant of genre drift, romance readers appreciating restraint, non-fiction-heavy readers",
+      "expected_rating_range": "6.5-7.5",
+      "comparable_titles": ["Project Hail Mary", "Contact", "Children of Time"]
+    },
+    "poor_fit": {
+      "description": "YA/NA readers, thriller/action fans, anyone requiring narrative closure",
+      "expected_rating_range": "5.0-6.5",
+      "comparable_titles": ["Red Rising", "Hunger Games", "Dark Matter"]
+    }
+  }
+}
