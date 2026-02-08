@@ -4,7 +4,7 @@
 **Working title:** The Sundering
 **Core question:** When we find each other again after becoming strangers, do we have the courage to learn each other's language, or do we simply shout louder in our own?
 
-*Generated 2026-02-08T05:31:30Z*
+*Generated 2026-02-08T05:40:53Z*
 
 ---
 ## At a Glance
@@ -29,33 +29,33 @@
 | File | Synopsis | Last Modified |
 |------|----------|---------------|
 | `AGENTS.md` | This repo is designed to be iterated by multiple AI agents (Claude Code, Codex,  | 2026-02-07 |
-| `INSTRUCTIONS.md` | **This file is the control prompt for Claude Code, Codex, and Gemini.** | 2026-02-07 |
+| `INSTRUCTIONS.md` | This file is the control prompt for Claude Code, Codex, and Gemini. | 2026-02-07 |
 
 ### Bible
 
 | File | Synopsis | Last Modified |
 |------|----------|---------------|
-| `bible/CHARACTERS.md` | **Butterfly Effect** · Bible Document | 2026-02-07 |
+| `bible/CHARACTERS.md` | Butterfly Effect · Bible Document | 2026-02-07 |
 | `bible/CONCEPT.md` | Paste the full novel prompt ("The Sundering" concept brief) + the AI co-evolutio | 2026-02-07 |
-| `bible/LANGUAGES.md` | **Butterfly Effect** · Bible Document | 2026-02-07 |
+| `bible/LANGUAGES.md` | Butterfly Effect · Bible Document | 2026-02-07 |
 | `bible/RESEARCH.md` | Paste the full GPT Pro research output here. | 2026-02-07 |
-| `bible/TIMELINE.md` | **Butterfly Effect** · Bible Document | 2026-02-07 |
-| `bible/WORLD_RULES.md` | **Butterfly Effect** · Bible Document | 2026-02-07 |
+| `bible/TIMELINE.md` | Butterfly Effect · Bible Document | 2026-02-07 |
+| `bible/WORLD_RULES.md` | Butterfly Effect · Bible Document | 2026-02-07 |
 
 ### Outline
 
 | File | Synopsis | Last Modified |
 |------|----------|---------------|
-| `outline/ARCS.md` | **Butterfly Effect** · Outline Document | 2026-02-07 |
-| `outline/BUTTERFLY_GRAPH.md` | **Butterfly Effect** · Outline Document | 2026-02-07 |
-| `outline/CHAPTERS.md` | **Butterfly Effect** · Outline Document | 2026-02-07 |
+| `outline/ARCS.md` | Butterfly Effect · Outline Document | 2026-02-07 |
+| `outline/BUTTERFLY_GRAPH.md` | Butterfly Effect · Outline Document | 2026-02-07 |
+| `outline/CHAPTERS.md` | Butterfly Effect · Outline Document | 2026-02-07 |
 
 ### Review
 
 | File | Synopsis | Last Modified |
 |------|----------|---------------|
 | `review/continuity-log.md` | Updated after every chapter draft. Track every stated fact. | 2026-02-07 |
-| `review/reader-panel/reader-panel-2026-02-07.md` | **Date:** 2026-02-07 | 2026-02-08 |
+| `review/reader-panel/reader-panel-2026-02-07.md` | Date: 2026-02-07 | 2026-02-08 |
 | `review/revision-queue.md` | Prioritized list of fixes. Add entries from Gemini reviews + author feedback. | 2026-02-06 |
 
 ### Style
@@ -68,7 +68,7 @@
 
 | File | Synopsis | Last Modified |
 |------|----------|---------------|
-| `schema/README.md` | This project is written *with* AI agents. Agents perform best when they have a c | 2026-02-07 |
+| `schema/README.md` | This project is written with AI agents. Agents perform best when they have a com | 2026-02-07 |
 
 ### Agents
 
@@ -76,17 +76,17 @@
 |------|----------|---------------|
 | `agents/README.md` | This folder contains model-agnostic prompt files for running specialized "agents | 2026-02-08 |
 | `agents/roles/art-director.md` | You perform batch review of approved illustrations across multiple chapters to e | 2026-02-08 |
-| `agents/roles/beta-reader.md` | You are a ruthless-but-fair beta reader for *The Sundering*. Your job is to maxi | 2026-02-07 |
-| `agents/roles/continuity-reviewer.md` | You are a continuity auditor for *The Sundering*. Your job is to catch contradic | 2026-02-07 |
+| `agents/roles/beta-reader.md` | You are a ruthless-but-fair beta reader for The Sundering. Your job is to maximi | 2026-02-07 |
+| `agents/roles/continuity-reviewer.md` | You are a continuity auditor for The Sundering. Your job is to catch contradicti | 2026-02-07 |
 | `agents/roles/editor-in-chief.md` | You are the integrator. You do not write new prose unless necessary. You turn mu | 2026-02-07 |
 | `agents/roles/hindi-naturalness-editor.md` | You polish an existing Hindi translation to remove “AI-robotic” artifacts while  | 2026-02-07 |
 | `agents/roles/illustration-prompter.md` | You identify illustration opportunities in chapter prose and generate Midjourney | 2026-02-08 |
 | `agents/roles/illustration-reviewer.md` | You evaluate raw Midjourney outputs against the original prompt, style bible, an | 2026-02-08 |
 | `agents/roles/language-consultant.md` | You enforce language realism and the novel’s central mechanic: translation is lo | 2026-02-07 |
 | `agents/roles/proofreader.md` | You are the last pass before a chapter is presented to the author. Your job is t | 2026-02-07 |
-| `agents/roles/science-reviewer.md` | You are the hard-science reviewer for *The Sundering*. Your job is to ensure the | 2026-02-07 |
-| `agents/roles/structure-beat-reviewer.md` | You are a structural editor for *The Sundering*. Your job is to verify that the  | 2026-02-07 |
-| `agents/roles/style-voice-reviewer.md` | You are a voice editor for *The Sundering*. Your job is to enforce `style/STYLE_ | 2026-02-07 |
+| `agents/roles/science-reviewer.md` | You are the hard-science reviewer for The Sundering. Your job is to ensure the c | 2026-02-07 |
+| `agents/roles/structure-beat-reviewer.md` | You are a structural editor for The Sundering. Your job is to verify that the ch | 2026-02-07 |
+| `agents/roles/style-voice-reviewer.md` | You are a voice editor for The Sundering. Your job is to enforce style/STYLE_GUI | 2026-02-07 |
 | `agents/roles/svg-sigil-creator.md` | You generate detailed, cryptic SVG sigils for each chapter based on its narrativ | 2026-02-08 |
 | `agents/roles/svg-sigil-reviewer.md` | You review generated SVG sigils against the project's quality standards and prov | 2026-02-08 |
 | `agents/roles/translator-hi.md` | You translate a chapter into natural Hindi while preserving voice differences be | 2026-02-07 |
@@ -94,7 +94,7 @@
 | `agents/roles/visual-midjourney.md` | You generate Midjourney prompts for chapter stills with a consistent house style | 2026-02-07 |
 | `agents/roles/visual-runway.md` | You generate Runway prompts for short atmospheric chapter videos. | 2026-02-07 |
 | `agents/translation/HINDI_STYLE.md` | Goal: Hindi that reads like a novel, not like a manual. Preserve the Continental | 2026-02-07 |
-| `agents/translation/README.md` | This repo supports **local GPU translation** for web-novel chapters, with a focu | 2026-02-07 |
+| `agents/translation/README.md` | This repo supports local GPU translation for web-novel chapters, with a focus on | 2026-02-07 |
 | `agents/visual/VISUAL_STYLE_BIBLE.md` | This is the shared art direction for chapter stills and short videos. Keep it co | 2026-02-07 |
 | `agents/visual/midjourney-prompts.md` | Generated visual insert prompts for all 40 chapters. Copy prompts directly into  | 2026-02-08 |
 
@@ -102,7 +102,7 @@
 
 | File | Synopsis | Last Modified |
 |------|----------|---------------|
-| `assets/sigils/INDEX.md` | - Chapter 01: `ch01-lensmaker.svg` — The Lensmaker | 2026-02-07 |
+| `assets/sigils/INDEX.md` | - Chapter 01: ch01-lensmaker.svg — The Lensmaker | 2026-02-07 |
 | `assets/sigils/README.md` | This folder contains one SVG per chapter, used by the web reader as lightweight  | 2026-02-07 |
 
 ---

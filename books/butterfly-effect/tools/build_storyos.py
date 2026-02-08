@@ -219,6 +219,17 @@ def categorize(rel_path: str) -> str:
     return CATEGORY_MAP.get(first, "root")
 
 
+def strip_md_inline(text: str) -> str:
+    """Remove markdown bold/italic markers and link syntax."""
+    text = re.sub(r"\*\*(.+?)\*\*", r"\1", text)   # **bold**
+    text = re.sub(r"\*(.+?)\*", r"\1", text)         # *italic*
+    text = re.sub(r"__(.+?)__", r"\1", text)          # __bold__
+    text = re.sub(r"_(.+?)_", r"\1", text)            # _italic_
+    text = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", text)  # [text](url)
+    text = re.sub(r"`([^`]+)`", r"\1", text)          # `code`
+    return text.strip()
+
+
 def first_meaningful_line(path: Path) -> str:
     """Return first non-empty, non-heading, non-metadata line."""
     try:
@@ -233,12 +244,12 @@ def first_meaningful_line(path: Path) -> str:
             continue
         if stripped.startswith(">"):
             # Use blockquote content as synopsis
-            return stripped.lstrip("> ").strip()
+            return strip_md_inline(stripped.lstrip("> ").strip())[:120]
         if stripped.startswith("---"):
             continue
         if stripped.startswith("```"):
             continue
-        return stripped[:120]
+        return strip_md_inline(stripped)[:120]
     return ""
 
 
@@ -262,12 +273,18 @@ def build_docs_index() -> list[dict]:
         name = md.stem
         synopsis = first_meaningful_line(md)
 
+        try:
+            content = md.read_text(encoding="utf-8", errors="replace")
+        except Exception:
+            content = ""
+
         docs.append({
             "category": category,
             "name": name,
             "path": rel,
             "mtime_iso": mtime,
             "synopsis": synopsis,
+            "content": content,
         })
 
     return docs

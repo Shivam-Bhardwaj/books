@@ -14,7 +14,7 @@ import sys
 from pathlib import Path
 
 
-PUBLIC_DIRS = ("assets", "manuscript", "style", "build")
+PUBLIC_DIRS = ("assets", "manuscript", "style", "build", "meta")
 PUBLIC_FILES = ("index.html",)  # book table of contents (preferred)
 
 
