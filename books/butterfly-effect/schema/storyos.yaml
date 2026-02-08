@@ -1,0 +1,161 @@
+meta:
+  version: 1
+  last_updated: "2026-02-07"
+  owner_notes: "Initial seed from ARCS.md, BUTTERFLY_GRAPH.md, continuity-log.md"
+
+book:
+  slug: butterfly-effect
+  title: "Butterfly Effect"
+  working_title: "The Sundering"
+  subtitle: "A Novel"
+  genre: "Hard science fiction"
+  core_question: >-
+    When we find each other again after becoming strangers,
+    do we have the courage to learn each other's language,
+    or do we simply shout louder in our own?
+
+arcs:
+  - id: 1
+    title: "The Silence"
+    chapter_range: [1, 5]
+    purpose: "Two worlds in isolation; the signal discovered"
+  - id: 2
+    title: "The Signal"
+    chapter_range: [6, 10]
+    purpose: "First contact protocol; the DNA revelation"
+  - id: 3
+    title: "The Crossing"
+    chapter_range: [11, 16]
+    purpose: "The impossible ocean journey"
+  - id: 4
+    title: "The Stranger"
+    chapter_range: [17, 22]
+    purpose: "Moss in Antarctica; culture shock, illness, modification"
+  - id: 5
+    title: "The Mirror"
+    chapter_range: [23, 28]
+    purpose: "Mutual understanding; VEDA's confession"
+  - id: 6
+    title: "The Return"
+    chapter_range: [29, 34]
+    purpose: "Reverse crossing; Surya outside the seal"
+  - id: 7
+    title: "The Choice"
+    chapter_range: [35, 40]
+    purpose: "First in-person contact; the question"
+
+threads:
+  - id: signal-chain
+    title: "The Signal"
+    status: closed
+    introduced_in_chapter: 1
+    last_touched_chapter: 10
+    next_action: null
+  - id: crossing-chain
+    title: "The Crossing"
+    status: closed
+    introduced_in_chapter: 10
+    last_touched_chapter: 16
+    next_action: null
+  - id: transformation-chain
+    title: "The Transformation"
+    status: closed
+    introduced_in_chapter: 16
+    last_touched_chapter: 28
+    next_action: null
+  - id: return-chain
+    title: "The Return"
+    status: closed
+    introduced_in_chapter: 28
+    last_touched_chapter: 40
+    next_action: null
+  - id: hidden-chain
+    title: "The Hidden Chain (Thematic)"
+    status: closed
+    introduced_in_chapter: 6
+    last_touched_chapter: 40
+    next_action: null
+  - id: surya-awakening
+    title: "Surya's Awakening"
+    status: closed
+    introduced_in_chapter: 2
+    last_touched_chapter: 40
+    next_action: null
+
+promises:
+  - id: what-is-signal
+    question: "What was this place listening for?"
+    introduced_in_chapter: 1
+    payoff_target_chapter: 10
+    status: closed
+  - id: kael-finds
+    question: "What will Kael find in the observatory?"
+    introduced_in_chapter: 1
+    payoff_target_chapter: 3
+    status: closed
+  - id: dish-points-south
+    question: "Why does the dish point south?"
+    introduced_in_chapter: 1
+    payoff_target_chapter: 5
+    status: closed
+  - id: kael-moss-relationship
+    question: "What is Kael's relationship with Moss?"
+    introduced_in_chapter: 1
+    payoff_target_chapter: 12
+    status: closed
+  - id: what-is-anomaly
+    question: "What is the anomaly VEDA detected?"
+    introduced_in_chapter: 2
+    payoff_target_chapter: 4
+    status: closed
+  - id: veda-secret
+    question: "Why is VEDA keeping the anomaly secret?"
+    introduced_in_chapter: 2
+    payoff_target_chapter: 5
+    status: closed
+  - id: surya-missing
+    question: "What does Surya sense is missing from her world?"
+    introduced_in_chapter: 2
+    payoff_target_chapter: 24
+    status: closed
+  - id: dhruv-recognition
+    question: "What did Dhruv recognize in Surya's question?"
+    introduced_in_chapter: 2
+    payoff_target_chapter: 6
+    status: closed
+  - id: will-kael-transmit
+    question: "Will Kael transmit, and will someone answer?"
+    introduced_in_chapter: 3
+    payoff_target_chapter: 5
+    status: closed
+  - id: who-sends-primes
+    question: "Who is sending primes from the south?"
+    introduced_in_chapter: 3
+    payoff_target_chapter: 8
+    status: closed
+  - id: will-surya-transmit
+    question: "Will Surya break protocol and transmit?"
+    introduced_in_chapter: 4
+    payoff_target_chapter: 8
+    status: closed
+  - id: veda-allows-it
+    question: "Why does VEDA seem to allow Surya's unauthorized act?"
+    introduced_in_chapter: 4
+    payoff_target_chapter: 28
+    status: closed
+  - id: who-is-intelligence
+    question: "Who is the intelligence responding to Kael?"
+    introduced_in_chapter: 5
+    payoff_target_chapter: 10
+    status: closed
+  - id: what-happens-public
+    question: "What happens when Kael goes public with the signal?"
+    introduced_in_chapter: 5
+    payoff_target_chapter: 7
+    status: closed
+
+dashboard_pins:
+  - "All 40 chapters drafted"
+  - "Continuity log covers 5/40 chapters"
+  - "Revision queue empty (no entries yet)"
+  - "6 translation samples complete (Ch 1)"

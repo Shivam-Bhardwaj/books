@@ -26,6 +26,7 @@ ROLE_MAP = {
     "language": "agents/roles/language-consultant.md",
     "visual-mj": "agents/roles/visual-midjourney.md",
     "visual-runway": "agents/roles/visual-runway.md",
+    "visual-inserts": "agents/roles/visual-insert-planner.md",
     "translate-hi": "agents/roles/translator-hi.md",
     "hi-naturalness": "agents/roles/hindi-naturalness-editor.md",
     "eic": "agents/roles/editor-in-chief.md",
@@ -108,4 +109,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

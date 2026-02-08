@@ -26,5 +26,8 @@ test-results/
 # Local artifacts (audit screenshots, etc.)
 artifacts/
 
+# Raw illustration source files (large MJ originals)
+books/**/assets/illustrations/raw/
+
 # Generated book output (keep if you want published output in-repo; remove if needed)
 books/**/build/index.html

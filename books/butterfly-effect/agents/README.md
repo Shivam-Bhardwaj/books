@@ -39,3 +39,16 @@ For anything that should become an actionable task, the agent should emit copy-r
 7. Translate with `translator-hi.md`, then refine with `hindi-naturalness-editor.md`.
 
 If you are running multiple reviewers, finish with `editor-in-chief.md` to dedupe, prioritize, and turn reports into a minimal fix plan.
+
+## Visual Insert Workflow (Markers In Prose)
+
+This book supports inline visual hyperlinks and block figures via marker comments in `.draft.md`:
+
+- `<!-- @illust full|thumb|link: id | text -->`
+- `<!-- @diagram full|thumb|link: id | text -->` (SVG diagrams)
+
+Suggested loop:
+
+1. Run `visual-insert-planner.md` to produce a YAML insert plan.
+2. Apply it to drafts with `python3 tools/apply_visual_inserts.py --plan agents/visual/visual-inserts.yaml --write`.
+3. Generate images (Midjourney/Gemini) or diagrams (SVG/Mermaid->SVG), then publish as usual (`build/convert.py` + `tools/publish_book.py`).

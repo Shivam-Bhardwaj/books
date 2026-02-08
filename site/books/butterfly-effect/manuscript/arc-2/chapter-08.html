@@ -14,7 +14,7 @@
     <a href="../arc-2/chapter-09.html">Next →</a>
   </nav>
   <header>
-    <div class="chapter-sigil"><img class="sigil" src="../../assets/sigils/ch08-adharma.svg" alt="A point leaving its boundary." loading="lazy" decoding="async"></div>
+    <div class="chapter-sigil"><svg class="sigil svg-anim svg-anim-antarctic" data-anim="draw-on-scroll" role="img" aria-label="A point leaving its boundary." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"><title>A point leaving its boundary.</title><path d="M 44 128 A 84 84 0 1 1 212 128"/><path d="M 44 128 A 84 84 0 0 0 194 80"/><circle cx="128.0" cy="66.0" r="4.2"/><circle cx="159.0" cy="74.3" r="4.2"/><circle cx="181.7" cy="97.0" r="4.2"/><circle cx="190.0" cy="128.0" r="4.2"/><circle cx="181.7" cy="159.0" r="4.2"/><circle cx="159.0" cy="181.7" r="4.2"/><circle cx="128.0" cy="190.0" r="4.2"/><circle cx="97.0" cy="181.7" r="4.2"/><circle cx="66.0" cy="128.0" r="4.2"/><circle cx="74.3" cy="97.0" r="4.2"/><circle cx="97.0" cy="74.3" r="4.2"/><line x1="92.0" y1="164.0" x2="164.0" y2="92.0"/></svg></div>
     <p class="arc-label">Arc 2: The Signal</p>
     <h1>Chapter 8<br><span class="chapter-title">Adharma</span></h1>
     <p class="chapter-meta">Sūrya · Habitat Prithvi, VLF array control · 2587, Month 3, Week 4</p>
@@ -81,17 +81,79 @@
   </nav>
   <script>
     (() => {
+      /* Progress bar */
       const bar = document.querySelector('.progress-bar');
-      if (!bar) return;
-      const update = () => {
-        const doc = document.documentElement;
-        const y = doc.scrollTop || document.body.scrollTop || 0;
-        const h = (doc.scrollHeight || 0) - (doc.clientHeight || 0);
-        const p = h > 0 ? Math.min(100, Math.max(0, (y / h) * 100)) : 0;
-        bar.style.width = p.toFixed(3) + '%';
-      };
-      document.addEventListener('scroll', update, { passive: true });
-      update();
+      if (bar) {
+        const update = () => {
+          const doc = document.documentElement;
+          const y = doc.scrollTop || document.body.scrollTop || 0;
+          const h = (doc.scrollHeight || 0) - (doc.clientHeight || 0);
+          const p = h > 0 ? Math.min(100, Math.max(0, (y / h) * 100)) : 0;
+          bar.style.width = p.toFixed(3) + '%';
+        };
+        document.addEventListener('scroll', update, { passive: true });
+        update();
+      }
+
+      /* SVG draw-on-scroll animation */
+      const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!reduced) {
+        document.querySelectorAll('[data-anim="draw-on-scroll"]').forEach(svg => {
+          const els = svg.querySelectorAll('path, line, circle, polyline, polygon');
+          els.forEach(el => {
+            const len = el.getTotalLength ? el.getTotalLength() : 0;
+            if (len) {
+              el.style.strokeDasharray = len;
+              el.style.strokeDashoffset = len;
+            }
+          });
+          const io = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+              if (e.isIntersecting) {
+                svg.classList.add('svg-anim-active');
+                io.unobserve(svg);
+              }
+            });
+          }, { threshold: 0.3 });
+          io.observe(svg);
+        });
+      }
+
+      /* Lightbox for illustration thumbnails and links */
+      function openOverlay(src, alt) {
+        const existing = document.querySelector('.illust-overlay');
+        if (existing) existing.remove();
+        const ov = document.createElement('div');
+        ov.className = 'illust-overlay';
+        ov.setAttribute('role', 'dialog');
+        ov.setAttribute('aria-label', alt || 'Illustration');
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = alt || '';
+        img.decoding = 'async';
+        ov.appendChild(img);
+        ov.addEventListener('click', () => ov.remove());
+        document.body.appendChild(ov);
+      }
+      function closeOverlay(e) {
+        if (e.key === 'Escape') {
+          const ov = document.querySelector('.illust-overlay');
+          if (ov) ov.remove();
+        }
+      }
+      document.addEventListener('keydown', closeOverlay);
+      document.querySelectorAll('.illust-thumb, .illust-link, .illust-zoom').forEach(el => {
+        const src = el.dataset.full || el.getAttribute('href');
+        if (!src) return;
+        const alt = el.querySelector('img')
+          ? el.querySelector('img').alt
+          : el.textContent;
+        const handler = (e) => { if (e) e.preventDefault(); openOverlay(src, alt); };
+        el.addEventListener('click', handler);
+        el.addEventListener('keydown', e => {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handler(); }
+        });
+      });
     })();
   </script>
 </body>

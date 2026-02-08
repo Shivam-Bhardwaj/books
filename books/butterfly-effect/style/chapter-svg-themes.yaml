@@ -7,14 +7,17 @@ meta:
     stroke: "currentColor"
     stroke_linecap: "round"
     stroke_linejoin: "round"
-    stroke_width: 12
+    stroke_width: "2-10 (variable)"
   constraints:
     - "No text in the SVG (no font dependencies)."
-    - "Legible at 24px. Avoid tiny details."
-    - "Prefer 1-3 primary shapes; use negative space."
+    - "Legible at 40px — primary shape must read at small size; fine detail rewards zoom."
+    - "15-40+ elements per sigil. Layer: primary shapes, secondary detail, texture marks."
+    - "Variable stroke-width (2-10). Thin for detail, thick for structure."
+    - "Use opacity (0.2-1.0) and <g> groups to create visual depth."
     - "Recurring motif: gaps/offsets to echo translation loss."
-    - "Continental chapters: slightly organic/asymmetric."
-    - "Antarctic chapters: geometric/symmetric; optional node/grid cues."
+    - "Continental chapters: organic curves, asymmetry, scattered texture, hand-drawn feel."
+    - "Antarctic chapters: geometric precision, symmetry, node grids, crystalline patterns."
+    - "Embed hidden symbols or double-readings — reward close inspection."
 
 chapters:
   - id: "ch01-lensmaker"

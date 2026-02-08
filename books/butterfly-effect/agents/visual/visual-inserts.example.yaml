@@ -1,0 +1,17 @@
+version: 1
+note: Example plan format for tools/apply_visual_inserts.py. Copy to visual-inserts.yaml and edit.
+chapters:
+  - chapter: 1
+    draft_path: manuscript/arc-1/chapter-01.draft.md
+    inserts:
+      - id: ch01-sealed-room
+        kind: illust
+        type: full
+        engine: midjourney
+        text: "Kael enters the sealed receiver room beneath the collapsed dish."
+        prompt: "Key moment: Kael pushes open the heavy door into a sealed underground receiver room; dust motes in lantern light; racks of unknown equipment; cables like vines; tactile hard sci-fi realism; Continental palette (warm amber, oxidized green, soot black, salt white); 35mm cinematic still; shallow depth of field; no text, no logos, no watermark."
+        params: "--ar 16:9 --style raw --stylize 100 --no text --no letters --no watermark --no logo"
+        negative: "--no text --no letters --no watermark --no logo --no subtitles"
+        apply:
+          after_paragraph_including: "Inside: racks of equipment."
+

@@ -191,10 +191,10 @@ header h1 {
 .chapter-body p {
   margin: 0;
   text-indent: var(--paragraph-indent);
-  text-align: left;
+  text-align: justify;
   text-wrap: pretty;
-  -webkit-hyphens: none;
-  hyphens: none;
+  -webkit-hyphens: auto;
+  hyphens: auto;
   overflow-wrap: break-word;
 }
 
@@ -295,6 +295,162 @@ video {
   height: auto;
 }
 
+/* ── Illustrations ── */
+.illust-full {
+  margin: 2.5rem calc(-1 * var(--content-pad));
+  text-align: center;
+}
+
+.illust-full picture {
+  display: block;
+}
+
+.illust-zoom {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.illust-full img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+}
+
+.illust-full figcaption {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.illust-thumb {
+  display: inline-block;
+  width: 120px;
+  vertical-align: middle;
+  margin: 0 0.35em;
+  cursor: pointer;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+}
+
+.illust-thumb:hover,
+.illust-thumb:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+}
+
+.illust-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.illust-link {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 0.18em;
+  cursor: pointer;
+}
+
+.illust-link:hover,
+.illust-link:focus-visible {
+  text-decoration-style: solid;
+  color: var(--accent-light);
+}
+
+/* Lightbox overlay */
+.illust-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  animation: illust-fade-in 0.25s ease;
+}
+
+.illust-overlay img {
+  max-width: 92vw;
+  max-height: 92vh;
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+@keyframes illust-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ── Animated SVG sigils ── */
+.svg-anim path,
+.svg-anim line,
+.svg-anim circle,
+.svg-anim polyline,
+.svg-anim polygon {
+  transition: stroke-dashoffset 2s ease;
+}
+
+.svg-anim-active path,
+.svg-anim-active line,
+.svg-anim-active circle,
+.svg-anim-active polyline,
+.svg-anim-active polygon {
+  stroke-dashoffset: 0 !important;
+}
+
+/* Continental: organic ease + gentle wobble after draw */
+.svg-anim-continental path,
+.svg-anim-continental line,
+.svg-anim-continental circle {
+  transition: stroke-dashoffset 2.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.svg-anim-continental.svg-anim-active {
+  animation: sigil-wobble 4s ease-in-out 2.4s 1;
+}
+
+@keyframes sigil-wobble {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(0.5deg); }
+  75% { transform: rotate(-0.5deg); }
+}
+
+/* Antarctic: precise ease + pulse glow after draw */
+.svg-anim-antarctic path,
+.svg-anim-antarctic line,
+.svg-anim-antarctic circle {
+  transition: stroke-dashoffset 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.svg-anim-antarctic.svg-anim-active {
+  animation: sigil-pulse 3s ease-in-out 1.4s 1;
+}
+
+@keyframes sigil-pulse {
+  0%, 100% { opacity: 0.88; filter: drop-shadow(0 0 0 transparent); }
+  50% { opacity: 1; filter: drop-shadow(0 0 6px var(--glow-cool)); }
+}
+
+/* Dual: both wobble and pulse layered */
+.svg-anim-dual path,
+.svg-anim-dual line,
+.svg-anim-dual circle {
+  transition: stroke-dashoffset 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.svg-anim-dual.svg-anim-active {
+  animation: sigil-wobble 4s ease-in-out 2s 1, sigil-pulse 3s ease-in-out 2s 1;
+}
+
 /* Index page */
 .toc-nav {
   position: sticky;
@@ -367,7 +523,7 @@ video {
 
 .chapter-link {
   display: grid;
-  grid-template-columns: 42px 3.2em 1fr;
+  grid-template-columns: 48px 1fr;
   gap: 0.75rem;
   align-items: center;
   padding: 0.65rem 0.25rem;
@@ -389,15 +545,9 @@ video {
 }
 
 .chapter-link .sigil {
-  width: 34px;
-  height: 34px;
+  width: 40px;
+  height: 40px;
   opacity: 0.82;
-}
-
-.chapter-number {
-  font-family: var(--font-ui);
-  font-size: 0.85rem;
-  color: var(--text-muted);
 }
 
 .chapter-text {
@@ -459,21 +609,35 @@ video {
   }
 
   .chapter-link {
-    grid-template-columns: 36px 2.8em 1fr;
+    grid-template-columns: 40px 1fr;
     gap: 0.6rem;
     padding: 0.6rem 0.2rem;
     border-radius: 8px;
   }
 
   .chapter-link .sigil {
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .illust-thumb {
+    width: 80px;
+  }
+
+  .illust-full {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
 @media (min-width: 900px) {
   :root {
     --measure: 78ch;
+  }
+
+  .illust-full {
+    margin-left: -2rem;
+    margin-right: -2rem;
   }
 }
 
@@ -495,6 +659,32 @@ video {
   transition: width 0.1s ease;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .svg-anim path,
+  .svg-anim line,
+  .svg-anim circle,
+  .svg-anim polyline,
+  .svg-anim polygon {
+    transition: none;
+    stroke-dashoffset: 0 !important;
+    stroke-dasharray: none !important;
+  }
+
+  .svg-anim-continental.svg-anim-active,
+  .svg-anim-antarctic.svg-anim-active,
+  .svg-anim-dual.svg-anim-active {
+    animation: none;
+  }
+
+  .illust-overlay {
+    animation: none;
+  }
+
+  .illust-thumb {
+    transition: none;
+  }
+}
+
 @media print {
   body {
     background: #fff;
@@ -508,5 +698,18 @@ video {
   a {
     color: #000;
     text-decoration: none;
+  }
+
+  .illust-overlay {
+    display: none;
+  }
+
+  .svg-anim path,
+  .svg-anim line,
+  .svg-anim circle,
+  .svg-anim polyline,
+  .svg-anim polygon {
+    stroke-dashoffset: 0 !important;
+    stroke-dasharray: none !important;
   }
 }

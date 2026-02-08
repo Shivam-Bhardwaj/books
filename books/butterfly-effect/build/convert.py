@@ -26,6 +26,147 @@ BUILD = os.path.join(BASE, "build")
 STYLE_REL = "../../style/novel.css"
 INDEX_REL = "../../index.html"
 SIGIL_REL = "../../assets/sigils"
+ILLUST_REL = "../../assets/illustrations"
+DIAGRAM_REL = "../../assets/diagrams"
+
+# Illustration marker regex: <!-- @illust full|thumb|link: id | alt -->
+ILLUST_RE = re.compile(
+    r"<!--\s*@illust\s+(full|thumb|link):\s*([a-z0-9_-]+)\s*\|\s*(.+?)\s*-->"
+)
+
+# Diagram marker regex: <!-- @diagram full|thumb|link: id | alt -->
+DIAGRAM_RE = re.compile(
+    r"<!--\s*@diagram\s+(full|thumb|link):\s*([a-z0-9_-]+)\s*\|\s*(.+?)\s*-->"
+)
+
+ILLUST_WIDTHS = [480, 768, 1200]
+
+def render_inline_markdown(text: str) -> str:
+    """Escape HTML but allow simple markdown emphasis in link text."""
+    s = html.escape(text)
+    s = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s)
+    s = re.sub(r"\*(.+?)\*", r"<em>\1</em>", s)
+    return s
+
+
+def strip_inline_markdown(text: str) -> str:
+    """Best-effort plain-text for aria-labels/tooltips."""
+    s = re.sub(r"\*\*(.+?)\*\*", r"\1", text)
+    s = re.sub(r"\*(.+?)\*", r"\1", s)
+    return s
+
+
+def picture_element(illust_id, alt, rel_base, cls="", sizes="100vw"):
+    """Generate a <picture> element with AVIF/WebP sources at multiple widths."""
+    avif_srcset = ", ".join(
+        f"{rel_base}/{illust_id}-{w}w.avif {w}w" for w in ILLUST_WIDTHS
+    )
+    webp_srcset = ", ".join(
+        f"{rel_base}/{illust_id}-{w}w.webp {w}w" for w in ILLUST_WIDTHS
+    )
+    fallback_src = f"{rel_base}/{illust_id}-{ILLUST_WIDTHS[-1]}w.webp"
+    alt_esc = html.escape(alt)
+    cls_attr = f' class="{cls}"' if cls else ""
+    return (
+        f'<picture>'
+        f'<source type="image/avif" srcset="{avif_srcset}" sizes="{sizes}">'
+        f'<source type="image/webp" srcset="{webp_srcset}" sizes="{sizes}">'
+        f'<img{cls_attr} src="{fallback_src}" alt="{alt_esc}" loading="lazy" decoding="async">'
+        f'</picture>'
+    )
+
+
+def illust_full_html(illust_id, caption, rel_base):
+    """Full-width illustration figure."""
+    pic = picture_element(illust_id, caption, rel_base, sizes="(min-width: 900px) 82ch, 100vw")
+    full_src = f"{rel_base}/{illust_id}-{ILLUST_WIDTHS[-1]}w.webp"
+    cap_esc = html.escape(caption)
+    return (
+        f'    <figure class="illust-full" data-illust="{html.escape(illust_id)}">'
+        f'<a class="illust-zoom" href="{full_src}" data-full="{full_src}" aria-label="View: {cap_esc}">'
+        f'{pic}</a><figcaption>{cap_esc}</figcaption></figure>'
+    )
+
+
+def illust_thumb_html(illust_id, alt, rel_base):
+    """Inline thumbnail that expands on click."""
+    thumb_src = f"{rel_base}/{illust_id}-{ILLUST_WIDTHS[0]}w.webp"
+    full_src = f"{rel_base}/{illust_id}-{ILLUST_WIDTHS[-1]}w.webp"
+    alt_esc = html.escape(alt)
+    return (
+        f'<a class="illust-thumb" data-illust="{html.escape(illust_id)}" '
+        f'data-full="{full_src}" href="{full_src}" aria-label="View: {alt_esc}">'
+        f'<img src="{thumb_src}" alt="{alt_esc}" loading="lazy" decoding="async">'
+        f'</a>'
+    )
+
+
+def illust_link_html(illust_id, link_text, rel_base):
+    """Text that opens an illustration overlay on click."""
+    full_src = f"{rel_base}/{illust_id}-{ILLUST_WIDTHS[-1]}w.webp"
+    link_html = render_inline_markdown(link_text)
+    label = html.escape(strip_inline_markdown(link_text).strip() or "Illustration")
+    return (
+        f'<a class="illust-link" data-illust="{html.escape(illust_id)}" '
+        f'data-full="{full_src}" href="{full_src}" aria-label="View illustration: {label}">'
+        f'{link_html}</a>'
+    )
+
+
+def diagram_src(diagram_id: str, rel_base: str) -> str:
+    return f"{rel_base}/{diagram_id}.svg"
+
+
+def diagram_full_html(diagram_id: str, caption: str, rel_base: str) -> str:
+    """Full-width SVG diagram figure."""
+    src = diagram_src(diagram_id, rel_base)
+    cap_esc = html.escape(caption)
+    return (
+        f'    <figure class="illust-full diagram-full" data-diagram="{html.escape(diagram_id)}">'
+        f'<a class="illust-zoom" href="{src}" data-full="{src}" aria-label="View: {cap_esc}">'
+        f'<img src="{src}" alt="{cap_esc}" loading="lazy" decoding="async"></a>'
+        f'<figcaption>{cap_esc}</figcaption></figure>'
+    )
+
+
+def diagram_thumb_html(diagram_id: str, alt: str, rel_base: str) -> str:
+    """Inline SVG thumbnail (click to open)."""
+    src = diagram_src(diagram_id, rel_base)
+    alt_esc = html.escape(alt)
+    return (
+        f'<a class="illust-thumb diagram-thumb" data-diagram="{html.escape(diagram_id)}" '
+        f'data-full="{src}" href="{src}" aria-label="View: {alt_esc}">'
+        f'<img src="{src}" alt="{alt_esc}" loading="lazy" decoding="async">'
+        f"</a>"
+    )
+
+
+def diagram_link_html(diagram_id: str, link_text: str, rel_base: str) -> str:
+    """Text that opens an SVG diagram overlay on click."""
+    src = diagram_src(diagram_id, rel_base)
+    link_html = render_inline_markdown(link_text)
+    label = html.escape(strip_inline_markdown(link_text).strip() or "Diagram")
+    return (
+        f'<a class="illust-link diagram-link" data-diagram="{html.escape(diagram_id)}" '
+        f'data-full="{src}" href="{src}" aria-label="View diagram: {label}">'
+        f"{link_html}</a>"
+    )
+
+
+# POV → world mapping for SVG animation styles
+POV_WORLD = {
+    "Kael": "continental",
+    "Moss": "continental",
+    "Sūrya": "antarctic",
+    "Sūrya + VEDA": "antarctic",
+    "Dual": "dual",
+    "Dual + VEDA": "dual",
+}
+
+
+def get_world(pov):
+    """Map a POV character to a world animation style."""
+    return POV_WORLD.get(pov, "continental")
 
 
 def load_book_config():
@@ -81,10 +222,27 @@ def load_sigil_map():
 SIGIL_MAP = load_sigil_map()
 
 
-def sigil_img(chapter_num, rel_base):
+def sigil_img(chapter_num, rel_base, inline=False, world="continental"):
+    """Generate sigil markup. When inline=True, embed the SVG directly with animation attrs."""
     sig = SIGIL_MAP.get(chapter_num)
     if not sig or not sig.get("id"):
         return ""
+    if inline:
+        svg_path = os.path.join(BASE, "assets", "sigils", f"{sig['id']}.svg")
+        if os.path.isfile(svg_path):
+            with open(svg_path, "r", encoding="utf-8") as f:
+                svg_content = f.read().strip()
+            # Strip XML declaration if present
+            svg_content = re.sub(r"<\?xml[^?]*\?>", "", svg_content).strip()
+            # Inject classes and attributes into the <svg> tag
+            alt = html.escape(sig.get("alt", "") or "")
+            inject = (
+                f'class="sigil svg-anim svg-anim-{html.escape(world)}" '
+                f'data-anim="draw-on-scroll" role="img" aria-label="{alt}"'
+            )
+            svg_content = re.sub(r"<svg\b", f"<svg {inject}", svg_content, count=1)
+            return svg_content
+    # Fallback: external <img> tag (used for TOC)
     src = f"{rel_base}/{sig['id']}.svg"
     alt = html.escape(sig.get("alt", "") or "")
     return f'<img class="sigil" src="{src}" alt="{alt}" loading="lazy" decoding="async">'
@@ -126,6 +284,10 @@ def parse_draft(filepath):
     for line in lines:
         # Skip title
         if re.match(r"^# Chapter \d+:", line):
+            continue
+        # Preserve visual markers (they look like comments but carry data)
+        if re.match(r"^\s*<!--\s*@(illust|diagram)\s", line):
+            prose_lines.append(line)
             continue
         # Skip HTML comments (single-line)
         if re.match(r"^\s*<!--.*-->\s*$", line):
@@ -198,6 +360,26 @@ def prose_to_html(prose):
             html_parts.append('    <hr class="scene-break">')
             continue
 
+        # Block-level full illustration (standalone paragraph)
+        full_match = re.match(
+            r"^\s*<!--\s*@illust\s+full:\s*([a-z0-9_-]+)\s*\|\s*(.+?)\s*-->\s*$",
+            para,
+        )
+        if full_match:
+            html_parts.append(illust_full_html(full_match.group(1), full_match.group(2).strip(), ILLUST_REL))
+            continue
+
+        # Block-level full diagram (standalone paragraph)
+        diag_full_match = re.match(
+            r"^\s*<!--\s*@diagram\s+full:\s*([a-z0-9_-]+)\s*\|\s*(.+?)\s*-->\s*$",
+            para,
+        )
+        if diag_full_match:
+            html_parts.append(
+                diagram_full_html(diag_full_match.group(1), diag_full_match.group(2).strip(), DIAGRAM_REL)
+            )
+            continue
+
         # Handle blockquotes
         if "<BLOCKQUOTE_START>" in para:
             para = para.replace("<BLOCKQUOTE_START>", "").strip()
@@ -216,6 +398,8 @@ def prose_to_html(prose):
         if not para:
             continue
 
+        # Process inline visuals before HTML escaping
+        para = process_visual_markers(para)
         # Convert markdown italics to <em>
         para = process_inline(para)
         html_parts.append(f"    <p>{para}</p>")
@@ -223,9 +407,47 @@ def prose_to_html(prose):
     return "\n".join(html_parts)
 
 
+def process_visual_markers(text):
+    """Replace inline @illust/@diagram thumb/link markers with HTML before general escaping."""
+    def _replace_diag(m):
+        kind, diagram_id, caption = m.group(1), m.group(2), m.group(3).strip()
+        if kind == "thumb":
+            return diagram_thumb_html(diagram_id, caption, DIAGRAM_REL)
+        elif kind == "link":
+            return diagram_link_html(diagram_id, caption, DIAGRAM_REL)
+        # full markers handled at block level; pass through if misplaced inline
+        return m.group(0)
+
+    def _replace_illust(m):
+        kind, illust_id, caption = m.group(1), m.group(2), m.group(3).strip()
+        if kind == "thumb":
+            return illust_thumb_html(illust_id, caption, ILLUST_REL)
+        elif kind == "link":
+            return illust_link_html(illust_id, caption, ILLUST_REL)
+        # full markers handled at block level; pass through if misplaced inline
+        return m.group(0)
+
+    text = DIAGRAM_RE.sub(_replace_diag, text)
+    text = ILLUST_RE.sub(_replace_illust, text)
+    return text
+
+
 def process_inline(text):
-    """Process inline markdown: *italic*, **bold**."""
-    # Escape HTML entities first
+    """Process inline markdown: *italic*, **bold**.
+
+    Illustration HTML (from process_illustrations) is protected from escaping
+    by temporarily replacing it with placeholders.
+    """
+    # Protect existing HTML tags (from illustration processing) from escaping
+    protected = []
+
+    def _protect(m):
+        protected.append(m.group(0))
+        return f"\x00PROTECT{len(protected) - 1}\x00"
+
+    text = re.sub(r"<[^>]+>", _protect, text)
+
+    # Escape HTML entities in prose text
     text = text.replace("&", "&amp;")
     text = text.replace("<", "&lt;")
     text = text.replace(">", "&gt;")
@@ -235,6 +457,10 @@ def process_inline(text):
     # Italic: *text*
     text = re.sub(r"\*(.+?)\*", r"<em>\1</em>", text)
 
+    # Restore protected HTML
+    for i, tag in enumerate(protected):
+        text = text.replace(f"\x00PROTECT{i}\x00", tag)
+
     return text
 
 
@@ -242,7 +468,8 @@ def generate_chapter_html(data, prev_href, next_href):
     """Generate the full HTML for a chapter."""
     arc_title = ARCS.get(data["arc_num"], "Unknown")
     prose_html = prose_to_html(data["prose"])
-    sigil_html = sigil_img(data["chapter_num"], SIGIL_REL)
+    world = get_world(data["pov"])
+    sigil_html = sigil_img(data["chapter_num"], SIGIL_REL, inline=True, world=world)
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -275,17 +502,79 @@ def generate_chapter_html(data, prev_href, next_href):
   </nav>
   <script>
     (() => {{
+      /* Progress bar */
       const bar = document.querySelector('.progress-bar');
-      if (!bar) return;
-      const update = () => {{
-        const doc = document.documentElement;
-        const y = doc.scrollTop || document.body.scrollTop || 0;
-        const h = (doc.scrollHeight || 0) - (doc.clientHeight || 0);
-        const p = h > 0 ? Math.min(100, Math.max(0, (y / h) * 100)) : 0;
-        bar.style.width = p.toFixed(3) + '%';
-      }};
-      document.addEventListener('scroll', update, {{ passive: true }});
-      update();
+      if (bar) {{
+        const update = () => {{
+          const doc = document.documentElement;
+          const y = doc.scrollTop || document.body.scrollTop || 0;
+          const h = (doc.scrollHeight || 0) - (doc.clientHeight || 0);
+          const p = h > 0 ? Math.min(100, Math.max(0, (y / h) * 100)) : 0;
+          bar.style.width = p.toFixed(3) + '%';
+        }};
+        document.addEventListener('scroll', update, {{ passive: true }});
+        update();
+      }}
+
+      /* SVG draw-on-scroll animation */
+      const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!reduced) {{
+        document.querySelectorAll('[data-anim="draw-on-scroll"]').forEach(svg => {{
+          const els = svg.querySelectorAll('path, line, circle, polyline, polygon');
+          els.forEach(el => {{
+            const len = el.getTotalLength ? el.getTotalLength() : 0;
+            if (len) {{
+              el.style.strokeDasharray = len;
+              el.style.strokeDashoffset = len;
+            }}
+          }});
+          const io = new IntersectionObserver(entries => {{
+            entries.forEach(e => {{
+              if (e.isIntersecting) {{
+                svg.classList.add('svg-anim-active');
+                io.unobserve(svg);
+              }}
+            }});
+          }}, {{ threshold: 0.3 }});
+          io.observe(svg);
+        }});
+      }}
+
+      /* Lightbox for illustration thumbnails and links */
+      function openOverlay(src, alt) {{
+        const existing = document.querySelector('.illust-overlay');
+        if (existing) existing.remove();
+        const ov = document.createElement('div');
+        ov.className = 'illust-overlay';
+        ov.setAttribute('role', 'dialog');
+        ov.setAttribute('aria-label', alt || 'Illustration');
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = alt || '';
+        img.decoding = 'async';
+        ov.appendChild(img);
+        ov.addEventListener('click', () => ov.remove());
+        document.body.appendChild(ov);
+      }}
+      function closeOverlay(e) {{
+        if (e.key === 'Escape') {{
+          const ov = document.querySelector('.illust-overlay');
+          if (ov) ov.remove();
+        }}
+      }}
+      document.addEventListener('keydown', closeOverlay);
+      document.querySelectorAll('.illust-thumb, .illust-link, .illust-zoom').forEach(el => {{
+        const src = el.dataset.full || el.getAttribute('href');
+        if (!src) return;
+        const alt = el.querySelector('img')
+          ? el.querySelector('img').alt
+          : el.textContent;
+        const handler = (e) => {{ if (e) e.preventDefault(); openOverlay(src, alt); }};
+        el.addEventListener('click', handler);
+        el.addEventListener('keydown', e => {{
+          if (e.key === 'Enter' || e.key === ' ') {{ e.preventDefault(); handler(); }}
+        }});
+      }});
     }})();
   </script>
 </body>
@@ -313,7 +602,6 @@ def generate_index(chapters, *, style_href, manuscript_prefix, sigil_rel_base):
             links.append(
                 f'''    <a class="chapter-link" href="{href}">
       <span class="chapter-sigil">{sigil_html}</span>
-      <span class="chapter-number">{ch["chapter_num"]}.</span>
       <span class="chapter-text">
         <span class="chapter-title">{html.escape(ch["chapter_title"])}</span>
         <span class="chapter-sub">{html.escape(ch["pov"])} · {html.escape(ch["location"])}</span>
