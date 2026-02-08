@@ -187,6 +187,8 @@ def parse_revision_queue() -> dict:
     if not path.exists():
         return {"open": 0, "closed": 0}
     text = path.read_text(encoding="utf-8")
+    # Strip fenced code blocks so template examples aren't counted
+    text = re.sub(r"```.*?```", "", text, flags=re.S)
     open_count = len(re.findall(r"^- \[ \]", text, re.M))
     closed_count = len(re.findall(r"^- \[x\]", text, re.M | re.I))
     return {"open": open_count, "closed": closed_count}
@@ -243,14 +245,17 @@ def first_meaningful_line(path: Path) -> str:
 def build_docs_index() -> list[dict]:
     """Index all .md files under ROOT with metadata."""
     docs = []
-    skip_dirs = {"manuscript", "meta", "translations"}
+    skip_dirs = {"manuscript", "meta", "translations", ".venv"}
 
     for md in sorted(ROOT.rglob("*.md")):
         rel = str(md.relative_to(ROOT))
-        top_dir = rel.split("/")[0]
+        parts = rel.split("/")
+        # Skip any path component that starts with a dot or is in skip_dirs
+        if any(p.startswith(".") or p in skip_dirs for p in parts[:-1]):
+            continue
+        top_dir = parts[0]
         if top_dir in skip_dirs:
             continue
-        # Skip INSTRUCTIONS.md from detailed indexing but still list it
         stat = md.stat()
         mtime = datetime.fromtimestamp(stat.st_mtime, tz=timezone.utc).isoformat()
         category = categorize(rel)
