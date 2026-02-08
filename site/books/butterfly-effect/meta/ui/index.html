@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StoryOS — Butterfly Effect</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <nav id="sidebar">
+    <h1>StoryOS</h1>
+    <ul>
+      <li><a href="#overview" class="nav-link active" data-view="overview">Overview</a></li>
+      <li><a href="#docs" class="nav-link" data-view="docs">Docs</a></li>
+      <li><a href="#storymap" class="nav-link" data-view="storymap">Story Map</a></li>
+      <li><a href="#entities" class="nav-link" data-view="entities">Entities</a></li>
+      <li><a href="#threads" class="nav-link" data-view="threads">Threads &amp; Promises</a></li>
+      <li><a href="#graphs" class="nav-link" data-view="graphs">Graphs</a></li>
+    </ul>
+    <div id="search-box">
+      <input type="text" id="search" placeholder="Search...">
+    </div>
+  </nav>
+  <main id="content">
+    <div id="view-overview" class="view active"></div>
+    <div id="view-docs" class="view"></div>
+    <div id="view-storymap" class="view"></div>
+    <div id="view-entities" class="view"></div>
+    <div id="view-threads" class="view"></div>
+    <div id="view-graphs" class="view"></div>
+  </main>
+  <script src="vendor/mermaid.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
